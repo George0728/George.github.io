@@ -1,0 +1,15 @@
+[2020/06/29 Mon 15:20:43.941961][INFO]Stair Speedtest v0.6.1-beta started in GUI mode.
+[2020/06/29 Mon 15:20:43.947908][INFO]Found V2Ray core at path tools\clients\v2ray-core\v2-core.exe
+[2020/06/29 Mon 15:20:43.948907][INFO]Found Shadowsocks-libev at path tools\clients\shadowsocks-libev\ss-libev.exe
+[2020/06/29 Mon 15:20:43.948907][INFO]Found ShadowsocksR-libev at path tools\clients\shadowsocksr-libev\ssr-libev.exe
+[2020/06/29 Mon 15:20:43.950902][INFO]Using local port: 65432
+[2020/06/29 Mon 15:20:43.951899][INFO]Init completed.
+[2020/06/29 Mon 15:20:43.951899][INFO]Input data: http://bbrc.work/link/BBRC201909?mu=0^1^all^tcping^none^false
+[2020/06/29 Mon 15:20:43.952895][INFO]Received Link.
+[2020/06/29 Mon 15:20:43.953893][INFO]Downloading subscription data...
+[2020/06/29 Mon 15:20:43.982815][WARNING]Cannot download subscription directly. Using system proxy.
+[2020/06/29 Mon 15:20:43.984809][WARNING]No system proxy is set. Skipping.
+[2020/06/29 Mon 15:20:43.984809][ERROR]Cannot download subscription data.
+[2020/06/29 Mon 15:20:43.985806][ERROR]No valid link found.
+[2020/06/29 Mon 15:20:43.985806][INFO]Program terminated.
+--EOF--

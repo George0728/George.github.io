@@ -1,0 +1,63 @@
+[Basic]
+GenerationTime=2020-06-29 15:23:51
+Tester=Stair Speedtest Reborn v0.6.1-beta
+
+[1^HK Free 01]
+AvgPing=190.00
+AvgSpeed=1.98MB
+GroupID=0
+ID=0
+MaxSpeed=3.07MB
+Online=true
+PkLoss=0.00%
+RawPing=21,28,22,20,1029,20
+RawSitePing=418,457,1447,483,506,460,823,439,632,431
+RawSpeed=478978,5969360,1945782,2054656,1993368,1987136,2117824,1735768,1888456,1734624,1857024,1758528,2223840,2491872,2369856,2149824,1979710,1759680,2214400,1987602
+SitePing=609.60
+ULSpeed=N/A
+UsedTraffic=21397912
+
+[1^HK Free 02]
+AvgPing=25.33
+AvgSpeed=N/A
+GroupID=0
+ID=1
+MaxSpeed=N/A
+Online=false
+PkLoss=0.00%
+RawPing=26,25,29,20,22,30
+RawSitePing=0,0,0,0,0,0,0,0,0,0
+RawSpeed=0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+SitePing=0.00
+ULSpeed=N/A
+UsedTraffic=0
+
+[1^HK Free 03]
+AvgPing=193.00
+AvgSpeed=1.93MB
+GroupID=0
+ID=2
+MaxSpeed=3.27MB
+Online=true
+PkLoss=0.00%
+RawPing=25,25,29,24,1029,26
+RawSitePing=829,474,476,896,453,626,1369,411,406,356
+RawSpeed=0,2572664,4764178,2084864,1913662,1889024,1896844,2117570,2028000,2019328,2232032,1971232,1923322,2115620,1808352,2239742,1937888,2118400,1701472,2296800
+SitePing=629.60
+ULSpeed=N/A
+UsedTraffic=20815497
+
+[1^HK Free 04]
+AvgPing=522.50
+AvgSpeed=N/A
+GroupID=0
+ID=3
+MaxSpeed=N/A
+Online=false
+PkLoss=0.00%
+RawPing=1020,21,1023,21,23,1027
+RawSitePing=0,0,0,0,0,0,0,0,0,0
+RawSpeed=0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+SitePing=0.00
+ULSpeed=N/A
+UsedTraffic=0

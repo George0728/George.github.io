@@ -1,0 +1,1131 @@
+[2020/06/08 Mon 15:45:13.411310][INFO]Stair Speedtest v0.6.1-beta started in GUI mode.
+[2020/06/08 Mon 15:45:13.431258][INFO]Found V2Ray core at path tools\clients\v2ray-core\v2-core.exe
+[2020/06/08 Mon 15:45:13.443233][INFO]Found Shadowsocks-libev at path tools\clients\shadowsocks-libev\ss-libev.exe
+[2020/06/08 Mon 15:45:13.452237][INFO]Found ShadowsocksR-libev at path tools\clients\shadowsocksr-libev\ssr-libev.exe
+[2020/06/08 Mon 15:45:13.465165][INFO]Using local port: 65432
+[2020/06/08 Mon 15:45:13.472145][INFO]Init completed.
+[2020/06/08 Mon 15:45:13.484114][INFO]Input data: https://www.viyundingji.xyz/link/GKuKKEy9WHdQJpl3?sub=1^?empty?^all^tcping^none^false
+[2020/06/08 Mon 15:45:13.494093][INFO]Received Link.
+[2020/06/08 Mon 15:45:13.503096][INFO]Downloading subscription data...
+[2020/06/08 Mon 15:45:15.634374][INFO]Parsing subscription data...
+[2020/06/08 Mon 15:45:15.660296][INFO]Comparing exclude remarks...
+[2020/06/08 Mon 15:45:15.670271][INFO]Node  VI云 - 加拿大丨[vip1]  has been added.
+[2020/06/08 Mon 15:45:15.680241][INFO]Comparing exclude remarks...
+[2020/06/08 Mon 15:45:15.690218][INFO]Node  VI云 - 悉尼丨[vip1]  has been added.
+[2020/06/08 Mon 15:45:15.699191][INFO]Comparing exclude remarks...
+[2020/06/08 Mon 15:45:15.709167][INFO]Node  VI云 - 悉尼丨备用丨[vip1]  has been added.
+[2020/06/08 Mon 15:45:15.719173][INFO]Comparing exclude remarks...
+[2020/06/08 Mon 15:45:15.730144][INFO]Node  VI云 - 新加坡 | 紧急 | 网页专用  has been added.
+[2020/06/08 Mon 15:45:15.741079][INFO]Comparing exclude remarks...
+[2020/06/08 Mon 15:45:15.753049][INFO]Node  VI云 - 新加坡丨[vip1]  has been added.
+[2020/06/08 Mon 15:45:15.764017][INFO]Comparing exclude remarks...
+[2020/06/08 Mon 15:45:15.771996][INFO]Node  VI云 - 有问题请发邮件viyun01@gmail.com 或者发工单  has been added.
+[2020/06/08 Mon 15:45:15.781970][INFO]Comparing exclude remarks...
+[2020/06/08 Mon 15:45:15.791942][INFO]Node  VI云 - 香港丨2丨解锁Netflix丨[vip1]  has been added.
+[2020/06/08 Mon 15:45:15.800920][INFO]Comparing exclude remarks...
+[2020/06/08 Mon 15:45:15.808934][INFO]Node  VI云 - 香港丨3丨三网优化丨[vip1]  has been added.
+[2020/06/08 Mon 15:45:15.817875][INFO]Comparing exclude remarks...
+[2020/06/08 Mon 15:45:15.825885][INFO]Node  VI云 - 加拿大丨备用丨[vip1] - 22111 单端口  has been added.
+[2020/06/08 Mon 15:45:15.834830][INFO]Comparing exclude remarks...
+[2020/06/08 Mon 15:45:15.843804][INFO]Node  VI云 - 日本 丨1丨双网优化丨[vip1] - 22111 单端口  has been added.
+[2020/06/08 Mon 15:45:15.851816][INFO]Comparing exclude remarks...
+[2020/06/08 Mon 15:45:15.860760][INFO]Node  VI云 - 日本丨2丨[vip1] - 22111 单端口  has been added.
+[2020/06/08 Mon 15:45:15.868772][INFO]Comparing exclude remarks...
+[2020/06/08 Mon 15:45:15.877714][INFO]Node  VI云 - 法国 （2）丨[vip1]  - 22111 单端口  has been added.
+[2020/06/08 Mon 15:45:15.885694][INFO]Comparing exclude remarks...
+[2020/06/08 Mon 15:45:15.893673][INFO]Node  VI云 - 法国1丨[vip1] - 22111 单端口  has been added.
+[2020/06/08 Mon 15:45:15.901651][INFO]Comparing exclude remarks...
+[2020/06/08 Mon 15:45:15.908633][INFO]Node  VI云 - 美国+丨[vip1] - 22111 单端口  has been added.
+[2020/06/08 Mon 15:45:15.917606][INFO]Comparing exclude remarks...
+[2020/06/08 Mon 15:45:15.927589][INFO]Node  VI云 - 美国丨高速节点1丨中转香港丨[vip1] - 22111 单端口  has been added.
+[2020/06/08 Mon 15:45:15.935558][INFO]Comparing exclude remarks...
+[2020/06/08 Mon 15:45:15.943539][INFO]Node  VI云 - 美国丨高速节点2丨中转香港丨[vip1] - 22111 单端口  has been added.
+[2020/06/08 Mon 15:45:15.951518][INFO]Comparing exclude remarks...
+[2020/06/08 Mon 15:45:15.959526][INFO]Node  VI云 - 美国丨高速节点3丨中转香港丨[vip1] - 22111 单端口  has been added.
+[2020/06/08 Mon 15:45:15.967475][INFO]Comparing exclude remarks...
+[2020/06/08 Mon 15:45:15.975454][INFO]Node  VI云 - 美国丨高速节点4丨中转香港丨[vip1] - 22111 单端口  has been added.
+[2020/06/08 Mon 15:45:15.983467][INFO]Comparing exclude remarks...
+[2020/06/08 Mon 15:45:15.991411][INFO]Node  VI云 - 美国丨高速节点5丨中转香港---[vip1] - 22111 单端口  has been added.
+[2020/06/08 Mon 15:45:15.999424][INFO]Comparing exclude remarks...
+[2020/06/08 Mon 15:45:16.006371][INFO]Node  VI云 - 美国丨高速节点6丨中转香港---[vip1] - 22111 单端口  has been added.
+[2020/06/08 Mon 15:45:16.014350][INFO]Comparing exclude remarks...
+[2020/06/08 Mon 15:45:16.021365][INFO]Node  VI云 - 香港丨1丨三网优化丨[vip1] - 22111 单端口  has been added.
+[2020/06/08 Mon 15:45:16.029308][INFO]Comparing exclude remarks...
+[2020/06/08 Mon 15:45:16.036291][INFO]Node  VI云 - 香港丨4丨解锁netfilx丨三网优化丨[vip1] - 22111 单端口  has been added.
+[2020/06/08 Mon 15:45:16.045266][INFO]Total node(s) found: 22
+[2020/06/08 Mon 15:45:16.052249][INFO]Speedtest will now begin.
+[2020/06/08 Mon 15:45:16.061224][INFO]Writing config file...
+[2020/06/08 Mon 15:45:16.070202][INFO]Starting up shadowsocks-libev...
+[2020/06/08 Mon 15:45:16.083164][INFO]Received server. Group: VI云 Name: 加拿大丨[vip1]
+[2020/06/08 Mon 15:45:16.097128][INFO]Now performing TCP ping...
+[2020/06/08 Mon 15:45:16.108098][TCPING]TCP Ping begin.
+[2020/06/08 Mon 15:45:16.154973][TCPING]Ping target: vip1.47.qiangwoshishabi.club:27384.
+[2020/06/08 Mon 15:45:16.164947][TCPING]Host name provided. Resolving into IP address.
+[2020/06/08 Mon 15:45:16.176915][TCPING]Start probing 45.77.130.157:27384.
+[2020/06/08 Mon 15:45:19.188029][TCPING]Probing 45.77.130.157:27384/tcp - No response - time=3000ms
+[2020/06/08 Mon 15:45:23.207273][TCPING]Probing 45.77.130.157:27384/tcp - No response - time=3000ms
+[2020/06/08 Mon 15:45:27.223379][TCPING]Probing 45.77.130.157:27384/tcp - No response - time=3000ms
+[2020/06/08 Mon 15:45:31.236744][TCPING]Probing 45.77.130.157:27384/tcp - No response - time=3001ms
+[2020/06/08 Mon 15:45:35.250925][TCPING]Probing 45.77.130.157:27384/tcp - No response - time=3001ms
+[2020/06/08 Mon 15:45:39.280143][TCPING]Probing 45.77.130.157:27384/tcp - No response - time=3000ms
+[2020/06/08 Mon 15:45:39.294105][TCPING]Ping statistics for 45.77.130.157:27384 : 6 probes sent, 0 successful, 6 failed. (100.00% fail)
+[2020/06/08 Mon 15:45:39.309065][ERROR]Cannot connect to this node.
+[2020/06/08 Mon 15:45:39.324020][INFO]Writing config file...
+[2020/06/08 Mon 15:45:39.341972][INFO]Starting up shadowsocks-libev...
+[2020/06/08 Mon 15:45:39.358929][INFO]Received server. Group: VI云 Name: 悉尼丨[vip1]
+[2020/06/08 Mon 15:45:39.372900][INFO]Now performing TCP ping...
+[2020/06/08 Mon 15:45:39.383860][TCPING]TCP Ping begin.
+[2020/06/08 Mon 15:45:39.394831][TCPING]Ping target: vip1.28.qiangwoshishabi.club:27384.
+[2020/06/08 Mon 15:45:39.407797][TCPING]Host name provided. Resolving into IP address.
+[2020/06/08 Mon 15:45:39.438713][TCPING]Start probing 45.76.94.120:27384.
+[2020/06/08 Mon 15:45:39.671291][TCPING]Probing 45.76.94.120:27384/tcp - Port is open - time=223ms
+[2020/06/08 Mon 15:45:40.851947][TCPING]Probing 45.76.94.120:27384/tcp - Port is open - time=171ms
+[2020/06/08 Mon 15:45:42.060703][TCPING]Probing 45.76.94.120:27384/tcp - Port is open - time=186ms
+[2020/06/08 Mon 15:45:43.282472][TCPING]Probing 45.76.94.120:27384/tcp - Port is open - time=211ms
+[2020/06/08 Mon 15:45:44.470258][TCPING]Probing 45.76.94.120:27384/tcp - Port is open - time=177ms
+[2020/06/08 Mon 15:45:45.699975][TCPING]Probing 45.76.94.120:27384/tcp - Port is open - time=216ms
+[2020/06/08 Mon 15:45:45.709948][TCPING]Ping statistics for 45.76.94.120:27384 : 6 probes sent, 6 successful, 0 failed. (0.00% fail)
+[2020/06/08 Mon 15:45:45.720917][RAW]223 171 186 211 177 216 
+[2020/06/08 Mon 15:45:45.730889][INFO]TCP Ping: 197.33  Packet Loss: 0.00%
+[2020/06/08 Mon 15:45:45.741859][INFO]Now performing GeoIP parse...
+[2020/06/08 Mon 15:45:45.754827][RULES]Rule match started.
+[2020/06/08 Mon 15:45:45.765796][RULES]Fetching inbound GeoIP info.
+[2020/06/08 Mon 15:45:45.776767][GEOIP]GeoIP parse begin.
+[2020/06/08 Mon 15:45:45.789733][GEOIP]No address provided, getting GeoIP through proxy 'socks5://127.0.0.1:65432'.
+[2020/06/08 Mon 15:45:48.076617][GEOIP]Fetched GeoIP data: {"organization":"Choopa, LLC","longitude":8.7147,"city":"Frankfurt am Main","timezone":"Europe\/Berlin","isp":"Choopa, LLC","offset":3600,"region":"Hesse","asn":20473,"asn_organization":"AS-CHOOPA","country":"Germany","ip":"45.76.94.120","latitude":50.1103,"postal_code":"60314","continent_code":"EU","country_code":"DE","region_code":"HE"}
+
+[2020/06/08 Mon 15:45:48.089581][GEOIP]Parsing GeoIP result.
+[2020/06/08 Mon 15:45:48.101583][GEOIP]Parse GeoIP complete. Leaving.
+[2020/06/08 Mon 15:45:48.110528][RULES]Searching default rule.
+[2020/06/08 Mon 15:45:48.123491][RULES]Using default rule: 'https://download.microsoft.com/download/2/0/E/20E90413-712F-438C-988E-FDAA79A8AC3D/dotnetfx35.exe'.
+[2020/06/08 Mon 15:45:48.136459][RULES]Node  VI云 - 悉尼丨[vip1]  matches no rule. Using default rule.
+[2020/06/08 Mon 15:45:48.151419][RULES]Node  VI云 - 悉尼丨[vip1]  uses test file 'https://download.microsoft.com/download/2/0/E/20E90413-712F-438C-988E-FDAA79A8AC3D/dotnetfx35.exe'.
+[2020/06/08 Mon 15:45:48.164411][INFO]Got outbound ISP: Choopa, LLC  Country code: DE
+[2020/06/08 Mon 15:45:48.176350][INFO]Now performing site ping...
+[2020/06/08 Mon 15:45:48.188320][GPING]Website ping started. Target: 'https://www.google.com/' . Proxy: '127.0.0.1:65432' .
+[2020/06/08 Mon 15:45:49.283391][GPING]Accessing 'https://www.google.com/' - Success - time=1084ms
+[2020/06/08 Mon 15:45:50.117217][GPING]Accessing 'https://www.google.com/' - Success - time=821ms
+[2020/06/08 Mon 15:45:51.191446][GPING]Accessing 'https://www.google.com/' - Success - time=1061ms
+[2020/06/08 Mon 15:45:52.221546][GPING]Accessing 'https://www.google.com/' - Success - time=1016ms
+[2020/06/08 Mon 15:45:54.114476][GPING]Accessing 'https://www.google.com/' - Success - time=1851ms
+[2020/06/08 Mon 15:45:55.703459][GPING]Accessing 'https://www.google.com/' - Success - time=1572ms
+[2020/06/08 Mon 15:45:57.308975][GPING]Accessing 'https://www.google.com/' - Success - time=1595ms
+[2020/06/08 Mon 15:45:58.183598][GPING]Accessing 'https://www.google.com/' - Success - time=852ms
+[2020/06/08 Mon 15:46:00.280983][GPING]Accessing 'https://www.google.com/' - Success - time=2084ms
+[2020/06/08 Mon 15:46:01.302255][GPING]Accessing 'https://www.google.com/' - Success - time=1004ms
+[2020/06/08 Mon 15:46:01.332174][GPING]Ping statistics of target https://www.google.com/ : 10 probes sent, 10 successful, 0 failed. 
+[2020/06/08 Mon 15:46:01.345139][GPING]Website ping completed. Leaving.
+[2020/06/08 Mon 15:46:01.356114][RAW]1084 821 1061 1016 1851 1572 1595 852 2084 1004 
+[2020/06/08 Mon 15:46:01.366092][INFO]Site ping: 1294.00
+[2020/06/08 Mon 15:46:01.375059][INFO]Now performing file download speed test...
+[2020/06/08 Mon 15:46:01.387026][FILEDL]Multi-thread download test started.
+[2020/06/08 Mon 15:46:01.399994][FILEDL]Fetch target: https://download.microsoft.com/download/2/0/E/20E90413-712F-438C-988E-FDAA79A8AC3D/dotnetfx35.exe
+[2020/06/08 Mon 15:46:01.410962][FILEDL]Found HTTPS URL. Initializing OpenSSL library.
+[2020/06/08 Mon 15:46:01.426919][FILEDL]Starting up thread #1.
+[2020/06/08 Mon 15:46:01.440881][FILEDL]Starting up thread #2.
+[2020/06/08 Mon 15:46:01.450854][FILEDL]Starting up thread #3.
+[2020/06/08 Mon 15:46:01.461826][FILEDL]Starting up thread #4.
+[2020/06/08 Mon 15:46:01.470802][FILEDL]All threads launched. Start accumulating data.
+[2020/06/08 Mon 15:46:01.992584][FILEDL]Running threads: 4, total received bytes: 0, current received bytes: 0.
+[2020/06/08 Mon 15:46:02.523182][FILEDL]Running threads: 4, total received bytes: 20228, current received bytes: 40456.
+[2020/06/08 Mon 15:46:03.052750][FILEDL]Running threads: 4, total received bytes: 126724, current received bytes: 212992.
+[2020/06/08 Mon 15:46:03.584376][FILEDL]Running threads: 4, total received bytes: 310499, current received bytes: 367550.
+[2020/06/08 Mon 15:46:04.099808][FILEDL]Running threads: 4, total received bytes: 707259, current received bytes: 793520.
+[2020/06/08 Mon 15:46:04.616624][FILEDL]Running threads: 4, total received bytes: 1329083, current received bytes: 1243648.
+[2020/06/08 Mon 15:46:05.134239][FILEDL]Running threads: 4, total received bytes: 1746107, current received bytes: 834048.
+[2020/06/08 Mon 15:46:05.662855][FILEDL]Running threads: 4, total received bytes: 2499387, current received bytes: 1506560.
+[2020/06/08 Mon 15:46:06.180416][FILEDL]Running threads: 4, total received bytes: 3505521, current received bytes: 2012268.
+[2020/06/08 Mon 15:46:06.708014][FILEDL]Running threads: 4, total received bytes: 4323713, current received bytes: 1636384.
+[2020/06/08 Mon 15:46:07.224650][FILEDL]Running threads: 4, total received bytes: 5529169, current received bytes: 2410912.
+[2020/06/08 Mon 15:46:07.743246][FILEDL]Running threads: 4, total received bytes: 7141489, current received bytes: 3224640.
+[2020/06/08 Mon 15:46:08.271850][FILEDL]Running threads: 4, total received bytes: 8542065, current received bytes: 2801152.
+[2020/06/08 Mon 15:46:08.788445][FILEDL]Running threads: 4, total received bytes: 9979745, current received bytes: 2875360.
+[2020/06/08 Mon 15:46:09.305081][FILEDL]Running threads: 4, total received bytes: 11555681, current received bytes: 3151872.
+[2020/06/08 Mon 15:46:09.821472][FILEDL]Running threads: 4, total received bytes: 12850289, current received bytes: 2589216.
+[2020/06/08 Mon 15:46:10.338091][FILEDL]Running threads: 4, total received bytes: 14845665, current received bytes: 3990752.
+[2020/06/08 Mon 15:46:10.866677][FILEDL]Running threads: 4, total received bytes: 16193376, current received bytes: 2695422.
+[2020/06/08 Mon 15:46:11.383566][FILEDL]Running threads: 4, total received bytes: 18653291, current received bytes: 4919830.
+[2020/06/08 Mon 15:46:11.912136][FILEDL]Running threads: 4, total received bytes: 20164075, current received bytes: 3021568.
+[2020/06/08 Mon 15:46:11.920860][FILEDL]Test completed. Terminate all threads.
+[2020/06/08 Mon 15:46:11.943056][FILEDL]Downloaded 20164075 bytes in 10451 milliseconds.
+[2020/06/08 Mon 15:46:12.140272][FILEDL]Multi-thread download test completed.
+[2020/06/08 Mon 15:46:12.151243][RAW]0 40456 212992 367550 793520 1243648 834048 1506560 2012268 1636384 2410912 3224640 2801152 2875360 3151872 2589216 3990752 2695422 4919830 3021568 
+[2020/06/08 Mon 15:46:12.162213][INFO]Average speed: 1.84MB  Max speed: 3.79MB  Upload speed: N/A  Traffic used in bytes: 20164075
+[2020/06/08 Mon 15:46:12.491398][INFO]Writing config file...
+[2020/06/08 Mon 15:46:12.508289][INFO]Starting up shadowsocks-libev...
+[2020/06/08 Mon 15:46:12.521253][INFO]Received server. Group: VI云 Name: 悉尼丨备用丨[vip1]
+[2020/06/08 Mon 15:46:12.535217][INFO]Now performing TCP ping...
+[2020/06/08 Mon 15:46:12.553169][TCPING]TCP Ping begin.
+[2020/06/08 Mon 15:46:12.565145][TCPING]Ping target: vip1.30.qiangwoshishabi.club:27384.
+[2020/06/08 Mon 15:46:12.578101][TCPING]Host name provided. Resolving into IP address.
+[2020/06/08 Mon 15:46:12.631956][TCPING]Start probing 45.76.94.120:27384.
+[2020/06/08 Mon 15:46:12.869324][TCPING]Probing 45.76.94.120:27384/tcp - Port is open - time=227ms
+[2020/06/08 Mon 15:46:14.100035][TCPING]Probing 45.76.94.120:27384/tcp - Port is open - time=219ms
+[2020/06/08 Mon 15:46:16.354009][TCPING]Probing 45.76.94.120:27384/tcp - Port is open - time=1223ms
+[2020/06/08 Mon 15:46:17.545821][TCPING]Probing 45.76.94.120:27384/tcp - Port is open - time=176ms
+[2020/06/08 Mon 15:46:18.734794][TCPING]Probing 45.76.94.120:27384/tcp - Port is open - time=174ms
+[2020/06/08 Mon 15:46:19.967561][TCPING]Probing 45.76.94.120:27384/tcp - Port is open - time=217ms
+[2020/06/08 Mon 15:46:19.976320][TCPING]Ping statistics for 45.76.94.120:27384 : 6 probes sent, 6 successful, 0 failed. (0.00% fail)
+[2020/06/08 Mon 15:46:19.986294][RAW]227 219 1223 176 174 217 
+[2020/06/08 Mon 15:46:19.995270][INFO]TCP Ping: 372.67  Packet Loss: 0.00%
+[2020/06/08 Mon 15:46:20.005243][INFO]Now performing GeoIP parse...
+[2020/06/08 Mon 15:46:20.016215][RULES]Rule match started.
+[2020/06/08 Mon 15:46:20.026186][RULES]Fetching inbound GeoIP info.
+[2020/06/08 Mon 15:46:20.036160][GEOIP]GeoIP parse begin.
+[2020/06/08 Mon 15:46:20.050122][GEOIP]No address provided, getting GeoIP through proxy 'socks5://127.0.0.1:65432'.
+[2020/06/08 Mon 15:46:24.641847][GEOIP]Fetched GeoIP data: {"organization":"Choopa, LLC","longitude":8.7147,"city":"Frankfurt am Main","timezone":"Europe\/Berlin","isp":"Choopa, LLC","offset":3600,"region":"Hesse","asn":20473,"asn_organization":"AS-CHOOPA","country":"Germany","ip":"45.76.94.120","latitude":50.1103,"postal_code":"60314","continent_code":"EU","country_code":"DE","region_code":"HE"}
+
+[2020/06/08 Mon 15:46:24.659798][GEOIP]Parsing GeoIP result.
+[2020/06/08 Mon 15:46:24.677789][GEOIP]Parse GeoIP complete. Leaving.
+[2020/06/08 Mon 15:46:24.692710][RULES]Searching default rule.
+[2020/06/08 Mon 15:46:24.705677][RULES]Using default rule: 'https://download.microsoft.com/download/2/0/E/20E90413-712F-438C-988E-FDAA79A8AC3D/dotnetfx35.exe'.
+[2020/06/08 Mon 15:46:24.716643][RULES]Node  VI云 - 悉尼丨备用丨[vip1]  matches no rule. Using default rule.
+[2020/06/08 Mon 15:46:24.728614][RULES]Node  VI云 - 悉尼丨备用丨[vip1]  uses test file 'https://download.microsoft.com/download/2/0/E/20E90413-712F-438C-988E-FDAA79A8AC3D/dotnetfx35.exe'.
+[2020/06/08 Mon 15:46:24.741610][INFO]Got outbound ISP: Choopa, LLC  Country code: DE
+[2020/06/08 Mon 15:46:24.753548][INFO]Now performing site ping...
+[2020/06/08 Mon 15:46:24.765516][GPING]Website ping started. Target: 'https://www.google.com/' . Proxy: '127.0.0.1:65432' .
+[2020/06/08 Mon 15:46:25.847624][GPING]Accessing 'https://www.google.com/' - Success - time=1069ms
+[2020/06/08 Mon 15:46:26.886846][GPING]Accessing 'https://www.google.com/' - Success - time=1026ms
+[2020/06/08 Mon 15:46:27.748554][GPING]Accessing 'https://www.google.com/' - Success - time=833ms
+[2020/06/08 Mon 15:46:28.814697][GPING]Accessing 'https://www.google.com/' - Success - time=1048ms
+[2020/06/08 Mon 15:46:29.872042][GPING]Accessing 'https://www.google.com/' - Success - time=1042ms
+[2020/06/08 Mon 15:46:31.678189][GPING]Accessing 'https://www.google.com/' - Success - time=1794ms
+[2020/06/08 Mon 15:46:32.547706][GPING]Accessing 'https://www.google.com/' - Success - time=854ms
+[2020/06/08 Mon 15:46:33.418536][GPING]Accessing 'https://www.google.com/' - Success - time=857ms
+[2020/06/08 Mon 15:46:35.291368][GPING]Accessing 'https://www.google.com/' - Success - time=1858ms
+[2020/06/08 Mon 15:46:36.914031][GPING]Accessing 'https://www.google.com/' - Success - time=1607ms
+[2020/06/08 Mon 15:46:36.930025][GPING]Ping statistics of target https://www.google.com/ : 10 probes sent, 10 successful, 0 failed. 
+[2020/06/08 Mon 15:46:36.944949][GPING]Website ping completed. Leaving.
+[2020/06/08 Mon 15:46:36.957914][RAW]1069 1026 833 1048 1042 1794 854 857 1858 1607 
+[2020/06/08 Mon 15:46:36.968884][INFO]Site ping: 1198.80
+[2020/06/08 Mon 15:46:36.978857][INFO]Now performing file download speed test...
+[2020/06/08 Mon 15:46:36.989828][FILEDL]Multi-thread download test started.
+[2020/06/08 Mon 15:46:37.000798][FILEDL]Fetch target: https://download.microsoft.com/download/2/0/E/20E90413-712F-438C-988E-FDAA79A8AC3D/dotnetfx35.exe
+[2020/06/08 Mon 15:46:37.011767][FILEDL]Found HTTPS URL. Initializing OpenSSL library.
+[2020/06/08 Mon 15:46:37.023775][FILEDL]Starting up thread #1.
+[2020/06/08 Mon 15:46:37.033722][FILEDL]Starting up thread #2.
+[2020/06/08 Mon 15:46:37.045679][FILEDL]Starting up thread #3.
+[2020/06/08 Mon 15:46:37.059653][FILEDL]Starting up thread #4.
+[2020/06/08 Mon 15:46:37.073610][FILEDL]All threads launched. Start accumulating data.
+[2020/06/08 Mon 15:46:37.602223][FILEDL]Running threads: 4, total received bytes: 0, current received bytes: 0.
+[2020/06/08 Mon 15:46:38.129939][FILEDL]Running threads: 4, total received bytes: 32768, current received bytes: 65536.
+[2020/06/08 Mon 15:46:38.663507][FILEDL]Running threads: 4, total received bytes: 101166, current received bytes: 136796.
+[2020/06/08 Mon 15:46:39.193109][FILEDL]Running threads: 4, total received bytes: 414998, current received bytes: 627664.
+[2020/06/08 Mon 15:46:39.723517][FILEDL]Running threads: 4, total received bytes: 772825, current received bytes: 715654.
+[2020/06/08 Mon 15:46:40.258303][FILEDL]Running threads: 4, total received bytes: 1114969, current received bytes: 684288.
+[2020/06/08 Mon 15:46:40.790802][FILEDL]Running threads: 4, total received bytes: 1962329, current received bytes: 1694720.
+[2020/06/08 Mon 15:46:41.321247][FILEDL]Running threads: 4, total received bytes: 2352541, current received bytes: 780424.
+[2020/06/08 Mon 15:46:41.847988][FILEDL]Running threads: 4, total received bytes: 4596254, current received bytes: 4487426.
+[2020/06/08 Mon 15:46:42.366632][FILEDL]Running threads: 4, total received bytes: 6167950, current received bytes: 3143392.
+[2020/06/08 Mon 15:46:42.896212][FILEDL]Running threads: 4, total received bytes: 7735839, current received bytes: 3135778.
+[2020/06/08 Mon 15:46:43.414817][FILEDL]Running threads: 4, total received bytes: 9763695, current received bytes: 4055712.
+[2020/06/08 Mon 15:46:43.944419][FILEDL]Running threads: 4, total received bytes: 10989450, current received bytes: 2451510.
+[2020/06/08 Mon 15:46:44.462845][FILEDL]Running threads: 4, total received bytes: 12402667, current received bytes: 2826434.
+[2020/06/08 Mon 15:46:44.992588][FILEDL]Running threads: 4, total received bytes: 14678794, current received bytes: 4552254.
+[2020/06/08 Mon 15:46:45.522013][FILEDL]Running threads: 4, total received bytes: 15615354, current received bytes: 1873120.
+[2020/06/08 Mon 15:46:46.040626][FILEDL]Running threads: 4, total received bytes: 17285173, current received bytes: 3339638.
+[2020/06/08 Mon 15:46:46.569249][FILEDL]Running threads: 4, total received bytes: 19150053, current received bytes: 3729760.
+[2020/06/08 Mon 15:46:47.100833][FILEDL]Running threads: 4, total received bytes: 21947492, current received bytes: 5594878.
+[2020/06/08 Mon 15:46:47.631538][FILEDL]Running threads: 4, total received bytes: 23686597, current received bytes: 3478210.
+[2020/06/08 Mon 15:46:47.643339][FILEDL]Test completed. Terminate all threads.
+[2020/06/08 Mon 15:46:47.660449][FILEDL]Downloaded 23995973 bytes in 10572 milliseconds.
+[2020/06/08 Mon 15:46:48.214851][FILEDL]Multi-thread download test completed.
+[2020/06/08 Mon 15:46:48.224786][RAW]0 65536 136796 627664 715654 684288 1694720 780424 4487426 3143392 3135778 4055712 2451510 2826434 4552254 1873120 3339638 3729760 5594878 3478210 
+[2020/06/08 Mon 15:46:48.233763][INFO]Average speed: 2.16MB  Max speed: 4.33MB  Upload speed: N/A  Traffic used in bytes: 23995973
+[2020/06/08 Mon 15:46:48.551152][INFO]Writing config file...
+[2020/06/08 Mon 15:46:48.567902][INFO]Starting up shadowsocks-libev...
+[2020/06/08 Mon 15:46:48.580832][INFO]Received server. Group: VI云 Name: 新加坡 | 紧急 | 网页专用
+[2020/06/08 Mon 15:46:48.592839][INFO]Now performing TCP ping...
+[2020/06/08 Mon 15:46:48.612748][TCPING]TCP Ping begin.
+[2020/06/08 Mon 15:46:48.627707][TCPING]Ping target: vip1.35.qiangwoshishabi.club:27384.
+[2020/06/08 Mon 15:46:48.641671][TCPING]Host name provided. Resolving into IP address.
+[2020/06/08 Mon 15:46:48.687782][TCPING]Start probing 140.82.1.73:27384.
+[2020/06/08 Mon 15:46:48.945858][TCPING]Probing 140.82.1.73:27384/tcp - Port is open - time=248ms
+[2020/06/08 Mon 15:46:50.225451][TCPING]Probing 140.82.1.73:27384/tcp - Port is open - time=263ms
+[2020/06/08 Mon 15:46:51.505015][TCPING]Probing 140.82.1.73:27384/tcp - Port is open - time=250ms
+[2020/06/08 Mon 15:46:52.794571][TCPING]Probing 140.82.1.73:27384/tcp - Port is open - time=268ms
+[2020/06/08 Mon 15:46:54.071158][TCPING]Probing 140.82.1.73:27384/tcp - Port is open - time=253ms
+[2020/06/08 Mon 15:46:55.349786][TCPING]Probing 140.82.1.73:27384/tcp - Port is open - time=257ms
+[2020/06/08 Mon 15:46:55.364695][TCPING]Ping statistics for 140.82.1.73:27384 : 6 probes sent, 6 successful, 0 failed. (0.00% fail)
+[2020/06/08 Mon 15:46:55.378660][RAW]248 263 250 268 253 257 
+[2020/06/08 Mon 15:46:55.387669][INFO]TCP Ping: 256.50  Packet Loss: 0.00%
+[2020/06/08 Mon 15:46:55.399602][INFO]Now performing GeoIP parse...
+[2020/06/08 Mon 15:46:55.411567][RULES]Rule match started.
+[2020/06/08 Mon 15:46:55.421541][RULES]Fetching inbound GeoIP info.
+[2020/06/08 Mon 15:46:55.429520][GEOIP]GeoIP parse begin.
+[2020/06/08 Mon 15:46:55.439493][GEOIP]No address provided, getting GeoIP through proxy 'socks5://127.0.0.1:65432'.
+[2020/06/08 Mon 15:46:56.984385][GEOIP]Fetched GeoIP data: {"organization":"Choopa, LLC","longitude":-74.4606,"city":"Piscataway","timezone":"America\/New_York","isp":"Choopa, LLC","offset":-18000,"region":"New Jersey","asn":20473,"asn_organization":"AS-CHOOPA","country":"United States","ip":"140.82.1.73","latitude":40.5511,"postal_code":"08854","continent_code":"NA","country_code":"US","region_code":"NJ"}
+
+[2020/06/08 Mon 15:46:57.011301][GEOIP]Parsing GeoIP result.
+[2020/06/08 Mon 15:46:57.033231][GEOIP]Parse GeoIP complete. Leaving.
+[2020/06/08 Mon 15:46:57.046200][RULES]Searching default rule.
+[2020/06/08 Mon 15:46:57.059162][RULES]Using default rule: 'https://download.microsoft.com/download/2/0/E/20E90413-712F-438C-988E-FDAA79A8AC3D/dotnetfx35.exe'.
+[2020/06/08 Mon 15:46:57.073164][RULES]Node  VI云 - 新加坡 | 紧急 | 网页专用  matches no rule. Using default rule.
+[2020/06/08 Mon 15:46:57.086094][RULES]Node  VI云 - 新加坡 | 紧急 | 网页专用  uses test file 'https://download.microsoft.com/download/2/0/E/20E90413-712F-438C-988E-FDAA79A8AC3D/dotnetfx35.exe'.
+[2020/06/08 Mon 15:46:57.100054][INFO]Got outbound ISP: Choopa, LLC  Country code: US
+[2020/06/08 Mon 15:46:57.114019][INFO]Now performing site ping...
+[2020/06/08 Mon 15:46:57.127982][GPING]Website ping started. Target: 'https://www.google.com/' . Proxy: '127.0.0.1:65432' .
+[2020/06/08 Mon 15:46:58.301988][GPING]Accessing 'https://www.google.com/' - Success - time=1160ms
+[2020/06/08 Mon 15:46:59.457750][GPING]Accessing 'https://www.google.com/' - Success - time=1137ms
+[2020/06/08 Mon 15:47:00.638596][GPING]Accessing 'https://www.google.com/' - Success - time=1157ms
+[2020/06/08 Mon 15:47:01.774558][GPING]Accessing 'https://www.google.com/' - Success - time=1122ms
+[2020/06/08 Mon 15:47:02.939442][GPING]Accessing 'https://www.google.com/' - Success - time=1152ms
+[2020/06/08 Mon 15:47:04.139238][GPING]Accessing 'https://www.google.com/' - Success - time=1169ms
+[2020/06/08 Mon 15:47:05.326060][GPING]Accessing 'https://www.google.com/' - Success - time=1153ms
+[2020/06/08 Mon 15:47:06.496137][GPING]Accessing 'https://www.google.com/' - Success - time=1159ms
+[2020/06/08 Mon 15:47:07.640875][GPING]Accessing 'https://www.google.com/' - Success - time=1130ms
+[2020/06/08 Mon 15:47:08.809743][GPING]Accessing 'https://www.google.com/' - Success - time=1135ms
+[2020/06/08 Mon 15:47:08.820712][GPING]Ping statistics of target https://www.google.com/ : 10 probes sent, 10 successful, 0 failed. 
+[2020/06/08 Mon 15:47:08.830703][GPING]Website ping completed. Leaving.
+[2020/06/08 Mon 15:47:08.839664][RAW]1160 1137 1157 1122 1152 1169 1153 1159 1130 1135 
+[2020/06/08 Mon 15:47:08.848639][INFO]Site ping: 1147.40
+[2020/06/08 Mon 15:47:08.859610][INFO]Now performing file download speed test...
+[2020/06/08 Mon 15:47:08.871576][FILEDL]Multi-thread download test started.
+[2020/06/08 Mon 15:47:08.881551][FILEDL]Fetch target: https://download.microsoft.com/download/2/0/E/20E90413-712F-438C-988E-FDAA79A8AC3D/dotnetfx35.exe
+[2020/06/08 Mon 15:47:08.892520][FILEDL]Found HTTPS URL. Initializing OpenSSL library.
+[2020/06/08 Mon 15:47:08.901496][FILEDL]Starting up thread #1.
+[2020/06/08 Mon 15:47:08.911472][FILEDL]Starting up thread #2.
+[2020/06/08 Mon 15:47:08.921443][FILEDL]Starting up thread #3.
+[2020/06/08 Mon 15:47:08.931417][FILEDL]Starting up thread #4.
+[2020/06/08 Mon 15:47:08.940429][FILEDL]All threads launched. Start accumulating data.
+[2020/06/08 Mon 15:47:09.462147][FILEDL]Running threads: 4, total received bytes: 0, current received bytes: 0.
+[2020/06/08 Mon 15:47:09.990743][FILEDL]Running threads: 4, total received bytes: 0, current received bytes: 0.
+[2020/06/08 Mon 15:47:10.521384][FILEDL]Running threads: 4, total received bytes: 263582, current received bytes: 527164.
+[2020/06/08 Mon 15:47:11.037995][FILEDL]Running threads: 4, total received bytes: 1114630, current received bytes: 1702096.
+[2020/06/08 Mon 15:47:11.554599][FILEDL]Running threads: 4, total received bytes: 2759814, current received bytes: 3290368.
+[2020/06/08 Mon 15:47:12.072258][FILEDL]Running threads: 4, total received bytes: 5561350, current received bytes: 5603072.
+[2020/06/08 Mon 15:47:12.599609][FILEDL]Running threads: 4, total received bytes: 5602166, current received bytes: 81632.
+[2020/06/08 Mon 15:47:13.116481][FILEDL]Running threads: 4, total received bytes: 6770703, current received bytes: 2337074.
+[2020/06/08 Mon 15:47:13.633842][FILEDL]Running threads: 4, total received bytes: 9128457, current received bytes: 4715508.
+[2020/06/08 Mon 15:47:14.182375][FILEDL]Running threads: 4, total received bytes: 12520601, current received bytes: 6784288.
+[2020/06/08 Mon 15:47:14.726987][FILEDL]Running threads: 4, total received bytes: 16112146, current received bytes: 7183090.
+[2020/06/08 Mon 15:47:15.243539][FILEDL]Running threads: 4, total received bytes: 17480571, current received bytes: 2736850.
+[2020/06/08 Mon 15:47:15.759159][FILEDL]Running threads: 4, total received bytes: 17586539, current received bytes: 211936.
+[2020/06/08 Mon 15:47:16.286749][FILEDL]Running threads: 4, total received bytes: 20290155, current received bytes: 5407232.
+[2020/06/08 Mon 15:47:16.802615][FILEDL]Running threads: 4, total received bytes: 22411881, current received bytes: 4243452.
+[2020/06/08 Mon 15:47:17.320201][FILEDL]Running threads: 4, total received bytes: 24895993, current received bytes: 4968224.
+[2020/06/08 Mon 15:47:17.836605][FILEDL]Running threads: 4, total received bytes: 27460969, current received bytes: 5129952.
+[2020/06/08 Mon 15:47:18.352461][FILEDL]Running threads: 4, total received bytes: 31093768, current received bytes: 7265598.
+[2020/06/08 Mon 15:47:18.912728][FILEDL]Running threads: 4, total received bytes: 34538488, current received bytes: 6889440.
+[2020/06/08 Mon 15:47:19.445535][FILEDL]Running threads: 4, total received bytes: 39046504, current received bytes: 9016032.
+[2020/06/08 Mon 15:47:19.456276][FILEDL]Test completed. Terminate all threads.
+[2020/06/08 Mon 15:47:19.473456][FILEDL]Downloaded 39299160 bytes in 10519 milliseconds.
+[2020/06/08 Mon 15:47:19.484198][FILEDL]Multi-thread download test completed.
+[2020/06/08 Mon 15:47:19.494175][RAW]0 0 527164 1702096 3290368 5603072 81632 2337074 4715508 6784288 7183090 2736850 211936 5407232 4243452 4968224 5129952 7265598 6889440 9016032 
+[2020/06/08 Mon 15:47:19.504146][INFO]Average speed: 3.56MB  Max speed: 7.58MB  Upload speed: N/A  Traffic used in bytes: 39299160
+[2020/06/08 Mon 15:47:19.818533][INFO]Writing config file...
+[2020/06/08 Mon 15:47:19.835262][INFO]Starting up shadowsocks-libev...
+[2020/06/08 Mon 15:47:19.848227][INFO]Received server. Group: VI云 Name: 新加坡丨[vip1]
+[2020/06/08 Mon 15:47:19.862190][INFO]Now performing TCP ping...
+[2020/06/08 Mon 15:47:19.875155][TCPING]TCP Ping begin.
+[2020/06/08 Mon 15:47:19.886125][TCPING]Ping target: vip1.29.qiangwoshishabi.club:27384.
+[2020/06/08 Mon 15:47:19.899090][TCPING]Host name provided. Resolving into IP address.
+[2020/06/08 Mon 15:47:19.944129][TCPING]Start probing 140.82.1.73:27384.
+[2020/06/08 Mon 15:47:20.205523][TCPING]Probing 140.82.1.73:27384/tcp - Port is open - time=251ms
+[2020/06/08 Mon 15:47:21.463121][TCPING]Probing 140.82.1.73:27384/tcp - Port is open - time=249ms
+[2020/06/08 Mon 15:47:22.734730][TCPING]Probing 140.82.1.73:27384/tcp - Port is open - time=261ms
+[2020/06/08 Mon 15:47:23.994366][TCPING]Probing 140.82.1.73:27384/tcp - Port is open - time=250ms
+[2020/06/08 Mon 15:47:25.262992][TCPING]Probing 140.82.1.73:27384/tcp - Port is open - time=259ms
+[2020/06/08 Mon 15:47:26.532367][TCPING]Probing 140.82.1.73:27384/tcp - Port is open - time=259ms
+[2020/06/08 Mon 15:47:26.561280][TCPING]Ping statistics for 140.82.1.73:27384 : 6 probes sent, 6 successful, 0 failed. (0.00% fail)
+[2020/06/08 Mon 15:47:26.582224][RAW]251 249 261 250 259 259 
+[2020/06/08 Mon 15:47:26.596218][INFO]TCP Ping: 254.83  Packet Loss: 0.00%
+[2020/06/08 Mon 15:47:26.610147][INFO]Now performing GeoIP parse...
+[2020/06/08 Mon 15:47:26.622116][RULES]Rule match started.
+[2020/06/08 Mon 15:47:26.633085][RULES]Fetching inbound GeoIP info.
+[2020/06/08 Mon 15:47:26.643056][GEOIP]GeoIP parse begin.
+[2020/06/08 Mon 15:47:26.653031][GEOIP]No address provided, getting GeoIP through proxy 'socks5://127.0.0.1:65432'.
+[2020/06/08 Mon 15:47:28.246790][GEOIP]Fetched GeoIP data: {"organization":"Choopa, LLC","longitude":-74.4606,"city":"Piscataway","timezone":"America\/New_York","isp":"Choopa, LLC","offset":-18000,"region":"New Jersey","asn":20473,"asn_organization":"AS-CHOOPA","country":"United States","ip":"140.82.1.73","latitude":40.5511,"postal_code":"08854","continent_code":"NA","country_code":"US","region_code":"NJ"}
+
+[2020/06/08 Mon 15:47:28.268717][GEOIP]Parsing GeoIP result.
+[2020/06/08 Mon 15:47:28.289689][GEOIP]Parse GeoIP complete. Leaving.
+[2020/06/08 Mon 15:47:28.302623][RULES]Searching default rule.
+[2020/06/08 Mon 15:47:28.315585][RULES]Using default rule: 'https://download.microsoft.com/download/2/0/E/20E90413-712F-438C-988E-FDAA79A8AC3D/dotnetfx35.exe'.
+[2020/06/08 Mon 15:47:28.328554][RULES]Node  VI云 - 新加坡丨[vip1]  matches no rule. Using default rule.
+[2020/06/08 Mon 15:47:28.341551][RULES]Node  VI云 - 新加坡丨[vip1]  uses test file 'https://download.microsoft.com/download/2/0/E/20E90413-712F-438C-988E-FDAA79A8AC3D/dotnetfx35.exe'.
+[2020/06/08 Mon 15:47:28.354480][INFO]Got outbound ISP: Choopa, LLC  Country code: US
+[2020/06/08 Mon 15:47:28.367484][INFO]Now performing site ping...
+[2020/06/08 Mon 15:47:28.380415][GPING]Website ping started. Target: 'https://www.google.com/' . Proxy: '127.0.0.1:65432' .
+[2020/06/08 Mon 15:47:29.560261][GPING]Accessing 'https://www.google.com/' - Success - time=1165ms
+[2020/06/08 Mon 15:47:30.712179][GPING]Accessing 'https://www.google.com/' - Success - time=1138ms
+[2020/06/08 Mon 15:47:31.914963][GPING]Accessing 'https://www.google.com/' - Success - time=1181ms
+[2020/06/08 Mon 15:47:33.110786][GPING]Accessing 'https://www.google.com/' - Success - time=1176ms
+[2020/06/08 Mon 15:47:34.329548][GPING]Accessing 'https://www.google.com/' - Success - time=1205ms
+[2020/06/08 Mon 15:47:35.474449][GPING]Accessing 'https://www.google.com/' - Success - time=1131ms
+[2020/06/08 Mon 15:47:36.619383][GPING]Accessing 'https://www.google.com/' - Success - time=1123ms
+[2020/06/08 Mon 15:47:37.469146][GPING]Accessing 'https://www.google.com/' - Success - time=834ms
+[2020/06/08 Mon 15:47:38.600091][GPING]Accessing 'https://www.google.com/' - Success - time=1119ms
+[2020/06/08 Mon 15:47:40.257695][GPING]Accessing 'https://www.google.com/' - Success - time=1621ms
+[2020/06/08 Mon 15:47:40.273614][GPING]Ping statistics of target https://www.google.com/ : 10 probes sent, 10 successful, 0 failed. 
+[2020/06/08 Mon 15:47:40.289571][GPING]Website ping completed. Leaving.
+[2020/06/08 Mon 15:47:40.298544][RAW]1165 1138 1181 1176 1205 1131 1123 834 1119 1621 
+[2020/06/08 Mon 15:47:40.308515][INFO]Site ping: 1169.30
+[2020/06/08 Mon 15:47:40.316496][INFO]Now performing file download speed test...
+[2020/06/08 Mon 15:47:40.327470][FILEDL]Multi-thread download test started.
+[2020/06/08 Mon 15:47:40.338439][FILEDL]Fetch target: https://download.microsoft.com/download/2/0/E/20E90413-712F-438C-988E-FDAA79A8AC3D/dotnetfx35.exe
+[2020/06/08 Mon 15:47:40.347411][FILEDL]Found HTTPS URL. Initializing OpenSSL library.
+[2020/06/08 Mon 15:47:40.356390][FILEDL]Starting up thread #1.
+[2020/06/08 Mon 15:47:40.364368][FILEDL]Starting up thread #2.
+[2020/06/08 Mon 15:47:40.373345][FILEDL]Starting up thread #3.
+[2020/06/08 Mon 15:47:40.382318][FILEDL]Starting up thread #4.
+[2020/06/08 Mon 15:47:40.391296][FILEDL]All threads launched. Start accumulating data.
+[2020/06/08 Mon 15:47:40.913050][FILEDL]Running threads: 4, total received bytes: 0, current received bytes: 0.
+[2020/06/08 Mon 15:47:41.441715][FILEDL]Running threads: 4, total received bytes: 16384, current received bytes: 32768.
+[2020/06/08 Mon 15:47:41.962226][FILEDL]Running threads: 4, total received bytes: 158148, current received bytes: 283528.
+[2020/06/08 Mon 15:47:42.492886][FILEDL]Running threads: 4, total received bytes: 764464, current received bytes: 1212632.
+[2020/06/08 Mon 15:47:43.021481][FILEDL]Running threads: 4, total received bytes: 2116176, current received bytes: 2703424.
+[2020/06/08 Mon 15:47:43.538068][FILEDL]Running threads: 4, total received bytes: 5602096, current received bytes: 6971840.
+[2020/06/08 Mon 15:47:44.056531][FILEDL]Running threads: 4, total received bytes: 5781168, current received bytes: 358144.
+[2020/06/08 Mon 15:47:44.585227][FILEDL]Running threads: 4, total received bytes: 6375584, current received bytes: 1188832.
+[2020/06/08 Mon 15:47:45.113835][FILEDL]Running threads: 4, total received bytes: 8595214, current received bytes: 4439260.
+[2020/06/08 Mon 15:47:45.647464][FILEDL]Running threads: 4, total received bytes: 12369933, current received bytes: 7549438.
+[2020/06/08 Mon 15:47:46.164094][FILEDL]Running threads: 4, total received bytes: 16242572, current received bytes: 7745278.
+[2020/06/08 Mon 15:47:46.680478][FILEDL]Running threads: 4, total received bytes: 17863847, current received bytes: 3242550.
+[2020/06/08 Mon 15:47:47.195346][FILEDL]Running threads: 4, total received bytes: 18715153, current received bytes: 1702612.
+[2020/06/08 Mon 15:47:47.711792][FILEDL]Running threads: 4, total received bytes: 22961557, current received bytes: 8492808.
+[2020/06/08 Mon 15:47:48.240468][FILEDL]Running threads: 4, total received bytes: 26207109, current received bytes: 6491104.
+[2020/06/08 Mon 15:47:48.772883][FILEDL]Running threads: 4, total received bytes: 29110421, current received bytes: 5806624.
+[2020/06/08 Mon 15:47:49.288838][FILEDL]Running threads: 4, total received bytes: 29729653, current received bytes: 1238464.
+[2020/06/08 Mon 15:47:49.805372][FILEDL]Running threads: 4, total received bytes: 31566195, current received bytes: 3673084.
+[2020/06/08 Mon 15:47:50.321951][FILEDL]Running threads: 4, total received bytes: 41151632, current received bytes: 19170874.
+[2020/06/08 Mon 15:47:50.850530][FILEDL]Running threads: 4, total received bytes: 43367088, current received bytes: 4430912.
+[2020/06/08 Mon 15:47:50.860302][FILEDL]Test completed. Terminate all threads.
+[2020/06/08 Mon 15:47:50.879252][FILEDL]Downloaded 43367088 bytes in 10472 milliseconds.
+[2020/06/08 Mon 15:47:51.387927][FILEDL]Multi-thread download test completed.
+[2020/06/08 Mon 15:47:51.396866][RAW]0 32768 283528 1212632 2703424 6971840 358144 1188832 4439260 7549438 7745278 3242550 1702612 8492808 6491104 5806624 1238464 3673084 19170874 4430912 
+[2020/06/08 Mon 15:47:51.409834][INFO]Average speed: 3.95MB  Max speed: 11.25MB  Upload speed: N/A  Traffic used in bytes: 43367088
+[2020/06/08 Mon 15:47:51.724236][INFO]Writing config file...
+[2020/06/08 Mon 15:47:51.741944][INFO]Starting up shadowsocks-libev...
+[2020/06/08 Mon 15:47:51.753915][INFO]Received server. Group: VI云 Name: 有问题请发邮件viyun01@gmail.com 或者发工单
+[2020/06/08 Mon 15:47:51.766877][INFO]Now performing TCP ping...
+[2020/06/08 Mon 15:47:51.780840][TCPING]TCP Ping begin.
+[2020/06/08 Mon 15:47:51.791811][TCPING]Ping target: vip2-jp2.mxxo.xyz:27384.
+[2020/06/08 Mon 15:47:51.802781][TCPING]Host name provided. Resolving into IP address.
+[2020/06/08 Mon 15:47:51.866611][TCPING]Start probing 31.13.85.8:27384.
+[2020/06/08 Mon 15:47:54.879608][TCPING]Probing 31.13.85.8:27384/tcp - No response - time=3000ms
+[2020/06/08 Mon 15:47:58.902023][TCPING]Probing 31.13.85.8:27384/tcp - No response - time=3000ms
+[2020/06/08 Mon 15:48:02.911228][TCPING]Probing 31.13.85.8:27384/tcp - No response - time=3000ms
+[2020/06/08 Mon 15:48:06.933493][TCPING]Probing 31.13.85.8:27384/tcp - No response - time=3000ms
+[2020/06/08 Mon 15:48:10.963737][TCPING]Probing 31.13.85.8:27384/tcp - No response - time=3000ms
+[2020/06/08 Mon 15:48:14.981975][TCPING]Probing 31.13.85.8:27384/tcp - No response - time=3001ms
+[2020/06/08 Mon 15:48:14.994802][TCPING]Ping statistics for 31.13.85.8:27384 : 6 probes sent, 0 successful, 6 failed. (100.00% fail)
+[2020/06/08 Mon 15:48:15.009741][ERROR]Cannot connect to this node.
+[2020/06/08 Mon 15:48:15.022692][INFO]Writing config file...
+[2020/06/08 Mon 15:48:15.051657][INFO]Starting up shadowsocks-libev...
+[2020/06/08 Mon 15:48:15.067573][INFO]Received server. Group: VI云 Name: 香港丨2丨解锁Netflix丨[vip1]
+[2020/06/08 Mon 15:48:15.079556][INFO]Now performing TCP ping...
+[2020/06/08 Mon 15:48:15.091509][TCPING]TCP Ping begin.
+[2020/06/08 Mon 15:48:15.102480][TCPING]Ping target: vip1.59.qiangwoshishabi.club:27384.
+[2020/06/08 Mon 15:48:15.112454][TCPING]Host name provided. Resolving into IP address.
+[2020/06/08 Mon 15:48:15.154346][TCPING]Start probing 45.32.94.207:27384.
+[2020/06/08 Mon 15:48:18.165430][TCPING]Probing 45.32.94.207:27384/tcp - No response - time=3000ms
+[2020/06/08 Mon 15:48:22.184718][TCPING]Probing 45.32.94.207:27384/tcp - No response - time=3000ms
+[2020/06/08 Mon 15:48:26.201957][TCPING]Probing 45.32.94.207:27384/tcp - No response - time=3002ms
+[2020/06/08 Mon 15:48:30.230165][TCPING]Probing 45.32.94.207:27384/tcp - No response - time=3000ms
+[2020/06/08 Mon 15:48:34.247344][TCPING]Probing 45.32.94.207:27384/tcp - No response - time=3001ms
+[2020/06/08 Mon 15:48:38.259595][TCPING]Probing 45.32.94.207:27384/tcp - No response - time=3000ms
+[2020/06/08 Mon 15:48:38.276514][TCPING]Ping statistics for 45.32.94.207:27384 : 6 probes sent, 0 successful, 6 failed. (100.00% fail)
+[2020/06/08 Mon 15:48:38.295468][ERROR]Cannot connect to this node.
+[2020/06/08 Mon 15:48:38.311423][INFO]Writing config file...
+[2020/06/08 Mon 15:48:38.338349][INFO]Starting up shadowsocks-libev...
+[2020/06/08 Mon 15:48:38.353309][INFO]Received server. Group: VI云 Name: 香港丨3丨三网优化丨[vip1]
+[2020/06/08 Mon 15:48:38.367272][INFO]Now performing TCP ping...
+[2020/06/08 Mon 15:48:38.385224][TCPING]TCP Ping begin.
+[2020/06/08 Mon 15:48:38.403176][TCPING]Ping target: vip1.40.qiangwoshishabi.club:27384.
+[2020/06/08 Mon 15:48:38.415143][TCPING]Host name provided. Resolving into IP address.
+[2020/06/08 Mon 15:48:38.463028][TCPING]Start probing 45.32.94.207:27384.
+[2020/06/08 Mon 15:48:41.474110][TCPING]Probing 45.32.94.207:27384/tcp - No response - time=3000ms
+[2020/06/08 Mon 15:48:45.497211][TCPING]Probing 45.32.94.207:27384/tcp - No response - time=3000ms
+[2020/06/08 Mon 15:48:49.510717][TCPING]Probing 45.32.94.207:27384/tcp - No response - time=3000ms
+[2020/06/08 Mon 15:48:53.521905][TCPING]Probing 45.32.94.207:27384/tcp - No response - time=3001ms
+[2020/06/08 Mon 15:48:57.549125][TCPING]Probing 45.32.94.207:27384/tcp - No response - time=3000ms
+[2020/06/08 Mon 15:49:01.566240][TCPING]Probing 45.32.94.207:27384/tcp - No response - time=3000ms
+[2020/06/08 Mon 15:49:01.574219][TCPING]Ping statistics for 45.32.94.207:27384 : 6 probes sent, 0 successful, 6 failed. (100.00% fail)
+[2020/06/08 Mon 15:49:01.591173][ERROR]Cannot connect to this node.
+[2020/06/08 Mon 15:49:01.601145][INFO]Writing config file...
+[2020/06/08 Mon 15:49:01.630072][INFO]Starting up shadowsocksr-libev...
+[2020/06/08 Mon 15:49:01.690906][INFO]Received server. Group: VI云 Name: 加拿大丨备用丨[vip1] - 22111 单端口
+[2020/06/08 Mon 15:49:01.710852][INFO]Now performing TCP ping...
+[2020/06/08 Mon 15:49:01.724816][TCPING]TCP Ping begin.
+[2020/06/08 Mon 15:49:01.739775][TCPING]Ping target: vip1.50.qiangwoshishabi.club:22111.
+[2020/06/08 Mon 15:49:01.756730][TCPING]Host name provided. Resolving into IP address.
+[2020/06/08 Mon 15:49:01.813594][TCPING]Start probing 45.77.130.157:22111.
+[2020/06/08 Mon 15:49:04.826520][TCPING]Probing 45.77.130.157:22111/tcp - No response - time=3001ms
+[2020/06/08 Mon 15:49:08.837794][TCPING]Probing 45.77.130.157:22111/tcp - No response - time=3000ms
+[2020/06/08 Mon 15:49:12.850067][TCPING]Probing 45.77.130.157:22111/tcp - No response - time=3000ms
+[2020/06/08 Mon 15:49:16.862356][TCPING]Probing 45.77.130.157:22111/tcp - No response - time=3001ms
+[2020/06/08 Mon 15:49:20.872771][TCPING]Probing 45.77.130.157:22111/tcp - No response - time=3000ms
+[2020/06/08 Mon 15:49:24.904851][TCPING]Probing 45.77.130.157:22111/tcp - No response - time=3001ms
+[2020/06/08 Mon 15:49:24.915806][TCPING]Ping statistics for 45.77.130.157:22111 : 6 probes sent, 0 successful, 6 failed. (100.00% fail)
+[2020/06/08 Mon 15:49:24.928772][ERROR]Cannot connect to this node.
+[2020/06/08 Mon 15:49:24.940737][INFO]Writing config file...
+[2020/06/08 Mon 15:49:24.965672][INFO]Starting up shadowsocksr-libev...
+[2020/06/08 Mon 15:49:24.981630][INFO]Received server. Group: VI云 Name: 日本 丨1丨双网优化丨[vip1] - 22111 单端口
+[2020/06/08 Mon 15:49:25.000578][INFO]Now performing TCP ping...
+[2020/06/08 Mon 15:49:25.016535][TCPING]TCP Ping begin.
+[2020/06/08 Mon 15:49:25.033496][TCPING]Ping target: vip1.77.qiangwoshishabi.club:22111.
+[2020/06/08 Mon 15:49:25.047453][TCPING]Host name provided. Resolving into IP address.
+[2020/06/08 Mon 15:49:25.091334][TCPING]Start probing 137.220.62.41:22111.
+[2020/06/08 Mon 15:49:28.103516][TCPING]Probing 137.220.62.41:22111/tcp - No response - time=2999ms
+[2020/06/08 Mon 15:49:32.113557][TCPING]Probing 137.220.62.41:22111/tcp - No response - time=3000ms
+[2020/06/08 Mon 15:49:36.129078][TCPING]Probing 137.220.62.41:22111/tcp - No response - time=3000ms
+[2020/06/08 Mon 15:49:40.142305][TCPING]Probing 137.220.62.41:22111/tcp - No response - time=3000ms
+[2020/06/08 Mon 15:49:44.156562][TCPING]Probing 137.220.62.41:22111/tcp - No response - time=3000ms
+[2020/06/08 Mon 15:49:48.165881][TCPING]Probing 137.220.62.41:22111/tcp - No response - time=3000ms
+[2020/06/08 Mon 15:49:48.174613][TCPING]Ping statistics for 137.220.62.41:22111 : 6 probes sent, 0 successful, 6 failed. (100.00% fail)
+[2020/06/08 Mon 15:49:48.187577][ERROR]Cannot connect to this node.
+[2020/06/08 Mon 15:49:48.204532][INFO]Writing config file...
+[2020/06/08 Mon 15:49:48.233455][INFO]Starting up shadowsocksr-libev...
+[2020/06/08 Mon 15:49:48.254402][INFO]Received server. Group: VI云 Name: 日本丨2丨[vip1] - 22111 单端口
+[2020/06/08 Mon 15:49:48.275342][INFO]Now performing TCP ping...
+[2020/06/08 Mon 15:49:48.292299][TCPING]TCP Ping begin.
+[2020/06/08 Mon 15:49:48.307271][TCPING]Ping target: vip1.57.qiangwoshishabi.club:22111.
+[2020/06/08 Mon 15:49:48.333188][TCPING]Host name provided. Resolving into IP address.
+[2020/06/08 Mon 15:49:48.389043][TCPING]Start probing 137.220.62.41:22111.
+[2020/06/08 Mon 15:49:51.404975][TCPING]Probing 137.220.62.41:22111/tcp - No response - time=3000ms
+[2020/06/08 Mon 15:49:55.423231][TCPING]Probing 137.220.62.41:22111/tcp - No response - time=3000ms
+[2020/06/08 Mon 15:49:59.438529][TCPING]Probing 137.220.62.41:22111/tcp - No response - time=3000ms
+[2020/06/08 Mon 15:50:03.451993][TCPING]Probing 137.220.62.41:22111/tcp - No response - time=3000ms
+[2020/06/08 Mon 15:50:07.465032][TCPING]Probing 137.220.62.41:22111/tcp - No response - time=3000ms
+[2020/06/08 Mon 15:50:11.476513][TCPING]Probing 137.220.62.41:22111/tcp - No response - time=3000ms
+[2020/06/08 Mon 15:50:11.488273][TCPING]Ping statistics for 137.220.62.41:22111 : 6 probes sent, 0 successful, 6 failed. (100.00% fail)
+[2020/06/08 Mon 15:50:11.503234][ERROR]Cannot connect to this node.
+[2020/06/08 Mon 15:50:11.514203][INFO]Writing config file...
+[2020/06/08 Mon 15:50:11.549110][INFO]Starting up shadowsocksr-libev...
+[2020/06/08 Mon 15:50:11.567066][INFO]Received server. Group: VI云 Name: 法国 （2）丨[vip1]  - 22111 单端口
+[2020/06/08 Mon 15:50:11.598976][INFO]Now performing TCP ping...
+[2020/06/08 Mon 15:50:11.623913][TCPING]TCP Ping begin.
+[2020/06/08 Mon 15:50:11.660812][TCPING]Ping target: vip1.49.qiangwoshishabi.club:22111.
+[2020/06/08 Mon 15:50:11.684763][TCPING]Host name provided. Resolving into IP address.
+[2020/06/08 Mon 15:50:11.757554][TCPING]Start probing 45.76.231.102:22111.
+[2020/06/08 Mon 15:50:14.774551][TCPING]Probing 45.76.231.102:22111/tcp - No response - time=3001ms
+[2020/06/08 Mon 15:50:18.789916][TCPING]Probing 45.76.231.102:22111/tcp - No response - time=3000ms
+[2020/06/08 Mon 15:50:22.812991][TCPING]Probing 45.76.231.102:22111/tcp - No response - time=3002ms
+[2020/06/08 Mon 15:50:26.830479][TCPING]Probing 45.76.231.102:22111/tcp - No response - time=3001ms
+[2020/06/08 Mon 15:50:30.845535][TCPING]Probing 45.76.231.102:22111/tcp - No response - time=3002ms
+[2020/06/08 Mon 15:50:34.866761][TCPING]Probing 45.76.231.102:22111/tcp - No response - time=3000ms
+[2020/06/08 Mon 15:50:34.874738][TCPING]Ping statistics for 45.76.231.102:22111 : 6 probes sent, 0 successful, 6 failed. (100.00% fail)
+[2020/06/08 Mon 15:50:34.893690][ERROR]Cannot connect to this node.
+[2020/06/08 Mon 15:50:34.906653][INFO]Writing config file...
+[2020/06/08 Mon 15:50:34.939567][INFO]Starting up shadowsocksr-libev...
+[2020/06/08 Mon 15:50:34.964501][INFO]Received server. Group: VI云 Name: 法国1丨[vip1] - 22111 单端口
+[2020/06/08 Mon 15:50:35.014376][INFO]Now performing TCP ping...
+[2020/06/08 Mon 15:50:35.034312][TCPING]TCP Ping begin.
+[2020/06/08 Mon 15:50:35.053262][TCPING]Ping target: vip1.48.qiangwoshishabi.club:22111.
+[2020/06/08 Mon 15:50:35.068222][TCPING]Host name provided. Resolving into IP address.
+[2020/06/08 Mon 15:50:35.102132][TCPING]Start probing 45.76.231.102:22111.
+[2020/06/08 Mon 15:50:38.114301][TCPING]Probing 45.76.231.102:22111/tcp - No response - time=2999ms
+[2020/06/08 Mon 15:50:42.129557][TCPING]Probing 45.76.231.102:22111/tcp - No response - time=2999ms
+[2020/06/08 Mon 15:50:46.142637][TCPING]Probing 45.76.231.102:22111/tcp - No response - time=3002ms
+[2020/06/08 Mon 15:50:50.170839][TCPING]Probing 45.76.231.102:22111/tcp - No response - time=3000ms
+[2020/06/08 Mon 15:50:54.193084][TCPING]Probing 45.76.231.102:22111/tcp - No response - time=3001ms
+[2020/06/08 Mon 15:50:58.211341][TCPING]Probing 45.76.231.102:22111/tcp - No response - time=3001ms
+[2020/06/08 Mon 15:50:58.229292][TCPING]Ping statistics for 45.76.231.102:22111 : 6 probes sent, 0 successful, 6 failed. (100.00% fail)
+[2020/06/08 Mon 15:50:58.251232][ERROR]Cannot connect to this node.
+[2020/06/08 Mon 15:50:58.269185][INFO]Writing config file...
+[2020/06/08 Mon 15:50:58.317058][INFO]Starting up shadowsocksr-libev...
+[2020/06/08 Mon 15:50:58.347979][INFO]Received server. Group: VI云 Name: 美国+丨[vip1] - 22111 单端口
+[2020/06/08 Mon 15:50:58.395845][INFO]Now performing TCP ping...
+[2020/06/08 Mon 15:50:58.435739][TCPING]TCP Ping begin.
+[2020/06/08 Mon 15:50:58.467654][TCPING]Ping target: vip1.31.qiangwoshishabi.club:22111.
+[2020/06/08 Mon 15:50:58.494583][TCPING]Host name provided. Resolving into IP address.
+[2020/06/08 Mon 15:50:58.517522][TCPING]Start probing 95.179.252.247:22111.
+[2020/06/08 Mon 15:50:58.727957][TCPING]Probing 95.179.252.247:22111/tcp - Port is open - time=182ms
+[2020/06/08 Mon 15:50:59.960662][TCPING]Probing 95.179.252.247:22111/tcp - Port is open - time=213ms
+[2020/06/08 Mon 15:51:01.199350][TCPING]Probing 95.179.252.247:22111/tcp - Port is open - time=226ms
+[2020/06/08 Mon 15:51:02.436053][TCPING]Probing 95.179.252.247:22111/tcp - Port is open - time=221ms
+[2020/06/08 Mon 15:51:04.628183][TCPING]Probing 95.179.252.247:22111/tcp - Port is open - time=1173ms
+[2020/06/08 Mon 15:51:05.839942][TCPING]Probing 95.179.252.247:22111/tcp - Port is open - time=187ms
+[2020/06/08 Mon 15:51:05.867868][TCPING]Ping statistics for 95.179.252.247:22111 : 6 probes sent, 6 successful, 0 failed. (0.00% fail)
+[2020/06/08 Mon 15:51:05.887816][RAW]182 213 226 221 1173 187 
+[2020/06/08 Mon 15:51:05.903771][INFO]TCP Ping: 367.00  Packet Loss: 0.00%
+[2020/06/08 Mon 15:51:05.917732][INFO]Now performing GeoIP parse...
+[2020/06/08 Mon 15:51:05.937683][RULES]Rule match started.
+[2020/06/08 Mon 15:51:05.949647][RULES]Fetching inbound GeoIP info.
+[2020/06/08 Mon 15:51:05.961615][GEOIP]GeoIP parse begin.
+[2020/06/08 Mon 15:51:05.974580][GEOIP]No address provided, getting GeoIP through proxy 'socks5://127.0.0.1:65432'.
+[2020/06/08 Mon 15:51:06.920058][GEOIP]Fetched GeoIP data: {"organization":"Choopa, LLC","longitude":4.8995,"timezone":"Europe\/Amsterdam","isp":"Choopa, LLC","offset":3600,"asn":20473,"asn_organization":"AS-CHOOPA","country":"Netherlands","ip":"95.179.252.247","latitude":52.3824,"continent_code":"EU","country_code":"NL"}
+
+[2020/06/08 Mon 15:51:06.936013][GEOIP]Parsing GeoIP result.
+[2020/06/08 Mon 15:51:06.950974][GEOIP]Parse GeoIP complete. Leaving.
+[2020/06/08 Mon 15:51:06.963937][RULES]Searching default rule.
+[2020/06/08 Mon 15:51:06.978894][RULES]Using default rule: 'https://download.microsoft.com/download/2/0/E/20E90413-712F-438C-988E-FDAA79A8AC3D/dotnetfx35.exe'.
+[2020/06/08 Mon 15:51:06.992861][RULES]Node  VI云 - 美国+丨[vip1] - 22111 单端口  matches no rule. Using default rule.
+[2020/06/08 Mon 15:51:07.006824][RULES]Node  VI云 - 美国+丨[vip1] - 22111 单端口  uses test file 'https://download.microsoft.com/download/2/0/E/20E90413-712F-438C-988E-FDAA79A8AC3D/dotnetfx35.exe'.
+[2020/06/08 Mon 15:51:07.020783][INFO]Got outbound ISP: Choopa, LLC  Country code: NL
+[2020/06/08 Mon 15:51:07.031780][INFO]Now performing site ping...
+[2020/06/08 Mon 15:51:07.042726][GPING]Website ping started. Target: 'https://www.google.com/' . Proxy: '127.0.0.1:65432' .
+[2020/06/08 Mon 15:51:08.220577][GPING]Accessing 'https://www.google.com/' - Success - time=1168ms
+[2020/06/08 Mon 15:51:10.385786][GPING]Accessing 'https://www.google.com/' - Success - time=2139ms
+[2020/06/08 Mon 15:51:11.652399][GPING]Accessing 'https://www.google.com/' - Success - time=1242ms
+[2020/06/08 Mon 15:51:12.646739][GPING]Accessing 'https://www.google.com/' - Success - time=970ms
+[2020/06/08 Mon 15:51:13.497465][GPING]Accessing 'https://www.google.com/' - Success - time=820ms
+[2020/06/08 Mon 15:51:15.892072][GPING]Accessing 'https://www.google.com/' - Success - time=2376ms
+[2020/06/08 Mon 15:51:16.938267][GPING]Accessing 'https://www.google.com/' - Success - time=1032ms
+[2020/06/08 Mon 15:51:18.040318][GPING]Accessing 'https://www.google.com/' - Success - time=1086ms
+[2020/06/08 Mon 15:51:19.088518][GPING]Accessing 'https://www.google.com/' - Success - time=984ms
+[2020/06/08 Mon 15:51:21.164978][GPING]Accessing 'https://www.google.com/' - Success - time=2048ms
+[2020/06/08 Mon 15:51:21.178927][GPING]Ping statistics of target https://www.google.com/ : 10 probes sent, 10 successful, 0 failed. 
+[2020/06/08 Mon 15:51:21.194884][GPING]Website ping completed. Leaving.
+[2020/06/08 Mon 15:51:21.209842][RAW]1168 2139 1242 970 820 2376 1032 1086 984 2048 
+[2020/06/08 Mon 15:51:21.223805][INFO]Site ping: 1386.50
+[2020/06/08 Mon 15:51:21.240760][INFO]Now performing file download speed test...
+[2020/06/08 Mon 15:51:21.255722][FILEDL]Multi-thread download test started.
+[2020/06/08 Mon 15:51:21.268688][FILEDL]Fetch target: https://download.microsoft.com/download/2/0/E/20E90413-712F-438C-988E-FDAA79A8AC3D/dotnetfx35.exe
+[2020/06/08 Mon 15:51:21.279658][FILEDL]Found HTTPS URL. Initializing OpenSSL library.
+[2020/06/08 Mon 15:51:21.290628][FILEDL]Starting up thread #1.
+[2020/06/08 Mon 15:51:21.305588][FILEDL]Starting up thread #2.
+[2020/06/08 Mon 15:51:21.341490][FILEDL]Starting up thread #3.
+[2020/06/08 Mon 15:51:21.366423][FILEDL]Starting up thread #4.
+[2020/06/08 Mon 15:51:21.387376][FILEDL]All threads launched. Start accumulating data.
+[2020/06/08 Mon 15:51:21.911187][FILEDL]Running threads: 4, total received bytes: 0, current received bytes: 0.
+[2020/06/08 Mon 15:51:22.443545][FILEDL]Running threads: 4, total received bytes: 0, current received bytes: 0.
+[2020/06/08 Mon 15:51:22.960163][FILEDL]Running threads: 4, total received bytes: 137461, current received bytes: 274922.
+[2020/06/08 Mon 15:51:23.476999][FILEDL]Running threads: 4, total received bytes: 381877, current received bytes: 488832.
+[2020/06/08 Mon 15:51:23.992657][FILEDL]Running threads: 4, total received bytes: 919147, current received bytes: 1074540.
+[2020/06/08 Mon 15:51:24.508239][FILEDL]Running threads: 4, total received bytes: 1448795, current received bytes: 1059296.
+[2020/06/08 Mon 15:51:25.037837][FILEDL]Running threads: 4, total received bytes: 1977963, current received bytes: 1058336.
+[2020/06/08 Mon 15:51:25.554437][FILEDL]Running threads: 4, total received bytes: 2670299, current received bytes: 1384672.
+[2020/06/08 Mon 15:51:26.087024][FILEDL]Running threads: 4, total received bytes: 3533563, current received bytes: 1726528.
+[2020/06/08 Mon 15:51:26.603419][FILEDL]Running threads: 4, total received bytes: 4420875, current received bytes: 1774624.
+[2020/06/08 Mon 15:51:27.131240][FILEDL]Running threads: 4, total received bytes: 5516501, current received bytes: 2191252.
+[2020/06/08 Mon 15:51:27.646835][FILEDL]Running threads: 4, total received bytes: 6518117, current received bytes: 2003232.
+[2020/06/08 Mon 15:51:28.180432][FILEDL]Running threads: 4, total received bytes: 7422197, current received bytes: 1808160.
+[2020/06/08 Mon 15:51:28.709998][FILEDL]Running threads: 4, total received bytes: 9104095, current received bytes: 3363796.
+[2020/06/08 Mon 15:51:29.225504][FILEDL]Running threads: 4, total received bytes: 10220544, current received bytes: 2232898.
+[2020/06/08 Mon 15:51:29.741276][FILEDL]Running threads: 4, total received bytes: 11010320, current received bytes: 1579552.
+[2020/06/08 Mon 15:51:30.257870][FILEDL]Running threads: 4, total received bytes: 12646872, current received bytes: 3273104.
+[2020/06/08 Mon 15:51:30.774475][FILEDL]Running threads: 4, total received bytes: 14149225, current received bytes: 3004706.
+[2020/06/08 Mon 15:51:31.290887][FILEDL]Running threads: 4, total received bytes: 15521747, current received bytes: 2745044.
+[2020/06/08 Mon 15:51:31.818619][FILEDL]Running threads: 4, total received bytes: 16938707, current received bytes: 2833920.
+[2020/06/08 Mon 15:51:31.828451][FILEDL]Test completed. Terminate all threads.
+[2020/06/08 Mon 15:51:31.848396][FILEDL]Downloaded 16955091 bytes in 10433 milliseconds.
+[2020/06/08 Mon 15:51:31.974061][FILEDL]Multi-thread download test completed.
+[2020/06/08 Mon 15:51:31.984069][RAW]0 0 274922 488832 1074540 1059296 1058336 1384672 1726528 1774624 2191252 2003232 1808160 3363796 2232898 1579552 3273104 3004706 2745044 2833920 
+[2020/06/08 Mon 15:51:31.994039][INFO]Average speed: 1.55MB  Max speed: 2.99MB  Upload speed: N/A  Traffic used in bytes: 16955091
+[2020/06/08 Mon 15:51:32.304177][INFO]Writing config file...
+[2020/06/08 Mon 15:51:32.321133][INFO]Starting up shadowsocksr-libev...
+[2020/06/08 Mon 15:51:32.334097][INFO]Received server. Group: VI云 Name: 美国丨高速节点1丨中转香港丨[vip1] - 22111 单端口
+[2020/06/08 Mon 15:51:32.346065][INFO]Now performing TCP ping...
+[2020/06/08 Mon 15:51:32.362023][TCPING]TCP Ping begin.
+[2020/06/08 Mon 15:51:32.372994][TCPING]Ping target: vip1.37.qiangwoshishabi.club:22111.
+[2020/06/08 Mon 15:51:32.385958][TCPING]Host name provided. Resolving into IP address.
+[2020/06/08 Mon 15:51:32.449869][TCPING]Start probing 95.179.252.247:22111.
+[2020/06/08 Mon 15:51:32.643317][TCPING]Probing 95.179.252.247:22111/tcp - Port is open - time=185ms
+[2020/06/08 Mon 15:51:33.833090][TCPING]Probing 95.179.252.247:22111/tcp - Port is open - time=172ms
+[2020/06/08 Mon 15:51:36.027470][TCPING]Probing 95.179.252.247:22111/tcp - Port is open - time=1185ms
+[2020/06/08 Mon 15:51:37.256141][TCPING]Probing 95.179.252.247:22111/tcp - Port is open - time=218ms
+[2020/06/08 Mon 15:51:38.485651][TCPING]Probing 95.179.252.247:22111/tcp - Port is open - time=219ms
+[2020/06/08 Mon 15:51:39.688441][TCPING]Probing 95.179.252.247:22111/tcp - Port is open - time=179ms
+[2020/06/08 Mon 15:51:39.704391][TCPING]Ping statistics for 95.179.252.247:22111 : 6 probes sent, 6 successful, 0 failed. (0.00% fail)
+[2020/06/08 Mon 15:51:39.719353][RAW]185 172 1185 218 219 179 
+[2020/06/08 Mon 15:51:39.735307][INFO]TCP Ping: 359.67  Packet Loss: 0.00%
+[2020/06/08 Mon 15:51:39.750270][INFO]Now performing GeoIP parse...
+[2020/06/08 Mon 15:51:39.772213][RULES]Rule match started.
+[2020/06/08 Mon 15:51:39.785174][RULES]Fetching inbound GeoIP info.
+[2020/06/08 Mon 15:51:39.795148][GEOIP]GeoIP parse begin.
+[2020/06/08 Mon 15:51:39.804160][GEOIP]No address provided, getting GeoIP through proxy 'socks5://127.0.0.1:65432'.
+[2020/06/08 Mon 15:51:45.444046][GEOIP]Fetched GeoIP data: {"organization":"Choopa, LLC","longitude":4.8995,"timezone":"Europe\/Amsterdam","isp":"Choopa, LLC","offset":3600,"asn":20473,"asn_organization":"AS-CHOOPA","country":"Netherlands","ip":"95.179.252.247","latitude":52.3824,"continent_code":"EU","country_code":"NL"}
+
+[2020/06/08 Mon 15:51:45.469973][GEOIP]Parsing GeoIP result.
+[2020/06/08 Mon 15:51:45.486928][GEOIP]Parse GeoIP complete. Leaving.
+[2020/06/08 Mon 15:51:45.496899][RULES]Searching default rule.
+[2020/06/08 Mon 15:51:45.506877][RULES]Using default rule: 'https://download.microsoft.com/download/2/0/E/20E90413-712F-438C-988E-FDAA79A8AC3D/dotnetfx35.exe'.
+[2020/06/08 Mon 15:51:45.516852][RULES]Node  VI云 - 美国丨高速节点1丨中转香港丨[vip1] - 22111 单端口  matches no rule. Using default rule.
+[2020/06/08 Mon 15:51:45.526824][RULES]Node  VI云 - 美国丨高速节点1丨中转香港丨[vip1] - 22111 单端口  uses test file 'https://download.microsoft.com/download/2/0/E/20E90413-712F-438C-988E-FDAA79A8AC3D/dotnetfx35.exe'.
+[2020/06/08 Mon 15:51:45.536793][INFO]Got outbound ISP: Choopa, LLC  Country code: NL
+[2020/06/08 Mon 15:51:45.546767][INFO]Now performing site ping...
+[2020/06/08 Mon 15:51:45.555745][GPING]Website ping started. Target: 'https://www.google.com/' . Proxy: '127.0.0.1:65432' .
+[2020/06/08 Mon 15:51:48.321348][GPING]Accessing 'https://www.google.com/' - Success - time=2755ms
+[2020/06/08 Mon 15:51:49.541120][GPING]Accessing 'https://www.google.com/' - Success - time=1210ms
+[2020/06/08 Mon 15:51:50.379883][GPING]Accessing 'https://www.google.com/' - Success - time=820ms
+[2020/06/08 Mon 15:51:51.583641][GPING]Accessing 'https://www.google.com/' - Success - time=1192ms
+[2020/06/08 Mon 15:51:52.380494][GPING]Accessing 'https://www.google.com/' - Success - time=777ms
+[2020/06/08 Mon 15:51:54.156745][GPING]Accessing 'https://www.google.com/' - Success - time=1718ms
+[2020/06/08 Mon 15:51:54.977551][GPING]Accessing 'https://www.google.com/' - Success - time=807ms
+[2020/06/08 Mon 15:51:55.969901][GPING]Accessing 'https://www.google.com/' - Success - time=974ms
+[2020/06/08 Mon 15:51:57.618490][GPING]Accessing 'https://www.google.com/' - Success - time=1637ms
+[2020/06/08 Mon 15:51:59.805640][GPING]Accessing 'https://www.google.com/' - Success - time=2155ms
+[2020/06/08 Mon 15:51:59.831572][GPING]Ping statistics of target https://www.google.com/ : 10 probes sent, 10 successful, 0 failed. 
+[2020/06/08 Mon 15:51:59.851518][GPING]Website ping completed. Leaving.
+[2020/06/08 Mon 15:51:59.869471][RAW]2755 1210 820 1192 777 1718 807 974 1637 2155 
+[2020/06/08 Mon 15:51:59.887428][INFO]Site ping: 1404.50
+[2020/06/08 Mon 15:51:59.912389][INFO]Now performing file download speed test...
+[2020/06/08 Mon 15:51:59.927316][FILEDL]Multi-thread download test started.
+[2020/06/08 Mon 15:51:59.947263][FILEDL]Fetch target: https://download.microsoft.com/download/2/0/E/20E90413-712F-438C-988E-FDAA79A8AC3D/dotnetfx35.exe
+[2020/06/08 Mon 15:51:59.966213][FILEDL]Found HTTPS URL. Initializing OpenSSL library.
+[2020/06/08 Mon 15:51:59.980174][FILEDL]Starting up thread #1.
+[2020/06/08 Mon 15:51:59.999124][FILEDL]Starting up thread #2.
+[2020/06/08 Mon 15:52:00.031037][FILEDL]Starting up thread #3.
+[2020/06/08 Mon 15:52:00.051982][FILEDL]Starting up thread #4.
+[2020/06/08 Mon 15:52:00.069934][FILEDL]All threads launched. Start accumulating data.
+[2020/06/08 Mon 15:52:00.615479][FILEDL]Running threads: 4, total received bytes: 0, current received bytes: 0.
+[2020/06/08 Mon 15:52:01.146065][FILEDL]Running threads: 4, total received bytes: 0, current received bytes: 0.
+[2020/06/08 Mon 15:52:01.681642][FILEDL]Running threads: 4, total received bytes: 36319, current received bytes: 72638.
+[2020/06/08 Mon 15:52:02.215250][FILEDL]Running threads: 4, total received bytes: 336989, current received bytes: 601340.
+[2020/06/08 Mon 15:52:02.741789][FILEDL]Running threads: 4, total received bytes: 732069, current received bytes: 790160.
+[2020/06/08 Mon 15:52:03.273368][FILEDL]Running threads: 4, total received bytes: 1090501, current received bytes: 716864.
+[2020/06/08 Mon 15:52:03.817912][FILEDL]Running threads: 4, total received bytes: 1693020, current received bytes: 1205038.
+[2020/06/08 Mon 15:52:04.349511][FILEDL]Running threads: 4, total received bytes: 2157036, current received bytes: 928032.
+[2020/06/08 Mon 15:52:04.886061][FILEDL]Running threads: 4, total received bytes: 3810172, current received bytes: 3306272.
+[2020/06/08 Mon 15:52:05.411649][FILEDL]Running threads: 4, total received bytes: 4811884, current received bytes: 2003424.
+[2020/06/08 Mon 15:52:05.948233][FILEDL]Running threads: 4, total received bytes: 6518118, current received bytes: 3412468.
+[2020/06/08 Mon 15:52:06.488791][FILEDL]Running threads: 4, total received bytes: 7104486, current received bytes: 1172736.
+[2020/06/08 Mon 15:52:07.038302][FILEDL]Running threads: 4, total received bytes: 9421429, current received bytes: 4633886.
+[2020/06/08 Mon 15:52:07.570884][FILEDL]Running threads: 4, total received bytes: 10732937, current received bytes: 2623016.
+[2020/06/08 Mon 15:52:08.098467][FILEDL]Running threads: 4, total received bytes: 11514953, current received bytes: 1564032.
+[2020/06/08 Mon 15:52:08.619090][FILEDL]Running threads: 4, total received bytes: 14181898, current received bytes: 5333890.
+[2020/06/08 Mon 15:52:09.161629][FILEDL]Running threads: 4, total received bytes: 16018536, current received bytes: 3673276.
+[2020/06/08 Mon 15:52:09.707165][FILEDL]Running threads: 4, total received bytes: 17997432, current received bytes: 3957792.
+[2020/06/08 Mon 15:52:10.241738][FILEDL]Running threads: 4, total received bytes: 19976662, current received bytes: 3958460.
+[2020/06/08 Mon 15:52:10.774325][FILEDL]Running threads: 4, total received bytes: 20913510, current received bytes: 1873696.
+[2020/06/08 Mon 15:52:10.796252][FILEDL]Test completed. Terminate all threads.
+[2020/06/08 Mon 15:52:10.818194][FILEDL]Downloaded 20946917 bytes in 10719 milliseconds.
+[2020/06/08 Mon 15:52:10.991731][FILEDL]Multi-thread download test completed.
+[2020/06/08 Mon 15:52:11.015665][RAW]0 0 72638 601340 790160 716864 1205038 928032 3306272 2003424 3412468 1172736 4633886 2623016 1564032 5333890 3673276 3957792 3958460 1873696 
+[2020/06/08 Mon 15:52:11.046582][INFO]Average speed: 1.86MB  Max speed: 3.64MB  Upload speed: N/A  Traffic used in bytes: 20945894
+[2020/06/08 Mon 15:52:11.380688][INFO]Writing config file...
+[2020/06/08 Mon 15:52:11.418587][INFO]Starting up shadowsocksr-libev...
+[2020/06/08 Mon 15:52:11.446513][INFO]Received server. Group: VI云 Name: 美国丨高速节点2丨中转香港丨[vip1] - 22111 单端口
+[2020/06/08 Mon 15:52:11.481419][INFO]Now performing TCP ping...
+[2020/06/08 Mon 15:52:11.501369][TCPING]TCP Ping begin.
+[2020/06/08 Mon 15:52:11.528295][TCPING]Ping target: vip1.44.qiangwoshishabi.club:22111.
+[2020/06/08 Mon 15:52:11.561207][TCPING]Host name provided. Resolving into IP address.
+[2020/06/08 Mon 15:52:11.610079][TCPING]Start probing 95.179.252.247:22111.
+[2020/06/08 Mon 15:52:11.809546][TCPING]Probing 95.179.252.247:22111/tcp - Port is open - time=179ms
+[2020/06/08 Mon 15:52:14.002678][TCPING]Probing 95.179.252.247:22111/tcp - Port is open - time=1171ms
+[2020/06/08 Mon 15:52:15.210466][TCPING]Probing 95.179.252.247:22111/tcp - Port is open - time=181ms
+[2020/06/08 Mon 15:52:17.401590][TCPING]Probing 95.179.252.247:22111/tcp - Port is open - time=1172ms
+[2020/06/08 Mon 15:52:20.642922][TCPING]Probing 95.179.252.247:22111/tcp - Port is open - time=2224ms
+[2020/06/08 Mon 15:52:21.870639][TCPING]Probing 95.179.252.247:22111/tcp - Port is open - time=211ms
+[2020/06/08 Mon 15:52:21.878617][TCPING]Ping statistics for 95.179.252.247:22111 : 6 probes sent, 6 successful, 0 failed. (0.00% fail)
+[2020/06/08 Mon 15:52:21.904550][RAW]179 1171 181 1172 2224 211 
+[2020/06/08 Mon 15:52:21.922503][INFO]TCP Ping: 856.33  Packet Loss: 0.00%
+[2020/06/08 Mon 15:52:21.942447][INFO]Now performing GeoIP parse...
+[2020/06/08 Mon 15:52:21.962394][RULES]Rule match started.
+[2020/06/08 Mon 15:52:21.988327][RULES]Fetching inbound GeoIP info.
+[2020/06/08 Mon 15:52:22.009272][GEOIP]GeoIP parse begin.
+[2020/06/08 Mon 15:52:22.027223][GEOIP]No address provided, getting GeoIP through proxy 'socks5://127.0.0.1:65432'.
+[2020/06/08 Mon 15:52:23.806466][GEOIP]Fetched GeoIP data: {"organization":"Choopa, LLC","longitude":4.8995,"timezone":"Europe\/Amsterdam","isp":"Choopa, LLC","offset":3600,"asn":20473,"asn_organization":"AS-CHOOPA","country":"Netherlands","ip":"95.179.252.247","latitude":52.3824,"continent_code":"EU","country_code":"NL"}
+
+[2020/06/08 Mon 15:52:23.828405][GEOIP]Parsing GeoIP result.
+[2020/06/08 Mon 15:52:23.854349][GEOIP]Parse GeoIP complete. Leaving.
+[2020/06/08 Mon 15:52:23.878272][RULES]Searching default rule.
+[2020/06/08 Mon 15:52:23.897237][RULES]Using default rule: 'https://download.microsoft.com/download/2/0/E/20E90413-712F-438C-988E-FDAA79A8AC3D/dotnetfx35.exe'.
+[2020/06/08 Mon 15:52:23.924149][RULES]Node  VI云 - 美国丨高速节点2丨中转香港丨[vip1] - 22111 单端口  matches no rule. Using default rule.
+[2020/06/08 Mon 15:52:23.943100][RULES]Node  VI云 - 美国丨高速节点2丨中转香港丨[vip1] - 22111 单端口  uses test file 'https://download.microsoft.com/download/2/0/E/20E90413-712F-438C-988E-FDAA79A8AC3D/dotnetfx35.exe'.
+[2020/06/08 Mon 15:52:23.959057][INFO]Got outbound ISP: Choopa, LLC  Country code: NL
+[2020/06/08 Mon 15:52:23.978004][INFO]Now performing site ping...
+[2020/06/08 Mon 15:52:23.995957][GPING]Website ping started. Target: 'https://www.google.com/' . Proxy: '127.0.0.1:65432' .
+[2020/06/08 Mon 15:52:25.507916][GPING]Accessing 'https://www.google.com/' - Success - time=1486ms
+[2020/06/08 Mon 15:52:26.496272][GPING]Accessing 'https://www.google.com/' - Success - time=973ms
+[2020/06/08 Mon 15:52:27.309115][GPING]Accessing 'https://www.google.com/' - Success - time=793ms
+[2020/06/08 Mon 15:52:28.543797][GPING]Accessing 'https://www.google.com/' - Success - time=1219ms
+[2020/06/08 Mon 15:52:29.907179][GPING]Accessing 'https://www.google.com/' - Success - time=1354ms
+[2020/06/08 Mon 15:52:30.985268][GPING]Accessing 'https://www.google.com/' - Success - time=1053ms
+[2020/06/08 Mon 15:52:32.848286][GPING]Accessing 'https://www.google.com/' - Success - time=1846ms
+[2020/06/08 Mon 15:52:33.857586][GPING]Accessing 'https://www.google.com/' - Success - time=994ms
+[2020/06/08 Mon 15:52:36.039753][GPING]Accessing 'https://www.google.com/' - Success - time=2147ms
+[2020/06/08 Mon 15:52:37.278440][GPING]Accessing 'https://www.google.com/' - Success - time=1222ms
+[2020/06/08 Mon 15:52:37.306370][GPING]Ping statistics of target https://www.google.com/ : 10 probes sent, 10 successful, 0 failed. 
+[2020/06/08 Mon 15:52:37.326314][GPING]Website ping completed. Leaving.
+[2020/06/08 Mon 15:52:37.344265][RAW]1486 973 793 1219 1354 1053 1846 994 2147 1222 
+[2020/06/08 Mon 15:52:37.362217][INFO]Site ping: 1308.70
+[2020/06/08 Mon 15:52:37.390144][INFO]Now performing file download speed test...
+[2020/06/08 Mon 15:52:37.411087][FILEDL]Multi-thread download test started.
+[2020/06/08 Mon 15:52:37.429038][FILEDL]Fetch target: https://download.microsoft.com/download/2/0/E/20E90413-712F-438C-988E-FDAA79A8AC3D/dotnetfx35.exe
+[2020/06/08 Mon 15:52:37.457961][FILEDL]Found HTTPS URL. Initializing OpenSSL library.
+[2020/06/08 Mon 15:52:37.477907][FILEDL]Starting up thread #1.
+[2020/06/08 Mon 15:52:37.505834][FILEDL]Starting up thread #2.
+[2020/06/08 Mon 15:52:37.525779][FILEDL]Starting up thread #3.
+[2020/06/08 Mon 15:52:37.545727][FILEDL]Starting up thread #4.
+[2020/06/08 Mon 15:52:37.578638][FILEDL]All threads launched. Start accumulating data.
+[2020/06/08 Mon 15:52:38.105230][FILEDL]Running threads: 4, total received bytes: 0, current received bytes: 0.
+[2020/06/08 Mon 15:52:38.631822][FILEDL]Running threads: 4, total received bytes: 0, current received bytes: 0.
+[2020/06/08 Mon 15:52:39.164405][FILEDL]Running threads: 4, total received bytes: 72638, current received bytes: 145276.
+[2020/06/08 Mon 15:52:39.711933][FILEDL]Running threads: 4, total received bytes: 328941, current received bytes: 512606.
+[2020/06/08 Mon 15:52:40.242517][FILEDL]Running threads: 4, total received bytes: 793108, current received bytes: 928334.
+[2020/06/08 Mon 15:52:40.770125][FILEDL]Running threads: 4, total received bytes: 1147276, current received bytes: 708336.
+[2020/06/08 Mon 15:52:41.310661][FILEDL]Running threads: 4, total received bytes: 1570668, current received bytes: 846784.
+[2020/06/08 Mon 15:52:41.838267][FILEDL]Running threads: 4, total received bytes: 2091788, current received bytes: 1042240.
+[2020/06/08 Mon 15:52:42.368829][FILEDL]Running threads: 4, total received bytes: 2539900, current received bytes: 896224.
+[2020/06/08 Mon 15:52:42.913374][FILEDL]Running threads: 4, total received bytes: 3394924, current received bytes: 1710048.
+[2020/06/08 Mon 15:52:43.444956][FILEDL]Running threads: 4, total received bytes: 4225900, current received bytes: 1661952.
+[2020/06/08 Mon 15:52:43.977540][FILEDL]Running threads: 4, total received bytes: 4982908, current received bytes: 1514016.
+[2020/06/08 Mon 15:52:44.507131][FILEDL]Running threads: 4, total received bytes: 5622374, current received bytes: 1278932.
+[2020/06/08 Mon 15:52:45.038690][FILEDL]Running threads: 4, total received bytes: 6489968, current received bytes: 1735188.
+[2020/06/08 Mon 15:52:45.583234][FILEDL]Running threads: 4, total received bytes: 7312224, current received bytes: 1644512.
+[2020/06/08 Mon 15:52:46.118802][FILEDL]Running threads: 4, total received bytes: 7963744, current received bytes: 1303040.
+[2020/06/08 Mon 15:52:46.648387][FILEDL]Running threads: 4, total received bytes: 9242352, current received bytes: 2557216.
+[2020/06/08 Mon 15:52:47.175997][FILEDL]Running threads: 4, total received bytes: 9853536, current received bytes: 1222368.
+[2020/06/08 Mon 15:52:47.712541][FILEDL]Running threads: 4, total received bytes: 10737135, current received bytes: 1767198.
+[2020/06/08 Mon 15:52:48.254092][FILEDL]Running threads: 4, total received bytes: 11824622, current received bytes: 2174974.
+[2020/06/08 Mon 15:52:48.272044][FILEDL]Test completed. Terminate all threads.
+[2020/06/08 Mon 15:52:48.300966][FILEDL]Downloaded 11938542 bytes in 10701 milliseconds.
+[2020/06/08 Mon 15:52:48.632098][FILEDL]Multi-thread download test completed.
+[2020/06/08 Mon 15:52:48.653030][RAW]0 0 145276 512606 928334 708336 846784 1042240 896224 1710048 1661952 1514016 1278932 1735188 1644512 1303040 2557216 1222368 1767198 2174974 
+[2020/06/08 Mon 15:52:48.668982][INFO]Average speed: 1.06MB  Max speed: 1.88MB  Upload speed: N/A  Traffic used in bytes: 11938542
+[2020/06/08 Mon 15:52:48.990124][INFO]Writing config file...
+[2020/06/08 Mon 15:52:49.022040][INFO]Starting up shadowsocksr-libev...
+[2020/06/08 Mon 15:52:49.052958][INFO]Received server. Group: VI云 Name: 美国丨高速节点3丨中转香港丨[vip1] - 22111 单端口
+[2020/06/08 Mon 15:52:49.070909][INFO]Now performing TCP ping...
+[2020/06/08 Mon 15:52:49.102823][TCPING]TCP Ping begin.
+[2020/06/08 Mon 15:52:49.137730][TCPING]Ping target: vip1.46.qiangwoshishabi.club:22111.
+[2020/06/08 Mon 15:52:49.173636][TCPING]Host name provided. Resolving into IP address.
+[2020/06/08 Mon 15:52:49.218517][TCPING]Start probing 149.248.54.93:22111.
+[2020/06/08 Mon 15:52:49.503750][TCPING]Probing 149.248.54.93:22111/tcp - Port is open - time=266ms
+[2020/06/08 Mon 15:52:50.788316][TCPING]Probing 149.248.54.93:22111/tcp - Port is open - time=266ms
+[2020/06/08 Mon 15:52:52.079863][TCPING]Probing 149.248.54.93:22111/tcp - Port is open - time=271ms
+[2020/06/08 Mon 15:52:53.388364][TCPING]Probing 149.248.54.93:22111/tcp - Port is open - time=281ms
+[2020/06/08 Mon 15:52:54.682902][TCPING]Probing 149.248.54.93:22111/tcp - Port is open - time=270ms
+[2020/06/08 Mon 15:52:58.036936][TCPING]Probing 149.248.54.93:22111/tcp - Port is open - time=2330ms
+[2020/06/08 Mon 15:52:58.060869][TCPING]Ping statistics for 149.248.54.93:22111 : 6 probes sent, 6 successful, 0 failed. (0.00% fail)
+[2020/06/08 Mon 15:52:58.082845][RAW]266 266 271 281 270 2330 
+[2020/06/08 Mon 15:52:58.099768][INFO]TCP Ping: 614.00  Packet Loss: 0.00%
+[2020/06/08 Mon 15:52:58.117765][INFO]Now performing GeoIP parse...
+[2020/06/08 Mon 15:52:58.145643][RULES]Rule match started.
+[2020/06/08 Mon 15:52:58.161600][RULES]Fetching inbound GeoIP info.
+[2020/06/08 Mon 15:52:58.181546][GEOIP]GeoIP parse begin.
+[2020/06/08 Mon 15:52:58.198511][GEOIP]No address provided, getting GeoIP through proxy 'socks5://127.0.0.1:65432'.
+[2020/06/08 Mon 15:53:02.964757][GEOIP]Fetched GeoIP data: {"organization":"Choopa, LLC","longitude":-79.4204,"timezone":"America\/Toronto","isp":"Choopa, LLC","offset":-18000,"region":"Ontario","asn":20473,"asn_organization":"AS-CHOOPA","country":"Canada","ip":"149.248.54.93","latitude":43.6655,"continent_code":"NA","country_code":"CA","region_code":"ON"}
+
+[2020/06/08 Mon 15:53:02.979731][GEOIP]Parsing GeoIP result.
+[2020/06/08 Mon 15:53:02.998667][GEOIP]Parse GeoIP complete. Leaving.
+[2020/06/08 Mon 15:53:03.018613][RULES]Searching default rule.
+[2020/06/08 Mon 15:53:03.031578][RULES]Using default rule: 'https://download.microsoft.com/download/2/0/E/20E90413-712F-438C-988E-FDAA79A8AC3D/dotnetfx35.exe'.
+[2020/06/08 Mon 15:53:03.042550][RULES]Node  VI云 - 美国丨高速节点3丨中转香港丨[vip1] - 22111 单端口  matches no rule. Using default rule.
+[2020/06/08 Mon 15:53:03.051525][RULES]Node  VI云 - 美国丨高速节点3丨中转香港丨[vip1] - 22111 单端口  uses test file 'https://download.microsoft.com/download/2/0/E/20E90413-712F-438C-988E-FDAA79A8AC3D/dotnetfx35.exe'.
+[2020/06/08 Mon 15:53:03.061502][INFO]Got outbound ISP: Choopa, LLC  Country code: CA
+[2020/06/08 Mon 15:53:03.073466][INFO]Now performing site ping...
+[2020/06/08 Mon 15:53:03.095412][GPING]Website ping started. Target: 'https://www.google.com/' . Proxy: '127.0.0.1:65432' .
+[2020/06/08 Mon 15:53:04.324123][GPING]Accessing 'https://www.google.com/' - Success - time=1219ms
+[2020/06/08 Mon 15:53:05.921852][GPING]Accessing 'https://www.google.com/' - Success - time=1570ms
+[2020/06/08 Mon 15:53:07.194461][GPING]Accessing 'https://www.google.com/' - Success - time=1225ms
+[2020/06/08 Mon 15:53:08.729597][GPING]Accessing 'https://www.google.com/' - Success - time=1517ms
+[2020/06/08 Mon 15:53:10.283188][GPING]Accessing 'https://www.google.com/' - Success - time=1538ms
+[2020/06/08 Mon 15:53:11.848216][GPING]Accessing 'https://www.google.com/' - Success - time=1549ms
+[2020/06/08 Mon 15:53:14.692399][GPING]Accessing 'https://www.google.com/' - Success - time=2828ms
+[2020/06/08 Mon 15:53:16.290146][GPING]Accessing 'https://www.google.com/' - Success - time=1585ms
+[2020/06/08 Mon 15:53:17.850985][GPING]Accessing 'https://www.google.com/' - Success - time=1545ms
+[2020/06/08 Mon 15:53:19.089641][GPING]Accessing 'https://www.google.com/' - Success - time=1222ms
+[2020/06/08 Mon 15:53:19.104600][GPING]Ping statistics of target https://www.google.com/ : 10 probes sent, 10 successful, 0 failed. 
+[2020/06/08 Mon 15:53:19.118562][GPING]Website ping completed. Leaving.
+[2020/06/08 Mon 15:53:19.128536][RAW]1219 1570 1225 1517 1538 1549 2828 1585 1545 1222 
+[2020/06/08 Mon 15:53:19.139508][INFO]Site ping: 1579.80
+[2020/06/08 Mon 15:53:19.153471][INFO]Now performing file download speed test...
+[2020/06/08 Mon 15:53:19.165437][FILEDL]Multi-thread download test started.
+[2020/06/08 Mon 15:53:19.177406][FILEDL]Fetch target: https://download.microsoft.com/download/2/0/E/20E90413-712F-438C-988E-FDAA79A8AC3D/dotnetfx35.exe
+[2020/06/08 Mon 15:53:19.188379][FILEDL]Found HTTPS URL. Initializing OpenSSL library.
+[2020/06/08 Mon 15:53:19.199348][FILEDL]Starting up thread #1.
+[2020/06/08 Mon 15:53:19.209329][FILEDL]Starting up thread #2.
+[2020/06/08 Mon 15:53:19.220292][FILEDL]Starting up thread #3.
+[2020/06/08 Mon 15:53:19.231260][FILEDL]Starting up thread #4.
+[2020/06/08 Mon 15:53:19.241236][FILEDL]All threads launched. Start accumulating data.
+[2020/06/08 Mon 15:53:19.758856][FILEDL]Running threads: 4, total received bytes: 0, current received bytes: 0.
+[2020/06/08 Mon 15:53:20.286442][FILEDL]Running threads: 4, total received bytes: 0, current received bytes: 0.
+[2020/06/08 Mon 15:53:20.820014][FILEDL]Running threads: 4, total received bytes: 0, current received bytes: 0.
+[2020/06/08 Mon 15:53:21.353589][FILEDL]Running threads: 4, total received bytes: 186649, current received bytes: 373298.
+[2020/06/08 Mon 15:53:21.882192][FILEDL]Running threads: 4, total received bytes: 430748, current received bytes: 488198.
+[2020/06/08 Mon 15:53:22.413753][FILEDL]Running threads: 4, total received bytes: 911244, current received bytes: 960992.
+[2020/06/08 Mon 15:53:22.945336][FILEDL]Running threads: 4, total received bytes: 1342492, current received bytes: 862496.
+[2020/06/08 Mon 15:53:23.476909][FILEDL]Running threads: 4, total received bytes: 2002348, current received bytes: 1319712.
+[2020/06/08 Mon 15:53:24.005496][FILEDL]Running threads: 4, total received bytes: 2466844, current received bytes: 928992.
+[2020/06/08 Mon 15:53:24.537082][FILEDL]Running threads: 4, total received bytes: 4685863, current received bytes: 4438038.
+[2020/06/08 Mon 15:53:25.072643][FILEDL]Running threads: 4, total received bytes: 5549223, current received bytes: 1726720.
+[2020/06/08 Mon 15:53:25.600231][FILEDL]Running threads: 4, total received bytes: 6550935, current received bytes: 2003424.
+[2020/06/08 Mon 15:53:26.131811][FILEDL]Running threads: 4, total received bytes: 8371090, current received bytes: 3640310.
+[2020/06/08 Mon 15:53:26.693310][FILEDL]Running threads: 4, total received bytes: 10948641, current received bytes: 5155102.
+[2020/06/08 Mon 15:53:27.226882][FILEDL]Running threads: 4, total received bytes: 12638492, current received bytes: 3379702.
+[2020/06/08 Mon 15:53:27.757462][FILEDL]Running threads: 4, total received bytes: 15367068, current received bytes: 5457152.
+[2020/06/08 Mon 15:53:28.276084][FILEDL]Running threads: 4, total received bytes: 18160652, current received bytes: 5587168.
+[2020/06/08 Mon 15:53:28.801670][FILEDL]Running threads: 4, total received bytes: 18689820, current received bytes: 1058336.
+[2020/06/08 Mon 15:53:29.332253][FILEDL]Running threads: 4, total received bytes: 20115635, current received bytes: 2851630.
+[2020/06/08 Mon 15:53:29.866823][FILEDL]Running threads: 4, total received bytes: 21243271, current received bytes: 2255272.
+[2020/06/08 Mon 15:53:29.877796][FILEDL]Test completed. Terminate all threads.
+[2020/06/08 Mon 15:53:29.911702][FILEDL]Downloaded 21243271 bytes in 10644 milliseconds.
+[2020/06/08 Mon 15:53:30.137099][FILEDL]Multi-thread download test completed.
+[2020/06/08 Mon 15:53:30.153058][RAW]0 0 0 373298 488198 960992 862496 1319712 928992 4438038 1726720 2003424 3640310 5155102 3379702 5457152 5587168 1058336 2851630 2255272 
+[2020/06/08 Mon 15:53:30.170012][INFO]Average speed: 1.90MB  Max speed: 4.21MB  Upload speed: N/A  Traffic used in bytes: 21243271
+[2020/06/08 Mon 15:53:30.495148][INFO]Writing config file...
+[2020/06/08 Mon 15:53:30.529055][INFO]Starting up shadowsocksr-libev...
+[2020/06/08 Mon 15:53:30.551991][INFO]Received server. Group: VI云 Name: 美国丨高速节点4丨中转香港丨[vip1] - 22111 单端口
+[2020/06/08 Mon 15:53:30.600860][INFO]Now performing TCP ping...
+[2020/06/08 Mon 15:53:30.632775][TCPING]TCP Ping begin.
+[2020/06/08 Mon 15:53:30.663694][TCPING]Ping target: vip1.52.qiangwoshishabi.club:22111.
+[2020/06/08 Mon 15:53:30.681646][TCPING]Host name provided. Resolving into IP address.
+[2020/06/08 Mon 15:53:30.714557][TCPING]Start probing 149.248.54.93:22111.
+[2020/06/08 Mon 15:53:31.012761][TCPING]Probing 149.248.54.93:22111/tcp - Port is open - time=277ms
+[2020/06/08 Mon 15:53:32.273389][TCPING]Probing 149.248.54.93:22111/tcp - Port is open - time=251ms
+[2020/06/08 Mon 15:53:33.567936][TCPING]Probing 149.248.54.93:22111/tcp - Port is open - time=278ms
+[2020/06/08 Mon 15:53:34.862465][TCPING]Probing 149.248.54.93:22111/tcp - Port is open - time=275ms
+[2020/06/08 Mon 15:53:36.133066][TCPING]Probing 149.248.54.93:22111/tcp - Port is open - time=261ms
+[2020/06/08 Mon 15:53:37.421625][TCPING]Probing 149.248.54.93:22111/tcp - Port is open - time=278ms
+[2020/06/08 Mon 15:53:37.446565][TCPING]Ping statistics for 149.248.54.93:22111 : 6 probes sent, 6 successful, 0 failed. (0.00% fail)
+[2020/06/08 Mon 15:53:37.472486][RAW]277 251 278 275 261 278 
+[2020/06/08 Mon 15:53:37.490481][INFO]TCP Ping: 270.00  Packet Loss: 0.00%
+[2020/06/08 Mon 15:53:37.504403][INFO]Now performing GeoIP parse...
+[2020/06/08 Mon 15:53:37.517404][RULES]Rule match started.
+[2020/06/08 Mon 15:53:37.530332][RULES]Fetching inbound GeoIP info.
+[2020/06/08 Mon 15:53:37.540304][GEOIP]GeoIP parse begin.
+[2020/06/08 Mon 15:53:37.548287][GEOIP]No address provided, getting GeoIP through proxy 'socks5://127.0.0.1:65432'.
+[2020/06/08 Mon 15:53:38.757050][GEOIP]Fetched GeoIP data: {"organization":"Choopa, LLC","longitude":-79.4204,"timezone":"America\/Toronto","isp":"Choopa, LLC","offset":-18000,"region":"Ontario","asn":20473,"asn_organization":"AS-CHOOPA","country":"Canada","ip":"149.248.54.93","latitude":43.6655,"continent_code":"NA","country_code":"CA","region_code":"ON"}
+
+[2020/06/08 Mon 15:53:38.773009][GEOIP]Parsing GeoIP result.
+[2020/06/08 Mon 15:53:38.782991][GEOIP]Parse GeoIP complete. Leaving.
+[2020/06/08 Mon 15:53:38.791962][RULES]Searching default rule.
+[2020/06/08 Mon 15:53:38.805921][RULES]Using default rule: 'https://download.microsoft.com/download/2/0/E/20E90413-712F-438C-988E-FDAA79A8AC3D/dotnetfx35.exe'.
+[2020/06/08 Mon 15:53:38.824874][RULES]Node  VI云 - 美国丨高速节点4丨中转香港丨[vip1] - 22111 单端口  matches no rule. Using default rule.
+[2020/06/08 Mon 15:53:38.841825][RULES]Node  VI云 - 美国丨高速节点4丨中转香港丨[vip1] - 22111 单端口  uses test file 'https://download.microsoft.com/download/2/0/E/20E90413-712F-438C-988E-FDAA79A8AC3D/dotnetfx35.exe'.
+[2020/06/08 Mon 15:53:38.862769][INFO]Got outbound ISP: Choopa, LLC  Country code: CA
+[2020/06/08 Mon 15:53:38.879724][INFO]Now performing site ping...
+[2020/06/08 Mon 15:53:38.904674][GPING]Website ping started. Target: 'https://www.google.com/' . Proxy: '127.0.0.1:65432' .
+[2020/06/08 Mon 15:53:40.114422][GPING]Accessing 'https://www.google.com/' - Success - time=1193ms
+[2020/06/08 Mon 15:53:41.939489][GPING]Accessing 'https://www.google.com/' - Success - time=1766ms
+[2020/06/08 Mon 15:53:43.942136][GPING]Accessing 'https://www.google.com/' - Success - time=1993ms
+[2020/06/08 Mon 15:53:45.521913][GPING]Accessing 'https://www.google.com/' - Success - time=1558ms
+[2020/06/08 Mon 15:53:46.753617][GPING]Accessing 'https://www.google.com/' - Success - time=1210ms
+[2020/06/08 Mon 15:53:48.016245][GPING]Accessing 'https://www.google.com/' - Success - time=1244ms
+[2020/06/08 Mon 15:53:49.266897][GPING]Accessing 'https://www.google.com/' - Success - time=1221ms
+[2020/06/08 Mon 15:53:50.823735][GPING]Accessing 'https://www.google.com/' - Success - time=1533ms
+[2020/06/08 Mon 15:53:52.050502][GPING]Accessing 'https://www.google.com/' - Success - time=1213ms
+[2020/06/08 Mon 15:53:54.401212][GPING]Accessing 'https://www.google.com/' - Success - time=2331ms
+[2020/06/08 Mon 15:53:54.410152][GPING]Ping statistics of target https://www.google.com/ : 10 probes sent, 10 successful, 0 failed. 
+[2020/06/08 Mon 15:53:54.419121][GPING]Website ping completed. Leaving.
+[2020/06/08 Mon 15:53:54.428097][RAW]1193 1766 1993 1558 1210 1244 1221 1533 1213 2331 
+[2020/06/08 Mon 15:53:54.437070][INFO]Site ping: 1526.20
+[2020/06/08 Mon 15:53:54.446047][INFO]Now performing file download speed test...
+[2020/06/08 Mon 15:53:54.456020][FILEDL]Multi-thread download test started.
+[2020/06/08 Mon 15:53:54.470981][FILEDL]Fetch target: https://download.microsoft.com/download/2/0/E/20E90413-712F-438C-988E-FDAA79A8AC3D/dotnetfx35.exe
+[2020/06/08 Mon 15:53:54.484943][FILEDL]Found HTTPS URL. Initializing OpenSSL library.
+[2020/06/08 Mon 15:53:54.496911][FILEDL]Starting up thread #1.
+[2020/06/08 Mon 15:53:54.507882][FILEDL]Starting up thread #2.
+[2020/06/08 Mon 15:53:54.516861][FILEDL]Starting up thread #3.
+[2020/06/08 Mon 15:53:54.526833][FILEDL]Starting up thread #4.
+[2020/06/08 Mon 15:53:54.536805][FILEDL]All threads launched. Start accumulating data.
+[2020/06/08 Mon 15:53:55.052554][FILEDL]Running threads: 4, total received bytes: 0, current received bytes: 0.
+[2020/06/08 Mon 15:53:55.582238][FILEDL]Running threads: 4, total received bytes: 0, current received bytes: 0.
+[2020/06/08 Mon 15:53:56.097859][FILEDL]Running threads: 4, total received bytes: 0, current received bytes: 0.
+[2020/06/08 Mon 15:53:56.613473][FILEDL]Running threads: 4, total received bytes: 0, current received bytes: 0.
+[2020/06/08 Mon 15:53:57.161786][FILEDL]Running threads: 4, total received bytes: 235926, current received bytes: 471852.
+[2020/06/08 Mon 15:53:57.680402][FILEDL]Running threads: 4, total received bytes: 487881, current received bytes: 503910.
+[2020/06/08 Mon 15:53:58.212976][FILEDL]Running threads: 4, total received bytes: 846409, current received bytes: 717056.
+[2020/06/08 Mon 15:53:58.740598][FILEDL]Running threads: 4, total received bytes: 1074633, current received bytes: 456448.
+[2020/06/08 Mon 15:53:59.257217][FILEDL]Running threads: 4, total received bytes: 1786436, current received bytes: 1423606.
+[2020/06/08 Mon 15:53:59.789006][FILEDL]Running threads: 4, total received bytes: 2377260, current received bytes: 1181648.
+[2020/06/08 Mon 15:54:00.305381][FILEDL]Running threads: 4, total received bytes: 3403404, current received bytes: 2052288.
+[2020/06/08 Mon 15:54:00.832971][FILEDL]Running threads: 4, total received bytes: 4022156, current received bytes: 1237504.
+[2020/06/08 Mon 15:54:01.351582][FILEDL]Running threads: 4, total received bytes: 5321479, current received bytes: 2598646.
+[2020/06/08 Mon 15:54:01.868203][FILEDL]Running threads: 4, total received bytes: 6949799, current received bytes: 3256640.
+[2020/06/08 Mon 15:54:02.395824][FILEDL]Running threads: 4, total received bytes: 7809062, current received bytes: 1718526.
+[2020/06/08 Mon 15:54:02.911410][FILEDL]Running threads: 4, total received bytes: 7809062, current received bytes: 0.
+[2020/06/08 Mon 15:54:03.427183][FILEDL]Running threads: 4, total received bytes: 7809062, current received bytes: 0.
+[2020/06/08 Mon 15:54:03.959759][FILEDL]Running threads: 4, total received bytes: 7809062, current received bytes: 0.
+[2020/06/08 Mon 15:54:04.489376][FILEDL]Running threads: 4, total received bytes: 7809062, current received bytes: 0.
+[2020/06/08 Mon 15:54:05.019919][FILEDL]Running threads: 4, total received bytes: 7809062, current received bytes: 0.
+[2020/06/08 Mon 15:54:05.035733][FILEDL]Test completed. Terminate all threads.
+[2020/06/08 Mon 15:54:05.067792][FILEDL]Downloaded 7809062 bytes in 10506 milliseconds.
+[2020/06/08 Mon 15:54:06.999719][FILEDL]Multi-thread download test completed.
+[2020/06/08 Mon 15:54:07.009455][RAW]0 0 0 0 471852 503910 717056 456448 1423606 1181648 2052288 1237504 2598646 3256640 1718526 0 0 0 0 0 
+[2020/06/08 Mon 15:54:07.019429][INFO]Average speed: 725.87KB  Max speed: 2.79MB  Upload speed: N/A  Traffic used in bytes: 7809062
+[2020/06/08 Mon 15:54:07.332838][INFO]Writing config file...
+[2020/06/08 Mon 15:54:07.350549][INFO]Starting up shadowsocksr-libev...
+[2020/06/08 Mon 15:54:07.375483][INFO]Received server. Group: VI云 Name: 美国丨高速节点5丨中转香港---[vip1] - 22111 单端口
+[2020/06/08 Mon 15:54:07.399417][INFO]Now performing TCP ping...
+[2020/06/08 Mon 15:54:07.416367][TCPING]TCP Ping begin.
+[2020/06/08 Mon 15:54:07.429331][TCPING]Ping target: vip1.55.qiangwoshishabi.club:22111.
+[2020/06/08 Mon 15:54:07.441300][TCPING]Host name provided. Resolving into IP address.
+[2020/06/08 Mon 15:54:07.486179][TCPING]Start probing 149.248.54.93:22111.
+[2020/06/08 Mon 15:54:10.496254][TCPING]Probing 149.248.54.93:22111/tcp - No response - time=3000ms
+[2020/06/08 Mon 15:54:14.530342][TCPING]Probing 149.248.54.93:22111/tcp - No response - time=3000ms
+[2020/06/08 Mon 15:54:18.548598][TCPING]Probing 149.248.54.93:22111/tcp - No response - time=3000ms
+[2020/06/08 Mon 15:54:22.562869][TCPING]Probing 149.248.54.93:22111/tcp - No response - time=3001ms
+[2020/06/08 Mon 15:54:26.581121][TCPING]Probing 149.248.54.93:22111/tcp - No response - time=3000ms
+[2020/06/08 Mon 15:54:30.591523][TCPING]Probing 149.248.54.93:22111/tcp - No response - time=3001ms
+[2020/06/08 Mon 15:54:30.613340][TCPING]Ping statistics for 149.248.54.93:22111 : 6 probes sent, 0 successful, 6 failed. (100.00% fail)
+[2020/06/08 Mon 15:54:30.631295][ERROR]Cannot connect to this node.
+[2020/06/08 Mon 15:54:30.644256][INFO]Writing config file...
+[2020/06/08 Mon 15:54:30.668195][INFO]Starting up shadowsocksr-libev...
+[2020/06/08 Mon 15:54:30.682159][INFO]Received server. Group: VI云 Name: 美国丨高速节点6丨中转香港---[vip1] - 22111 单端口
+[2020/06/08 Mon 15:54:30.694123][INFO]Now performing TCP ping...
+[2020/06/08 Mon 15:54:30.706094][TCPING]TCP Ping begin.
+[2020/06/08 Mon 15:54:30.717063][TCPING]Ping target: vip1.56.qiangwoshishabi.club:22111.
+[2020/06/08 Mon 15:54:30.730027][TCPING]Host name provided. Resolving into IP address.
+[2020/06/08 Mon 15:54:30.776900][TCPING]Start probing 136.244.64.5:22111.
+[2020/06/08 Mon 15:54:30.999310][TCPING]Probing 136.244.64.5:22111/tcp - Port is open - time=210ms
+[2020/06/08 Mon 15:54:35.009583][TCPING]Probing 136.244.64.5:22111/tcp - No response - time=3000ms
+[2020/06/08 Mon 15:54:36.230331][TCPING]Probing 136.244.64.5:22111/tcp - Port is open - time=207ms
+[2020/06/08 Mon 15:54:37.455046][TCPING]Probing 136.244.64.5:22111/tcp - Port is open - time=213ms
+[2020/06/08 Mon 15:54:38.754609][TCPING]Probing 136.244.64.5:22111/tcp - Port is open - time=215ms
+[2020/06/08 Mon 15:54:39.984282][TCPING]Probing 136.244.64.5:22111/tcp - Port is open - time=205ms
+[2020/06/08 Mon 15:54:40.012213][TCPING]Ping statistics for 136.244.64.5:22111 : 6 probes sent, 5 successful, 1 failed. (16.67% fail)
+[2020/06/08 Mon 15:54:40.031161][RAW]210 0 207 213 215 205 
+[2020/06/08 Mon 15:54:40.050106][INFO]TCP Ping: 210.00  Packet Loss: 16.67%
+[2020/06/08 Mon 15:54:40.069058][INFO]Now performing GeoIP parse...
+[2020/06/08 Mon 15:54:40.084051][RULES]Rule match started.
+[2020/06/08 Mon 15:54:40.095982][RULES]Fetching inbound GeoIP info.
+[2020/06/08 Mon 15:54:40.108949][GEOIP]GeoIP parse begin.
+[2020/06/08 Mon 15:54:40.122911][GEOIP]No address provided, getting GeoIP through proxy 'socks5://127.0.0.1:65432'.
+[2020/06/08 Mon 15:54:41.014558][GEOIP]Fetched GeoIP data: {"organization":"Choopa, LLC","longitude":-0.1224,"timezone":"Europe\/London","isp":"Choopa, LLC","offset":0,"asn":20473,"asn_organization":"AS-CHOOPA","country":"United Kingdom","ip":"136.244.64.5","latitude":51.4964,"continent_code":"EU","country_code":"GB"}
+
+[2020/06/08 Mon 15:54:41.037471][GEOIP]Parsing GeoIP result.
+[2020/06/08 Mon 15:54:41.048438][GEOIP]Parse GeoIP complete. Leaving.
+[2020/06/08 Mon 15:54:41.058446][RULES]Searching default rule.
+[2020/06/08 Mon 15:54:41.069382][RULES]Using default rule: 'https://download.microsoft.com/download/2/0/E/20E90413-712F-438C-988E-FDAA79A8AC3D/dotnetfx35.exe'.
+[2020/06/08 Mon 15:54:41.079391][RULES]Node  VI云 - 美国丨高速节点6丨中转香港---[vip1] - 22111 单端口  matches no rule. Using default rule.
+[2020/06/08 Mon 15:54:41.091321][RULES]Node  VI云 - 美国丨高速节点6丨中转香港---[vip1] - 22111 单端口  uses test file 'https://download.microsoft.com/download/2/0/E/20E90413-712F-438C-988E-FDAA79A8AC3D/dotnetfx35.exe'.
+[2020/06/08 Mon 15:54:41.102294][INFO]Got outbound ISP: Choopa, LLC  Country code: GB
+[2020/06/08 Mon 15:54:41.112264][INFO]Now performing site ping...
+[2020/06/08 Mon 15:54:41.124233][GPING]Website ping started. Target: 'https://www.google.com/' . Proxy: '127.0.0.1:65432' .
+[2020/06/08 Mon 15:54:42.063722][GPING]Accessing 'https://www.google.com/' - Success - time=929ms
+[2020/06/08 Mon 15:54:46.035148][GPING]Accessing 'https://www.google.com/' - Success - time=3958ms
+[2020/06/08 Mon 15:54:47.004730][GPING]Accessing 'https://www.google.com/' - Success - time=953ms
+[2020/06/08 Mon 15:54:47.933029][GPING]Accessing 'https://www.google.com/' - Success - time=918ms
+[2020/06/08 Mon 15:54:49.537738][GPING]Accessing 'https://www.google.com/' - Success - time=1586ms
+[2020/06/08 Mon 15:54:50.882141][GPING]Accessing 'https://www.google.com/' - Success - time=1329ms
+[2020/06/08 Mon 15:54:51.818708][GPING]Accessing 'https://www.google.com/' - Success - time=922ms
+[2020/06/08 Mon 15:54:52.740181][GPING]Accessing 'https://www.google.com/' - Success - time=911ms
+[2020/06/08 Mon 15:54:53.684653][GPING]Accessing 'https://www.google.com/' - Success - time=913ms
+[2020/06/08 Mon 15:54:54.631115][GPING]Accessing 'https://www.google.com/' - Success - time=928ms
+[2020/06/08 Mon 15:54:54.641091][GPING]Ping statistics of target https://www.google.com/ : 10 probes sent, 10 successful, 0 failed. 
+[2020/06/08 Mon 15:54:54.651063][GPING]Website ping completed. Leaving.
+[2020/06/08 Mon 15:54:54.660038][RAW]929 3958 953 918 1586 1329 922 911 913 928 
+[2020/06/08 Mon 15:54:54.669015][INFO]Site ping: 1334.70
+[2020/06/08 Mon 15:54:54.676995][INFO]Now performing file download speed test...
+[2020/06/08 Mon 15:54:54.688961][FILEDL]Multi-thread download test started.
+[2020/06/08 Mon 15:54:54.698937][FILEDL]Fetch target: https://download.microsoft.com/download/2/0/E/20E90413-712F-438C-988E-FDAA79A8AC3D/dotnetfx35.exe
+[2020/06/08 Mon 15:54:54.710904][FILEDL]Found HTTPS URL. Initializing OpenSSL library.
+[2020/06/08 Mon 15:54:54.720875][FILEDL]Starting up thread #1.
+[2020/06/08 Mon 15:54:54.729852][FILEDL]Starting up thread #2.
+[2020/06/08 Mon 15:54:54.738830][FILEDL]Starting up thread #3.
+[2020/06/08 Mon 15:54:54.748803][FILEDL]Starting up thread #4.
+[2020/06/08 Mon 15:54:54.757813][FILEDL]All threads launched. Start accumulating data.
+[2020/06/08 Mon 15:54:55.273556][FILEDL]Running threads: 4, total received bytes: 0, current received bytes: 0.
+[2020/06/08 Mon 15:54:55.802985][FILEDL]Running threads: 4, total received bytes: 0, current received bytes: 0.
+[2020/06/08 Mon 15:54:56.334567][FILEDL]Running threads: 4, total received bytes: 210853, current received bytes: 421706.
+[2020/06/08 Mon 15:54:56.866268][FILEDL]Running threads: 4, total received bytes: 455365, current received bytes: 489024.
+[2020/06/08 Mon 15:54:57.397720][FILEDL]Running threads: 4, total received bytes: 1375115, current received bytes: 1839500.
+[2020/06/08 Mon 15:54:57.915337][FILEDL]Running threads: 4, total received bytes: 2311771, current received bytes: 1873312.
+[2020/06/08 Mon 15:54:58.445157][FILEDL]Running threads: 4, total received bytes: 4681483, current received bytes: 4739424.
+[2020/06/08 Mon 15:54:58.960572][FILEDL]Running threads: 4, total received bytes: 6852309, current received bytes: 4341652.
+[2020/06/08 Mon 15:54:59.476191][FILEDL]Running threads: 4, total received bytes: 11144041, current received bytes: 8583464.
+[2020/06/08 Mon 15:55:00.005747][FILEDL]Running threads: 4, total received bytes: 13359442, current received bytes: 4430802.
+[2020/06/08 Mon 15:55:00.524404][FILEDL]Running threads: 4, total received bytes: 14927330, current received bytes: 3135776.
+[2020/06/08 Mon 15:55:01.038983][FILEDL]Running threads: 4, total received bytes: 17712578, current received bytes: 5570496.
+[2020/06/08 Mon 15:55:01.556599][FILEDL]Running threads: 4, total received bytes: 21149297, current received bytes: 6873438.
+[2020/06/08 Mon 15:55:02.086192][FILEDL]Running threads: 4, total received bytes: 24887537, current received bytes: 7476480.
+[2020/06/08 Mon 15:55:02.616018][FILEDL]Running threads: 4, total received bytes: 27033552, current received bytes: 4292030.
+[2020/06/08 Mon 15:55:03.133593][FILEDL]Running threads: 4, total received bytes: 30328158, current received bytes: 6589212.
+[2020/06/08 Mon 15:55:03.650002][FILEDL]Running threads: 4, total received bytes: 32474175, current received bytes: 4292034.
+[2020/06/08 Mon 15:55:04.177856][FILEDL]Running threads: 4, total received bytes: 40573549, current received bytes: 16198748.
+[2020/06/08 Mon 15:55:04.692295][FILEDL]Running threads: 4, total received bytes: 41225069, current received bytes: 1303040.
+[2020/06/08 Mon 15:55:05.212846][FILEDL]Running threads: 4, total received bytes: 45061322, current received bytes: 7672506.
+[2020/06/08 Mon 15:55:05.224790][FILEDL]Test completed. Terminate all threads.
+[2020/06/08 Mon 15:55:05.255707][FILEDL]Downloaded 45126474 bytes in 10472 milliseconds.
+[2020/06/08 Mon 15:55:05.605771][FILEDL]Multi-thread download test completed.
+[2020/06/08 Mon 15:55:05.619741][RAW]0 0 421706 489024 1839500 1873312 4739424 4341652 8583464 4430802 3135776 5570496 6873438 7476480 4292030 6589212 4292034 16198748 1303040 7672506 
+[2020/06/08 Mon 15:55:05.629712][INFO]Average speed: 4.11MB  Max speed: 9.77MB  Upload speed: N/A  Traffic used in bytes: 45126474
+[2020/06/08 Mon 15:55:05.959957][INFO]Writing config file...
+[2020/06/08 Mon 15:55:06.003716][INFO]Starting up shadowsocksr-libev...
+[2020/06/08 Mon 15:55:06.025650][INFO]Received server. Group: VI云 Name: 香港丨1丨三网优化丨[vip1] - 22111 单端口
+[2020/06/08 Mon 15:55:06.050583][INFO]Now performing TCP ping...
+[2020/06/08 Mon 15:55:06.067538][TCPING]TCP Ping begin.
+[2020/06/08 Mon 15:55:06.080503][TCPING]Ping target: vip1.58.qiangwoshishabi.club:22111.
+[2020/06/08 Mon 15:55:06.097456][TCPING]Host name provided. Resolving into IP address.
+[2020/06/08 Mon 15:55:06.147322][TCPING]Start probing 136.244.64.5:22111.
+[2020/06/08 Mon 15:55:06.358758][TCPING]Probing 136.244.64.5:22111/tcp - Port is open - time=200ms
+[2020/06/08 Mon 15:55:07.599519][TCPING]Probing 136.244.64.5:22111/tcp - Port is open - time=213ms
+[2020/06/08 Mon 15:55:08.812203][TCPING]Probing 136.244.64.5:22111/tcp - Port is open - time=199ms
+[2020/06/08 Mon 15:55:10.043061][TCPING]Probing 136.244.64.5:22111/tcp - Port is open - time=203ms
+[2020/06/08 Mon 15:55:11.267640][TCPING]Probing 136.244.64.5:22111/tcp - Port is open - time=212ms
+[2020/06/08 Mon 15:55:12.488372][TCPING]Probing 136.244.64.5:22111/tcp - Port is open - time=198ms
+[2020/06/08 Mon 15:55:12.501335][TCPING]Ping statistics for 136.244.64.5:22111 : 6 probes sent, 6 successful, 0 failed. (0.00% fail)
+[2020/06/08 Mon 15:55:12.515299][RAW]200 213 199 203 212 198 
+[2020/06/08 Mon 15:55:12.528260][INFO]TCP Ping: 204.17  Packet Loss: 0.00%
+[2020/06/08 Mon 15:55:12.541227][INFO]Now performing GeoIP parse...
+[2020/06/08 Mon 15:55:12.554194][RULES]Rule match started.
+[2020/06/08 Mon 15:55:12.568155][RULES]Fetching inbound GeoIP info.
+[2020/06/08 Mon 15:55:12.584113][GEOIP]GeoIP parse begin.
+[2020/06/08 Mon 15:55:12.598074][GEOIP]No address provided, getting GeoIP through proxy 'socks5://127.0.0.1:65432'.
+[2020/06/08 Mon 15:55:13.738029][GEOIP]Fetched GeoIP data: {"organization":"Choopa, LLC","longitude":-0.1224,"timezone":"Europe\/London","isp":"Choopa, LLC","offset":0,"asn":20473,"asn_organization":"AS-CHOOPA","country":"United Kingdom","ip":"136.244.64.5","latitude":51.4964,"continent_code":"EU","country_code":"GB"}
+
+[2020/06/08 Mon 15:55:13.769941][GEOIP]Parsing GeoIP result.
+[2020/06/08 Mon 15:55:13.782912][GEOIP]Parse GeoIP complete. Leaving.
+[2020/06/08 Mon 15:55:13.795872][RULES]Searching default rule.
+[2020/06/08 Mon 15:55:13.808836][RULES]Using default rule: 'https://download.microsoft.com/download/2/0/E/20E90413-712F-438C-988E-FDAA79A8AC3D/dotnetfx35.exe'.
+[2020/06/08 Mon 15:55:13.821848][RULES]Node  VI云 - 香港丨1丨三网优化丨[vip1] - 22111 单端口  matches no rule. Using default rule.
+[2020/06/08 Mon 15:55:13.833773][RULES]Node  VI云 - 香港丨1丨三网优化丨[vip1] - 22111 单端口  uses test file 'https://download.microsoft.com/download/2/0/E/20E90413-712F-438C-988E-FDAA79A8AC3D/dotnetfx35.exe'.
+[2020/06/08 Mon 15:55:13.846735][INFO]Got outbound ISP: Choopa, LLC  Country code: GB
+[2020/06/08 Mon 15:55:13.859706][INFO]Now performing site ping...
+[2020/06/08 Mon 15:55:13.873703][GPING]Website ping started. Target: 'https://www.google.com/' . Proxy: '127.0.0.1:65432' .
+[2020/06/08 Mon 15:55:14.788222][GPING]Accessing 'https://www.google.com/' - Success - time=901ms
+[2020/06/08 Mon 15:55:15.705765][GPING]Accessing 'https://www.google.com/' - Success - time=881ms
+[2020/06/08 Mon 15:55:18.939119][GPING]Accessing 'https://www.google.com/' - Success - time=3222ms
+[2020/06/08 Mon 15:55:20.688445][GPING]Accessing 'https://www.google.com/' - Success - time=1607ms
+[2020/06/08 Mon 15:55:22.717017][GPING]Accessing 'https://www.google.com/' - Success - time=2018ms
+[2020/06/08 Mon 15:55:23.638743][GPING]Accessing 'https://www.google.com/' - Success - time=901ms
+[2020/06/08 Mon 15:55:24.547137][GPING]Accessing 'https://www.google.com/' - Success - time=897ms
+[2020/06/08 Mon 15:55:29.559936][GPING]ERROR: Connect to www.google.com:443 through SOCKS5 server failed.
+[2020/06/08 Mon 15:55:30.533117][GPING]Accessing 'https://www.google.com/' - Success - time=964ms
+[2020/06/08 Mon 15:55:31.445677][GPING]Accessing 'https://www.google.com/' - Success - time=896ms
+[2020/06/08 Mon 15:55:31.455651][GPING]Ping statistics of target https://www.google.com/ : 10 probes sent, 9 successful, 1 failed. 
+[2020/06/08 Mon 15:55:31.464626][GPING]Website ping completed. Leaving.
+[2020/06/08 Mon 15:55:31.474604][RAW]901 881 3222 1607 2018 901 897 0 964 896 
+[2020/06/08 Mon 15:55:31.483583][INFO]Site ping: 1365.22
+[2020/06/08 Mon 15:55:31.492554][INFO]Now performing file download speed test...
+[2020/06/08 Mon 15:55:31.504521][FILEDL]Multi-thread download test started.
+[2020/06/08 Mon 15:55:31.514495][FILEDL]Fetch target: https://download.microsoft.com/download/2/0/E/20E90413-712F-438C-988E-FDAA79A8AC3D/dotnetfx35.exe
+[2020/06/08 Mon 15:55:31.524467][FILEDL]Found HTTPS URL. Initializing OpenSSL library.
+[2020/06/08 Mon 15:55:31.533442][FILEDL]Starting up thread #1.
+[2020/06/08 Mon 15:55:31.543416][FILEDL]Starting up thread #2.
+[2020/06/08 Mon 15:55:31.552428][FILEDL]Starting up thread #3.
+[2020/06/08 Mon 15:55:31.562368][FILEDL]Starting up thread #4.
+[2020/06/08 Mon 15:55:31.572339][FILEDL]All threads launched. Start accumulating data.
+[2020/06/08 Mon 15:55:32.100090][FILEDL]Running threads: 4, total received bytes: 0, current received bytes: 0.
+[2020/06/08 Mon 15:55:32.631535][FILEDL]Running threads: 4, total received bytes: 0, current received bytes: 0.
+[2020/06/08 Mon 15:55:33.192032][FILEDL]Running threads: 4, total received bytes: 206682, current received bytes: 413364.
+[2020/06/08 Mon 15:55:33.708626][FILEDL]Running threads: 4, total received bytes: 528562, current received bytes: 643760.
+[2020/06/08 Mon 15:55:34.224463][FILEDL]Running threads: 4, total received bytes: 1351106, current received bytes: 1645088.
+[2020/06/08 Mon 15:55:34.741863][FILEDL]Running threads: 4, total received bytes: 2874034, current received bytes: 3045856.
+[2020/06/08 Mon 15:55:35.271704][FILEDL]Running threads: 4, total received bytes: 4906028, current received bytes: 4063988.
+[2020/06/08 Mon 15:55:35.790063][FILEDL]Running threads: 4, total received bytes: 6767589, current received bytes: 3723122.
+[2020/06/08 Mon 15:55:36.305906][FILEDL]Running threads: 4, total received bytes: 11071276, current received bytes: 8607374.
+[2020/06/08 Mon 15:55:36.835265][FILEDL]Running threads: 3, total received bytes: 13868943, current received bytes: 5595334.
+[2020/06/08 Mon 15:55:37.366845][FILEDL]Running threads: 3, total received bytes: 14593567, current received bytes: 1449248.
+[2020/06/08 Mon 15:55:37.882536][FILEDL]Running threads: 3, total received bytes: 15839887, current received bytes: 2492640.
+[2020/06/08 Mon 15:55:38.399200][FILEDL]Running threads: 3, total received bytes: 16230799, current received bytes: 781824.
+[2020/06/08 Mon 15:55:38.930664][FILEDL]Running threads: 3, total received bytes: 16670479, current received bytes: 879360.
+[2020/06/08 Mon 15:55:39.459250][FILEDL]Running threads: 3, total received bytes: 18962991, current received bytes: 4585024.
+[2020/06/08 Mon 15:55:39.978111][FILEDL]Running threads: 3, total received bytes: 20921887, current received bytes: 3917792.
+[2020/06/08 Mon 15:55:40.505720][FILEDL]Running threads: 3, total received bytes: 23104527, current received bytes: 4365280.
+[2020/06/08 Mon 15:55:41.021169][FILEDL]Running threads: 3, total received bytes: 25531151, current received bytes: 4853248.
+[2020/06/08 Mon 15:55:41.537000][FILEDL]Running threads: 3, total received bytes: 28654877, current received bytes: 6247452.
+[2020/06/08 Mon 15:55:42.052388][FILEDL]Running threads: 3, total received bytes: 31334157, current received bytes: 5358560.
+[2020/06/08 Mon 15:55:42.062327][FILEDL]Test completed. Terminate all threads.
+[2020/06/08 Mon 15:55:42.082433][FILEDL]Downloaded 31334157 bytes in 10493 milliseconds.
+[2020/06/08 Mon 15:55:42.222861][FILEDL]Multi-thread download test completed.
+[2020/06/08 Mon 15:55:42.232835][RAW]0 0 413364 643760 1645088 3045856 4063988 3723122 8607374 5595334 1449248 2492640 781824 879360 4585024 3917792 4365280 4853248 6247452 5358560 
+[2020/06/08 Mon 15:55:42.244801][INFO]Average speed: 2.85MB  Max speed: 6.77MB  Upload speed: N/A  Traffic used in bytes: 31334157
+[2020/06/08 Mon 15:55:42.614061][INFO]Writing config file...
+[2020/06/08 Mon 15:55:42.630768][INFO]Starting up shadowsocksr-libev...
+[2020/06/08 Mon 15:55:42.643735][INFO]Received server. Group: VI云 Name: 香港丨4丨解锁netfilx丨三网优化丨[vip1] - 22111 单端口
+[2020/06/08 Mon 15:55:42.656733][INFO]Now performing TCP ping...
+[2020/06/08 Mon 15:55:42.671661][TCPING]TCP Ping begin.
+[2020/06/08 Mon 15:55:42.687617][TCPING]Ping target: vip1.34.qiangwoshishabi.club:22111.
+[2020/06/08 Mon 15:55:42.709559][TCPING]Host name provided. Resolving into IP address.
+[2020/06/08 Mon 15:55:42.757432][TCPING]Start probing 161.117.227.201:22111.
+[2020/06/08 Mon 15:55:45.768588][TCPING]Probing 161.117.227.201:22111/tcp - No response - time=3000ms
+[2020/06/08 Mon 15:55:49.783899][TCPING]Probing 161.117.227.201:22111/tcp - No response - time=3000ms
+[2020/06/08 Mon 15:55:53.794918][TCPING]Probing 161.117.227.201:22111/tcp - No response - time=3001ms
+[2020/06/08 Mon 15:55:57.846306][TCPING]Probing 161.117.227.201:22111/tcp - No response - time=3000ms
+[2020/06/08 Mon 15:56:01.860350][TCPING]Probing 161.117.227.201:22111/tcp - No response - time=3000ms
+[2020/06/08 Mon 15:56:05.869862][TCPING]Probing 161.117.227.201:22111/tcp - No response - time=3000ms
+[2020/06/08 Mon 15:56:05.878641][TCPING]Ping statistics for 161.117.227.201:22111 : 6 probes sent, 0 successful, 6 failed. (100.00% fail)
+[2020/06/08 Mon 15:56:05.887584][ERROR]Cannot connect to this node.
+[2020/06/08 Mon 15:56:05.896592][INFO]All nodes tested. Total/Online nodes: 22/11 Traffic used: 269.11MB
+[2020/06/08 Mon 15:56:05.920495][INFO]Now exporting result...
+[2020/06/08 Mon 15:56:05.933459][RENDER]Start calculating basic string widths for font 'tools\misc\WenQuanYiMicroHei-01.ttf' at size 12.
+[2020/06/08 Mon 15:56:05.950414][RENDER]Calculated basic string widths: Number=9 N/A=28 KB=21 MB=26 GB=23 Percent=14 Dot=5
+[2020/06/08 Mon 15:56:06.265578][INFO]Result saved to results\20200608-154516.png .
+[2020/06/08 Mon 15:56:06.279533][INFO]Multi-link test completed.
+[2020/06/08 Mon 15:56:06.288514][INFO]Program terminated.
+--EOF--

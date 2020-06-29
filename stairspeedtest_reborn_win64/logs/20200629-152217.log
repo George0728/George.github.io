@@ -1,0 +1,350 @@
+[2020/06/29 Mon 15:22:17.809381][INFO]Stair Speedtest v0.6.1-beta started in GUI mode.
+[2020/06/29 Mon 15:22:17.816366][INFO]Found V2Ray core at path tools\clients\v2ray-core\v2-core.exe
+[2020/06/29 Mon 15:22:17.816366][INFO]Found Shadowsocks-libev at path tools\clients\shadowsocks-libev\ss-libev.exe
+[2020/06/29 Mon 15:22:17.816366][INFO]Found ShadowsocksR-libev at path tools\clients\shadowsocksr-libev\ssr-libev.exe
+[2020/06/29 Mon 15:22:17.819349][INFO]Using local port: 65432
+[2020/06/29 Mon 15:22:17.819349][INFO]Init completed.
+[2020/06/29 Mon 15:22:17.820346][INFO]Input data: https://www.j1234.xyz/link/Q8qQ5pT1h4niw6fk?sub=1^1^all^tcping^none^false
+[2020/06/29 Mon 15:22:17.820346][INFO]Received Link.
+[2020/06/29 Mon 15:22:17.821344][INFO]Downloading subscription data...
+[2020/06/29 Mon 15:22:19.431413][INFO]Parsing subscription data...
+[2020/06/29 Mon 15:22:19.433409][INFO]Comparing exclude remarks...
+[2020/06/29 Mon 15:22:19.434405][INFO]Node  全球通 - 剩余流量：36.3GB  has been ignored and will not be added.
+[2020/06/29 Mon 15:22:19.434405][INFO]Comparing exclude remarks...
+[2020/06/29 Mon 15:22:19.434405][INFO]Node  全球通 - 过期时间：2020-07-29  has been ignored and will not be added.
+[2020/06/29 Mon 15:22:19.434405][INFO]Comparing exclude remarks...
+[2020/06/29 Mon 15:22:19.434405][INFO]Node  全球通 - HK Free 01   has been added.
+[2020/06/29 Mon 15:22:19.435402][INFO]Comparing exclude remarks...
+[2020/06/29 Mon 15:22:19.435402][INFO]Node  全球通 - HK Free 02  has been added.
+[2020/06/29 Mon 15:22:19.435402][INFO]Comparing exclude remarks...
+[2020/06/29 Mon 15:22:19.435402][INFO]Node  全球通 - HK Free 03  has been added.
+[2020/06/29 Mon 15:22:19.436399][INFO]Comparing exclude remarks...
+[2020/06/29 Mon 15:22:19.436399][INFO]Node  全球通 - HK Free 04  has been added.
+[2020/06/29 Mon 15:22:19.436399][INFO]Total node(s) found: 4
+[2020/06/29 Mon 15:22:19.436399][INFO]Speedtest will now begin.
+[2020/06/29 Mon 15:22:19.437397][INFO]Writing config file...
+[2020/06/29 Mon 15:22:19.437397][INFO]Starting up shadowsocksr-libev...
+[2020/06/29 Mon 15:22:19.442404][INFO]Received server. Group: 1 Name: HK Free 01
+[2020/06/29 Mon 15:22:19.442404][INFO]Now performing TCP ping...
+[2020/06/29 Mon 15:22:19.442404][TCPING]TCP Ping begin.
+[2020/06/29 Mon 15:22:19.443382][TCPING]Ping target: 112.3.24.198:40000.
+[2020/06/29 Mon 15:22:19.443382][TCPING]IP address provided. Skip resolve.
+[2020/06/29 Mon 15:22:19.443382][TCPING]Start probing 112.3.24.198:40000.
+[2020/06/29 Mon 15:22:19.465323][TCPING]Probing 112.3.24.198:40000/tcp - Port is open - time=21ms
+[2020/06/29 Mon 15:22:20.493898][TCPING]Probing 112.3.24.198:40000/tcp - Port is open - time=28ms
+[2020/06/29 Mon 15:22:21.517328][TCPING]Probing 112.3.24.198:40000/tcp - Port is open - time=22ms
+[2020/06/29 Mon 15:22:22.539313][TCPING]Probing 112.3.24.198:40000/tcp - Port is open - time=20ms
+[2020/06/29 Mon 15:22:24.568595][TCPING]Probing 112.3.24.198:40000/tcp - Port is open - time=1029ms
+[2020/06/29 Mon 15:22:25.590191][TCPING]Probing 112.3.24.198:40000/tcp - Port is open - time=20ms
+[2020/06/29 Mon 15:22:25.590191][TCPING]Ping statistics for 112.3.24.198:40000 : 6 probes sent, 6 successful, 0 failed. (0.00% fail)
+[2020/06/29 Mon 15:22:25.591190][RAW]21 28 22 20 1029 20 
+[2020/06/29 Mon 15:22:25.591190][INFO]TCP Ping: 190.00  Packet Loss: 0.00%
+[2020/06/29 Mon 15:22:25.592187][INFO]Now performing GeoIP parse...
+[2020/06/29 Mon 15:22:25.592187][RULES]Rule match started.
+[2020/06/29 Mon 15:22:25.592187][RULES]Fetching inbound GeoIP info.
+[2020/06/29 Mon 15:22:25.593184][GEOIP]GeoIP parse begin.
+[2020/06/29 Mon 15:22:25.593184][GEOIP]No address provided, getting GeoIP through proxy 'socks5://127.0.0.1:65432'.
+[2020/06/29 Mon 15:22:25.870719][GEOIP]Fetched GeoIP data: {"organization":"Microsoft Azure","longitude":114.15,"city":"Central","timezone":"Asia\/Hong_Kong","isp":"Microsoft Corporation","offset":28800,"region":"Central and Western District","asn":8075,"asn_organization":"MICROSOFT-CORP-MSN-AS-BLOCK","country":"Hong Kong","ip":"65.52.166.132","latitude":22.2909,"continent_code":"AS","country_code":"HK","region_code":"HCW"}
+
+[2020/06/29 Mon 15:22:25.870719][GEOIP]Parsing GeoIP result.
+[2020/06/29 Mon 15:22:25.870719][GEOIP]Parse GeoIP complete. Leaving.
+[2020/06/29 Mon 15:22:25.871725][RULES]Searching default rule.
+[2020/06/29 Mon 15:22:25.871725][RULES]Using default rule: 'https://download.microsoft.com/download/2/0/E/20E90413-712F-438C-988E-FDAA79A8AC3D/dotnetfx35.exe'.
+[2020/06/29 Mon 15:22:25.872736][RULES]Node  1 - HK Free 01  matches no rule. Using default rule.
+[2020/06/29 Mon 15:22:25.872736][RULES]Node  1 - HK Free 01  uses test file 'https://download.microsoft.com/download/2/0/E/20E90413-712F-438C-988E-FDAA79A8AC3D/dotnetfx35.exe'.
+[2020/06/29 Mon 15:22:25.873717][INFO]Got outbound ISP: Microsoft Azure  Country code: HK
+[2020/06/29 Mon 15:22:25.873717][INFO]Now performing site ping...
+[2020/06/29 Mon 15:22:25.873717][GPING]Website ping started. Target: 'https://www.google.com/' . Proxy: '127.0.0.1:65432' .
+[2020/06/29 Mon 15:22:26.293205][GPING]Accessing 'https://www.google.com/' - Success - time=418ms
+[2020/06/29 Mon 15:22:26.751538][GPING]Accessing 'https://www.google.com/' - Success - time=457ms
+[2020/06/29 Mon 15:22:28.198967][GPING]Accessing 'https://www.google.com/' - Success - time=1447ms
+[2020/06/29 Mon 15:22:28.682989][GPING]Accessing 'https://www.google.com/' - Success - time=483ms
+[2020/06/29 Mon 15:22:29.190692][GPING]Accessing 'https://www.google.com/' - Success - time=506ms
+[2020/06/29 Mon 15:22:29.651304][GPING]Accessing 'https://www.google.com/' - Success - time=460ms
+[2020/06/29 Mon 15:22:30.476012][GPING]Accessing 'https://www.google.com/' - Success - time=823ms
+[2020/06/29 Mon 15:22:30.917128][GPING]Accessing 'https://www.google.com/' - Success - time=439ms
+[2020/06/29 Mon 15:22:31.549834][GPING]Accessing 'https://www.google.com/' - Success - time=632ms
+[2020/06/29 Mon 15:22:31.982883][GPING]Accessing 'https://www.google.com/' - Success - time=431ms
+[2020/06/29 Mon 15:22:31.983901][GPING]Ping statistics of target https://www.google.com/ : 10 probes sent, 10 successful, 0 failed. 
+[2020/06/29 Mon 15:22:31.983901][GPING]Website ping completed. Leaving.
+[2020/06/29 Mon 15:22:31.984862][RAW]418 457 1447 483 506 460 823 439 632 431 
+[2020/06/29 Mon 15:22:31.984862][INFO]Site ping: 609.60
+[2020/06/29 Mon 15:22:31.984862][INFO]Now performing file download speed test...
+[2020/06/29 Mon 15:22:31.985860][FILEDL]Multi-thread download test started.
+[2020/06/29 Mon 15:22:31.985860][FILEDL]Fetch target: https://download.microsoft.com/download/2/0/E/20E90413-712F-438C-988E-FDAA79A8AC3D/dotnetfx35.exe
+[2020/06/29 Mon 15:22:31.985860][FILEDL]Found HTTPS URL. Initializing OpenSSL library.
+[2020/06/29 Mon 15:22:31.986858][FILEDL]Starting up thread #1.
+[2020/06/29 Mon 15:22:31.986858][FILEDL]Starting up thread #2.
+[2020/06/29 Mon 15:22:31.987855][FILEDL]Starting up thread #3.
+[2020/06/29 Mon 15:22:31.987855][FILEDL]Starting up thread #4.
+[2020/06/29 Mon 15:22:31.988852][FILEDL]All threads launched. Start accumulating data.
+[2020/06/29 Mon 15:22:32.508960][FILEDL]Running threads: 4, total received bytes: 239489, current received bytes: 478978.
+[2020/06/29 Mon 15:22:33.026133][FILEDL]Running threads: 4, total received bytes: 3224169, current received bytes: 5969360.
+[2020/06/29 Mon 15:22:33.538631][FILEDL]Running threads: 4, total received bytes: 4197060, current received bytes: 1945782.
+[2020/06/29 Mon 15:22:34.055946][FILEDL]Running threads: 4, total received bytes: 5224388, current received bytes: 2054656.
+[2020/06/29 Mon 15:22:34.574643][FILEDL]Running threads: 4, total received bytes: 6221072, current received bytes: 1993368.
+[2020/06/29 Mon 15:22:35.086304][FILEDL]Running threads: 4, total received bytes: 7214640, current received bytes: 1987136.
+[2020/06/29 Mon 15:22:35.603144][FILEDL]Running threads: 4, total received bytes: 8273552, current received bytes: 2117824.
+[2020/06/29 Mon 15:22:36.122156][FILEDL]Running threads: 4, total received bytes: 9141436, current received bytes: 1735768.
+[2020/06/29 Mon 15:22:36.633579][FILEDL]Running threads: 4, total received bytes: 10085664, current received bytes: 1888456.
+[2020/06/29 Mon 15:22:37.152931][FILEDL]Running threads: 4, total received bytes: 10952976, current received bytes: 1734624.
+[2020/06/29 Mon 15:22:37.666464][FILEDL]Running threads: 4, total received bytes: 11881488, current received bytes: 1857024.
+[2020/06/29 Mon 15:22:38.183689][FILEDL]Running threads: 4, total received bytes: 12760752, current received bytes: 1758528.
+[2020/06/29 Mon 15:22:38.694618][FILEDL]Running threads: 4, total received bytes: 13872672, current received bytes: 2223840.
+[2020/06/29 Mon 15:22:39.213564][FILEDL]Running threads: 4, total received bytes: 15118608, current received bytes: 2491872.
+[2020/06/29 Mon 15:22:39.730936][FILEDL]Running threads: 4, total received bytes: 16303536, current received bytes: 2369856.
+[2020/06/29 Mon 15:22:40.241820][FILEDL]Running threads: 4, total received bytes: 17378448, current received bytes: 2149824.
+[2020/06/29 Mon 15:22:40.762046][FILEDL]Running threads: 4, total received bytes: 18368303, current received bytes: 1979710.
+[2020/06/29 Mon 15:22:41.273056][FILEDL]Running threads: 4, total received bytes: 19248143, current received bytes: 1759680.
+[2020/06/29 Mon 15:22:41.792239][FILEDL]Running threads: 4, total received bytes: 20355343, current received bytes: 2214400.
+[2020/06/29 Mon 15:22:42.309735][FILEDL]Running threads: 4, total received bytes: 21349144, current received bytes: 1987602.
+[2020/06/29 Mon 15:22:42.309735][FILEDL]Test completed. Terminate all threads.
+[2020/06/29 Mon 15:22:42.319908][FILEDL]Downloaded 21397912 bytes in 10319 milliseconds.
+[2020/06/29 Mon 15:22:42.625708][FILEDL]Multi-thread download test completed.
+[2020/06/29 Mon 15:22:42.626704][RAW]478978 5969360 1945782 2054656 1993368 1987136 2117824 1735768 1888456 1734624 1857024 1758528 2223840 2491872 2369856 2149824 1979710 1759680 2214400 1987602 
+[2020/06/29 Mon 15:22:42.626704][INFO]Average speed: 1.98MB  Max speed: 3.07MB  Upload speed: N/A  Traffic used in bytes: 21397912
+[2020/06/29 Mon 15:22:42.930531][INFO]Writing config file...
+[2020/06/29 Mon 15:22:42.931365][INFO]Starting up shadowsocksr-libev...
+[2020/06/29 Mon 15:22:42.935358][INFO]Received server. Group: 1 Name: HK Free 02
+[2020/06/29 Mon 15:22:42.935358][INFO]Now performing TCP ping...
+[2020/06/29 Mon 15:22:42.936354][TCPING]TCP Ping begin.
+[2020/06/29 Mon 15:22:42.936354][TCPING]Ping target: 112.3.24.198:40001.
+[2020/06/29 Mon 15:22:42.937349][TCPING]IP address provided. Skip resolve.
+[2020/06/29 Mon 15:22:42.937349][TCPING]Start probing 112.3.24.198:40001.
+[2020/06/29 Mon 15:22:42.965273][TCPING]Probing 112.3.24.198:40001/tcp - Port is open - time=26ms
+[2020/06/29 Mon 15:22:43.990505][TCPING]Probing 112.3.24.198:40001/tcp - Port is open - time=25ms
+[2020/06/29 Mon 15:22:45.019951][TCPING]Probing 112.3.24.198:40001/tcp - Port is open - time=29ms
+[2020/06/29 Mon 15:22:46.041309][TCPING]Probing 112.3.24.198:40001/tcp - Port is open - time=20ms
+[2020/06/29 Mon 15:22:47.064041][TCPING]Probing 112.3.24.198:40001/tcp - Port is open - time=22ms
+[2020/06/29 Mon 15:22:48.096140][TCPING]Probing 112.3.24.198:40001/tcp - Port is open - time=30ms
+[2020/06/29 Mon 15:22:48.096956][TCPING]Ping statistics for 112.3.24.198:40001 : 6 probes sent, 6 successful, 0 failed. (0.00% fail)
+[2020/06/29 Mon 15:22:48.096956][RAW]26 25 29 20 22 30 
+[2020/06/29 Mon 15:22:48.097954][INFO]TCP Ping: 25.33  Packet Loss: 0.00%
+[2020/06/29 Mon 15:22:48.097954][INFO]Now performing GeoIP parse...
+[2020/06/29 Mon 15:22:48.097954][RULES]Rule match started.
+[2020/06/29 Mon 15:22:48.098953][RULES]Fetching inbound GeoIP info.
+[2020/06/29 Mon 15:22:48.098953][GEOIP]GeoIP parse begin.
+[2020/06/29 Mon 15:22:48.098953][GEOIP]No address provided, getting GeoIP through proxy 'socks5://127.0.0.1:65432'.
+[2020/06/29 Mon 15:22:53.147497][GEOIP]No GeoIP result. Leaving.
+[2020/06/29 Mon 15:22:53.147497][RULES]Searching default rule.
+[2020/06/29 Mon 15:22:53.148498][RULES]Using default rule: 'https://download.microsoft.com/download/2/0/E/20E90413-712F-438C-988E-FDAA79A8AC3D/dotnetfx35.exe'.
+[2020/06/29 Mon 15:22:53.148498][RULES]Node  1 - HK Free 02  matches no rule. Using default rule.
+[2020/06/29 Mon 15:22:53.148498][RULES]Node  1 - HK Free 02  uses test file 'https://download.microsoft.com/download/2/0/E/20E90413-712F-438C-988E-FDAA79A8AC3D/dotnetfx35.exe'.
+[2020/06/29 Mon 15:22:53.149492][INFO]Now performing site ping...
+[2020/06/29 Mon 15:22:53.149492][GPING]Website ping started. Target: 'https://www.google.com/' . Proxy: '127.0.0.1:65432' .
+[2020/06/29 Mon 15:22:58.152554][GPING]ERROR: Connect to www.google.com:443 through SOCKS5 server failed.
+[2020/06/29 Mon 15:23:03.165302][GPING]ERROR: Connect to www.google.com:443 through SOCKS5 server failed.
+[2020/06/29 Mon 15:23:03.165302][GPING]Fail limit exceeded. Stop now.
+[2020/06/29 Mon 15:23:03.166261][GPING]Ping statistics of target https://www.google.com/ : 2 probes sent, 0 successful, 2 failed. 
+[2020/06/29 Mon 15:23:03.166261][GPING]Website ping completed. Leaving.
+[2020/06/29 Mon 15:23:03.167258][RAW]0 0 0 0 0 0 0 0 0 0 
+[2020/06/29 Mon 15:23:03.167258][INFO]Site ping: 0.00
+[2020/06/29 Mon 15:23:03.167258][INFO]Now performing file download speed test...
+[2020/06/29 Mon 15:23:03.167258][FILEDL]Multi-thread download test started.
+[2020/06/29 Mon 15:23:03.168256][FILEDL]Fetch target: https://download.microsoft.com/download/2/0/E/20E90413-712F-438C-988E-FDAA79A8AC3D/dotnetfx35.exe
+[2020/06/29 Mon 15:23:03.168256][FILEDL]Found HTTPS URL. Initializing OpenSSL library.
+[2020/06/29 Mon 15:23:03.168256][FILEDL]Starting up thread #1.
+[2020/06/29 Mon 15:23:03.168256][FILEDL]Starting up thread #2.
+[2020/06/29 Mon 15:23:03.169253][FILEDL]Starting up thread #3.
+[2020/06/29 Mon 15:23:03.170250][FILEDL]Starting up thread #4.
+[2020/06/29 Mon 15:23:03.170250][FILEDL]All threads launched. Start accumulating data.
+[2020/06/29 Mon 15:23:03.682011][FILEDL]Running threads: 4, total received bytes: 0, current received bytes: 0.
+[2020/06/29 Mon 15:23:04.199284][FILEDL]Running threads: 4, total received bytes: 0, current received bytes: 0.
+[2020/06/29 Mon 15:23:04.716009][FILEDL]Running threads: 4, total received bytes: 0, current received bytes: 0.
+[2020/06/29 Mon 15:23:05.227709][FILEDL]Running threads: 4, total received bytes: 0, current received bytes: 0.
+[2020/06/29 Mon 15:23:05.745901][FILEDL]Running threads: 4, total received bytes: 0, current received bytes: 0.
+[2020/06/29 Mon 15:23:06.257652][FILEDL]Running threads: 4, total received bytes: 0, current received bytes: 0.
+[2020/06/29 Mon 15:23:06.774623][FILEDL]Running threads: 4, total received bytes: 0, current received bytes: 0.
+[2020/06/29 Mon 15:23:07.292962][FILEDL]Running threads: 4, total received bytes: 0, current received bytes: 0.
+[2020/06/29 Mon 15:23:07.805425][FILEDL]Running threads: 4, total received bytes: 0, current received bytes: 0.
+[2020/06/29 Mon 15:23:08.323330][FILEDL]Running threads: 0, total received bytes: 0, current received bytes: 0.
+[2020/06/29 Mon 15:23:08.323330][FILEDL]Test completed. Terminate all threads.
+[2020/06/29 Mon 15:23:08.336285][FILEDL]Downloaded 0 bytes in 5154 milliseconds.
+[2020/06/29 Mon 15:23:08.336285][FILEDL]Multi-thread download test completed.
+[2020/06/29 Mon 15:23:08.337206][RAW]0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[2020/06/29 Mon 15:23:08.337206][ERROR]Speedtest returned no speed.
+[2020/06/29 Mon 15:23:08.338204][FILEDL]Multi-thread download test started.
+[2020/06/29 Mon 15:23:08.338204][FILEDL]Fetch target: https://download.microsoft.com/download/2/0/E/20E90413-712F-438C-988E-FDAA79A8AC3D/dotnetfx35.exe
+[2020/06/29 Mon 15:23:08.339203][FILEDL]Found HTTPS URL. Initializing OpenSSL library.
+[2020/06/29 Mon 15:23:08.340198][FILEDL]Starting up thread #1.
+[2020/06/29 Mon 15:23:08.340198][FILEDL]Starting up thread #2.
+[2020/06/29 Mon 15:23:08.341195][FILEDL]Starting up thread #3.
+[2020/06/29 Mon 15:23:08.342193][FILEDL]Starting up thread #4.
+[2020/06/29 Mon 15:23:08.344188][FILEDL]All threads launched. Start accumulating data.
+[2020/06/29 Mon 15:23:08.856368][FILEDL]Running threads: 4, total received bytes: 0, current received bytes: 0.
+[2020/06/29 Mon 15:23:09.367447][FILEDL]Running threads: 4, total received bytes: 0, current received bytes: 0.
+[2020/06/29 Mon 15:23:09.884582][FILEDL]Running threads: 4, total received bytes: 0, current received bytes: 0.
+[2020/06/29 Mon 15:23:10.401622][FILEDL]Running threads: 4, total received bytes: 0, current received bytes: 0.
+[2020/06/29 Mon 15:23:10.917835][FILEDL]Running threads: 4, total received bytes: 0, current received bytes: 0.
+[2020/06/29 Mon 15:23:11.430009][FILEDL]Running threads: 4, total received bytes: 0, current received bytes: 0.
+[2020/06/29 Mon 15:23:11.948106][FILEDL]Running threads: 4, total received bytes: 0, current received bytes: 0.
+[2020/06/29 Mon 15:23:12.460716][FILEDL]Running threads: 4, total received bytes: 0, current received bytes: 0.
+[2020/06/29 Mon 15:23:12.980262][FILEDL]Running threads: 4, total received bytes: 0, current received bytes: 0.
+[2020/06/29 Mon 15:23:13.492891][FILEDL]Running threads: 0, total received bytes: 0, current received bytes: 0.
+[2020/06/29 Mon 15:23:13.493824][FILEDL]Test completed. Terminate all threads.
+[2020/06/29 Mon 15:23:13.508936][FILEDL]Downloaded 0 bytes in 5150 milliseconds.
+[2020/06/29 Mon 15:23:13.508936][FILEDL]Multi-thread download test completed.
+[2020/06/29 Mon 15:23:13.509779][RAW]0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[2020/06/29 Mon 15:23:13.509779][ERROR]Speedtest returned no speed 2 times.
+[2020/06/29 Mon 15:23:13.510776][INFO]Writing config file...
+[2020/06/29 Mon 15:23:13.512772][INFO]Starting up shadowsocksr-libev...
+[2020/06/29 Mon 15:23:13.516762][INFO]Received server. Group: 1 Name: HK Free 03
+[2020/06/29 Mon 15:23:13.517758][INFO]Now performing TCP ping...
+[2020/06/29 Mon 15:23:13.517758][TCPING]TCP Ping begin.
+[2020/06/29 Mon 15:23:13.518757][TCPING]Ping target: 112.3.24.198:40002.
+[2020/06/29 Mon 15:23:13.519753][TCPING]IP address provided. Skip resolve.
+[2020/06/29 Mon 15:23:13.519753][TCPING]Start probing 112.3.24.198:40002.
+[2020/06/29 Mon 15:23:13.545684][TCPING]Probing 112.3.24.198:40002/tcp - Port is open - time=25ms
+[2020/06/29 Mon 15:23:14.571114][TCPING]Probing 112.3.24.198:40002/tcp - Port is open - time=25ms
+[2020/06/29 Mon 15:23:15.601225][TCPING]Probing 112.3.24.198:40002/tcp - Port is open - time=29ms
+[2020/06/29 Mon 15:23:16.627437][TCPING]Probing 112.3.24.198:40002/tcp - Port is open - time=24ms
+[2020/06/29 Mon 15:23:18.657340][TCPING]Probing 112.3.24.198:40002/tcp - Port is open - time=1029ms
+[2020/06/29 Mon 15:23:19.683187][TCPING]Probing 112.3.24.198:40002/tcp - Port is open - time=26ms
+[2020/06/29 Mon 15:23:19.684175][TCPING]Ping statistics for 112.3.24.198:40002 : 6 probes sent, 6 successful, 0 failed. (0.00% fail)
+[2020/06/29 Mon 15:23:19.684175][RAW]25 25 29 24 1029 26 
+[2020/06/29 Mon 15:23:19.684175][INFO]TCP Ping: 193.00  Packet Loss: 0.00%
+[2020/06/29 Mon 15:23:19.685169][INFO]Now performing GeoIP parse...
+[2020/06/29 Mon 15:23:19.685169][RULES]Rule match started.
+[2020/06/29 Mon 15:23:19.686171][RULES]Fetching inbound GeoIP info.
+[2020/06/29 Mon 15:23:19.686171][GEOIP]GeoIP parse begin.
+[2020/06/29 Mon 15:23:19.686171][GEOIP]No address provided, getting GeoIP through proxy 'socks5://127.0.0.1:65432'.
+[2020/06/29 Mon 15:23:20.033390][GEOIP]Fetched GeoIP data: {"organization":"Microsoft Azure","longitude":114.15,"city":"Central","timezone":"Asia\/Hong_Kong","isp":"Microsoft Corporation","offset":28800,"region":"Central and Western District","asn":8075,"asn_organization":"MICROSOFT-CORP-MSN-AS-BLOCK","country":"Hong Kong","ip":"65.52.181.76","latitude":22.2909,"continent_code":"AS","country_code":"HK","region_code":"HCW"}
+
+[2020/06/29 Mon 15:23:20.033390][GEOIP]Parsing GeoIP result.
+[2020/06/29 Mon 15:23:20.033390][GEOIP]Parse GeoIP complete. Leaving.
+[2020/06/29 Mon 15:23:20.034386][RULES]Searching default rule.
+[2020/06/29 Mon 15:23:20.034386][RULES]Using default rule: 'https://download.microsoft.com/download/2/0/E/20E90413-712F-438C-988E-FDAA79A8AC3D/dotnetfx35.exe'.
+[2020/06/29 Mon 15:23:20.034386][RULES]Node  1 - HK Free 03  matches no rule. Using default rule.
+[2020/06/29 Mon 15:23:20.034386][RULES]Node  1 - HK Free 03  uses test file 'https://download.microsoft.com/download/2/0/E/20E90413-712F-438C-988E-FDAA79A8AC3D/dotnetfx35.exe'.
+[2020/06/29 Mon 15:23:20.035384][INFO]Got outbound ISP: Microsoft Azure  Country code: HK
+[2020/06/29 Mon 15:23:20.035384][INFO]Now performing site ping...
+[2020/06/29 Mon 15:23:20.035384][GPING]Website ping started. Target: 'https://www.google.com/' . Proxy: '127.0.0.1:65432' .
+[2020/06/29 Mon 15:23:20.865396][GPING]Accessing 'https://www.google.com/' - Success - time=829ms
+[2020/06/29 Mon 15:23:21.341606][GPING]Accessing 'https://www.google.com/' - Success - time=474ms
+[2020/06/29 Mon 15:23:21.819095][GPING]Accessing 'https://www.google.com/' - Success - time=476ms
+[2020/06/29 Mon 15:23:22.715767][GPING]Accessing 'https://www.google.com/' - Success - time=896ms
+[2020/06/29 Mon 15:23:23.171517][GPING]Accessing 'https://www.google.com/' - Success - time=453ms
+[2020/06/29 Mon 15:23:23.798477][GPING]Accessing 'https://www.google.com/' - Success - time=626ms
+[2020/06/29 Mon 15:23:25.167900][GPING]Accessing 'https://www.google.com/' - Success - time=1369ms
+[2020/06/29 Mon 15:23:25.580082][GPING]Accessing 'https://www.google.com/' - Success - time=411ms
+[2020/06/29 Mon 15:23:25.989327][GPING]Accessing 'https://www.google.com/' - Success - time=406ms
+[2020/06/29 Mon 15:23:26.347785][GPING]Accessing 'https://www.google.com/' - Success - time=356ms
+[2020/06/29 Mon 15:23:26.348776][GPING]Ping statistics of target https://www.google.com/ : 10 probes sent, 10 successful, 0 failed. 
+[2020/06/29 Mon 15:23:26.349774][GPING]Website ping completed. Leaving.
+[2020/06/29 Mon 15:23:26.350771][RAW]829 474 476 896 453 626 1369 411 406 356 
+[2020/06/29 Mon 15:23:26.351770][INFO]Site ping: 629.60
+[2020/06/29 Mon 15:23:26.352765][INFO]Now performing file download speed test...
+[2020/06/29 Mon 15:23:26.352765][FILEDL]Multi-thread download test started.
+[2020/06/29 Mon 15:23:26.353766][FILEDL]Fetch target: https://download.microsoft.com/download/2/0/E/20E90413-712F-438C-988E-FDAA79A8AC3D/dotnetfx35.exe
+[2020/06/29 Mon 15:23:26.355759][FILEDL]Found HTTPS URL. Initializing OpenSSL library.
+[2020/06/29 Mon 15:23:26.356757][FILEDL]Starting up thread #1.
+[2020/06/29 Mon 15:23:26.359748][FILEDL]Starting up thread #2.
+[2020/06/29 Mon 15:23:26.360742][FILEDL]Starting up thread #3.
+[2020/06/29 Mon 15:23:26.361742][FILEDL]Starting up thread #4.
+[2020/06/29 Mon 15:23:26.363734][FILEDL]All threads launched. Start accumulating data.
+[2020/06/29 Mon 15:23:26.870184][FILEDL]Running threads: 4, total received bytes: 0, current received bytes: 0.
+[2020/06/29 Mon 15:23:27.386609][FILEDL]Running threads: 4, total received bytes: 1286332, current received bytes: 2572664.
+[2020/06/29 Mon 15:23:27.903638][FILEDL]Running threads: 4, total received bytes: 3668421, current received bytes: 4764178.
+[2020/06/29 Mon 15:23:28.415141][FILEDL]Running threads: 4, total received bytes: 4710853, current received bytes: 2084864.
+[2020/06/29 Mon 15:23:28.933142][FILEDL]Running threads: 4, total received bytes: 5667684, current received bytes: 1913662.
+[2020/06/29 Mon 15:23:29.450588][FILEDL]Running threads: 4, total received bytes: 6612196, current received bytes: 1889024.
+[2020/06/29 Mon 15:23:29.963166][FILEDL]Running threads: 4, total received bytes: 7560618, current received bytes: 1896844.
+[2020/06/29 Mon 15:23:30.479372][FILEDL]Running threads: 4, total received bytes: 8619403, current received bytes: 2117570.
+[2020/06/29 Mon 15:23:30.992074][FILEDL]Running threads: 4, total received bytes: 9633403, current received bytes: 2028000.
+[2020/06/29 Mon 15:23:31.509073][FILEDL]Running threads: 4, total received bytes: 10643067, current received bytes: 2019328.
+[2020/06/29 Mon 15:23:32.026698][FILEDL]Running threads: 4, total received bytes: 11759083, current received bytes: 2232032.
+[2020/06/29 Mon 15:23:32.539204][FILEDL]Running threads: 4, total received bytes: 12744699, current received bytes: 1971232.
+[2020/06/29 Mon 15:23:33.056399][FILEDL]Running threads: 4, total received bytes: 13706360, current received bytes: 1923322.
+[2020/06/29 Mon 15:23:33.573978][FILEDL]Running threads: 4, total received bytes: 14764170, current received bytes: 2115620.
+[2020/06/29 Mon 15:23:34.086529][FILEDL]Running threads: 4, total received bytes: 15668346, current received bytes: 1808352.
+[2020/06/29 Mon 15:23:34.605052][FILEDL]Running threads: 4, total received bytes: 16788217, current received bytes: 2239742.
+[2020/06/29 Mon 15:23:35.117964][FILEDL]Running threads: 4, total received bytes: 17757161, current received bytes: 1937888.
+[2020/06/29 Mon 15:23:35.634869][FILEDL]Running threads: 4, total received bytes: 18816361, current received bytes: 2118400.
+[2020/06/29 Mon 15:23:36.153209][FILEDL]Running threads: 4, total received bytes: 19667097, current received bytes: 1701472.
+[2020/06/29 Mon 15:23:36.665086][FILEDL]Running threads: 4, total received bytes: 20815497, current received bytes: 2296800.
+[2020/06/29 Mon 15:23:36.665086][FILEDL]Test completed. Terminate all threads.
+[2020/06/29 Mon 15:23:36.679317][FILEDL]Downloaded 20815497 bytes in 10302 milliseconds.
+[2020/06/29 Mon 15:23:36.763910][FILEDL]Multi-thread download test completed.
+[2020/06/29 Mon 15:23:36.763910][RAW]0 2572664 4764178 2084864 1913662 1889024 1896844 2117570 2028000 2019328 2232032 1971232 1923322 2115620 1808352 2239742 1937888 2118400 1701472 2296800 
+[2020/06/29 Mon 15:23:36.764909][INFO]Average speed: 1.93MB  Max speed: 3.27MB  Upload speed: N/A  Traffic used in bytes: 20815497
+[2020/06/29 Mon 15:23:37.070551][INFO]Writing config file...
+[2020/06/29 Mon 15:23:37.071316][INFO]Starting up shadowsocksr-libev...
+[2020/06/29 Mon 15:23:37.074305][INFO]Received server. Group: 1 Name: HK Free 04
+[2020/06/29 Mon 15:23:37.074305][INFO]Now performing TCP ping...
+[2020/06/29 Mon 15:23:37.074305][TCPING]TCP Ping begin.
+[2020/06/29 Mon 15:23:37.075303][TCPING]Ping target: 112.3.24.198:40003.
+[2020/06/29 Mon 15:23:37.075303][TCPING]IP address provided. Skip resolve.
+[2020/06/29 Mon 15:23:37.076300][TCPING]Start probing 112.3.24.198:40003.
+[2020/06/29 Mon 15:23:38.096229][TCPING]Probing 112.3.24.198:40003/tcp - Port is open - time=1020ms
+[2020/06/29 Mon 15:23:39.118324][TCPING]Probing 112.3.24.198:40003/tcp - Port is open - time=21ms
+[2020/06/29 Mon 15:23:41.142939][TCPING]Probing 112.3.24.198:40003/tcp - Port is open - time=1023ms
+[2020/06/29 Mon 15:23:42.164653][TCPING]Probing 112.3.24.198:40003/tcp - Port is open - time=21ms
+[2020/06/29 Mon 15:23:43.189557][TCPING]Probing 112.3.24.198:40003/tcp - Port is open - time=23ms
+[2020/06/29 Mon 15:23:45.218343][TCPING]Probing 112.3.24.198:40003/tcp - Port is open - time=1027ms
+[2020/06/29 Mon 15:23:45.219344][TCPING]Ping statistics for 112.3.24.198:40003 : 6 probes sent, 6 successful, 0 failed. (0.00% fail)
+[2020/06/29 Mon 15:23:45.219344][RAW]1020 21 1023 21 23 1027 
+[2020/06/29 Mon 15:23:45.220342][INFO]TCP Ping: 522.50  Packet Loss: 0.00%
+[2020/06/29 Mon 15:23:45.220342][INFO]Now performing GeoIP parse...
+[2020/06/29 Mon 15:23:45.221344][RULES]Rule match started.
+[2020/06/29 Mon 15:23:45.221344][RULES]Fetching inbound GeoIP info.
+[2020/06/29 Mon 15:23:45.222340][GEOIP]GeoIP parse begin.
+[2020/06/29 Mon 15:23:45.222340][GEOIP]No address provided, getting GeoIP through proxy 'socks5://127.0.0.1:65432'.
+[2020/06/29 Mon 15:23:45.446582][GEOIP]No GeoIP result. Leaving.
+[2020/06/29 Mon 15:23:45.447583][RULES]Searching default rule.
+[2020/06/29 Mon 15:23:45.448570][RULES]Using default rule: 'https://download.microsoft.com/download/2/0/E/20E90413-712F-438C-988E-FDAA79A8AC3D/dotnetfx35.exe'.
+[2020/06/29 Mon 15:23:45.448570][RULES]Node  1 - HK Free 04  matches no rule. Using default rule.
+[2020/06/29 Mon 15:23:45.448570][RULES]Node  1 - HK Free 04  uses test file 'https://download.microsoft.com/download/2/0/E/20E90413-712F-438C-988E-FDAA79A8AC3D/dotnetfx35.exe'.
+[2020/06/29 Mon 15:23:45.449568][INFO]Now performing site ping...
+[2020/06/29 Mon 15:23:45.449568][GPING]Website ping started. Target: 'https://www.google.com/' . Proxy: '127.0.0.1:65432' .
+[2020/06/29 Mon 15:23:45.676785][GPING]ERROR: Connect to www.google.com:443 through SOCKS5 server failed.
+[2020/06/29 Mon 15:23:45.883049][GPING]ERROR: Connect to www.google.com:443 through SOCKS5 server failed.
+[2020/06/29 Mon 15:23:45.884046][GPING]Fail limit exceeded. Stop now.
+[2020/06/29 Mon 15:23:45.884046][GPING]Ping statistics of target https://www.google.com/ : 2 probes sent, 0 successful, 2 failed. 
+[2020/06/29 Mon 15:23:45.884046][GPING]Website ping completed. Leaving.
+[2020/06/29 Mon 15:23:45.885041][RAW]0 0 0 0 0 0 0 0 0 0 
+[2020/06/29 Mon 15:23:45.885041][INFO]Site ping: 0.00
+[2020/06/29 Mon 15:23:45.886054][INFO]Now performing file download speed test...
+[2020/06/29 Mon 15:23:45.886054][FILEDL]Multi-thread download test started.
+[2020/06/29 Mon 15:23:45.887040][FILEDL]Fetch target: https://download.microsoft.com/download/2/0/E/20E90413-712F-438C-988E-FDAA79A8AC3D/dotnetfx35.exe
+[2020/06/29 Mon 15:23:45.887040][FILEDL]Found HTTPS URL. Initializing OpenSSL library.
+[2020/06/29 Mon 15:23:45.887040][FILEDL]Starting up thread #1.
+[2020/06/29 Mon 15:23:45.888034][FILEDL]Starting up thread #2.
+[2020/06/29 Mon 15:23:45.890041][FILEDL]Starting up thread #3.
+[2020/06/29 Mon 15:23:45.891036][FILEDL]Starting up thread #4.
+[2020/06/29 Mon 15:23:45.893021][FILEDL]All threads launched. Start accumulating data.
+[2020/06/29 Mon 15:23:46.400877][FILEDL]Running threads: 0, total received bytes: 0, current received bytes: 0.
+[2020/06/29 Mon 15:23:46.400877][FILEDL]Test completed. Terminate all threads.
+[2020/06/29 Mon 15:23:46.413845][FILEDL]Downloaded 0 bytes in 507 milliseconds.
+[2020/06/29 Mon 15:23:46.414852][FILEDL]Multi-thread download test completed.
+[2020/06/29 Mon 15:23:46.414852][RAW]0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[2020/06/29 Mon 15:23:46.415839][ERROR]Speedtest returned no speed.
+[2020/06/29 Mon 15:23:46.415839][FILEDL]Multi-thread download test started.
+[2020/06/29 Mon 15:23:46.415839][FILEDL]Fetch target: https://download.microsoft.com/download/2/0/E/20E90413-712F-438C-988E-FDAA79A8AC3D/dotnetfx35.exe
+[2020/06/29 Mon 15:23:46.416836][FILEDL]Found HTTPS URL. Initializing OpenSSL library.
+[2020/06/29 Mon 15:23:46.416836][FILEDL]Starting up thread #1.
+[2020/06/29 Mon 15:23:46.416836][FILEDL]Starting up thread #2.
+[2020/06/29 Mon 15:23:46.417832][FILEDL]Starting up thread #3.
+[2020/06/29 Mon 15:23:46.417832][FILEDL]Starting up thread #4.
+[2020/06/29 Mon 15:23:46.418830][FILEDL]All threads launched. Start accumulating data.
+[2020/06/29 Mon 15:23:46.930625][FILEDL]Running threads: 1, total received bytes: 0, current received bytes: 0.
+[2020/06/29 Mon 15:23:47.449509][FILEDL]Running threads: 1, total received bytes: 0, current received bytes: 0.
+[2020/06/29 Mon 15:23:47.962601][FILEDL]Running threads: 1, total received bytes: 0, current received bytes: 0.
+[2020/06/29 Mon 15:23:48.479298][FILEDL]Running threads: 1, total received bytes: 0, current received bytes: 0.
+[2020/06/29 Mon 15:23:48.991498][FILEDL]Running threads: 1, total received bytes: 0, current received bytes: 0.
+[2020/06/29 Mon 15:23:49.509663][FILEDL]Running threads: 1, total received bytes: 0, current received bytes: 0.
+[2020/06/29 Mon 15:23:50.027128][FILEDL]Running threads: 1, total received bytes: 0, current received bytes: 0.
+[2020/06/29 Mon 15:23:50.539300][FILEDL]Running threads: 1, total received bytes: 0, current received bytes: 0.
+[2020/06/29 Mon 15:23:51.058055][FILEDL]Running threads: 0, total received bytes: 0, current received bytes: 0.
+[2020/06/29 Mon 15:23:51.059051][FILEDL]Test completed. Terminate all threads.
+[2020/06/29 Mon 15:23:51.070164][FILEDL]Downloaded 0 bytes in 4641 milliseconds.
+[2020/06/29 Mon 15:23:51.072016][FILEDL]Multi-thread download test completed.
+[2020/06/29 Mon 15:23:51.075007][RAW]0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[2020/06/29 Mon 15:23:51.076004][ERROR]Speedtest returned no speed 2 times.
+[2020/06/29 Mon 15:23:51.078002][INFO]All nodes tested. Total/Online nodes: 4/2 Traffic used: 40.26MB
+[2020/06/29 Mon 15:23:51.080993][INFO]Now exporting result...
+[2020/06/29 Mon 15:23:51.094956][RENDER]Start calculating basic string widths for font 'tools\misc\WenQuanYiMicroHei-01.ttf' at size 12.
+[2020/06/29 Mon 15:23:51.109915][RENDER]Calculated basic string widths: Number=9 N/A=28 KB=21 MB=26 GB=23 Percent=14 Dot=5
+[2020/06/29 Mon 15:23:51.185707][INFO]Result saved to results\20200629-152219.png .
+[2020/06/29 Mon 15:23:51.186706][INFO]Multi-link test completed.
+[2020/06/29 Mon 15:23:51.187705][INFO]Program terminated.
+--EOF--

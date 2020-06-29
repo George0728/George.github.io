@@ -1,0 +1,6 @@
+[2020/06/08 Mon 15:40:35.504413][INFO]Stair Speedtest v0.6.1-beta started in CLI mode.
+[2020/06/08 Mon 15:40:35.533334][INFO]Found V2Ray core at path tools\clients\v2ray-core\v2-core.exe
+[2020/06/08 Mon 15:40:35.550290][INFO]Found Shadowsocks-libev at path tools\clients\shadowsocks-libev\ss-libev.exe
+[2020/06/08 Mon 15:40:35.573230][INFO]Found ShadowsocksR-libev at path tools\clients\shadowsocksr-libev\ssr-libev.exe
+[2020/06/08 Mon 15:40:35.582204][INFO]Using local port: 65432
+[2020/06/08 Mon 15:40:35.592178][INFO]Init completed.
