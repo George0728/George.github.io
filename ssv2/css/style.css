@@ -7,14 +7,14 @@
 #left {
 	float: left;
 	width: 260px;
-	height: 600px;
+	height: 540px;
 	background-color: #E3E3E3;
 }
 
 #right {
 	background-color: #E3E3E3;
 	margin-left: 270px;
-	height: 600px;
+	height: 540px;
 }
 
 body{
