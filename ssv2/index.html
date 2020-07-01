@@ -1,40 +1,75 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
 <meta charset="UTF-8">
 <meta name="Author" content="hanson04 george0728">
-<meta name="Keywords" content="测试关键字节点分享是否可用在搜索列表中是否显示,george0728,SSR,ssr,v2ray,V2ray,SSR免费节点,ssr免费节点,v2ray免费节点,V2ray免费节点,免费节点">
+<meta name="Keywords" content="SSR,ssr,v2ray,V2ray,SSR免费节点,ssr免费节点,v2ray免费节点,V2ray免费节点,免费节点">
 <meta name="Description" content="节点发布网站收集">
 <title>免费SSR/V2ray节点</title>
+<link rel="stylesheet" href="css/style.css" type="text/css" />
 <link rel="shortcut icon" href="img/favicon21.png" type="image/x-icon" />
-<style>
+<style type="text/css">
 a {
-	target: "_blank";
+	display: inline-block;
 	text-decoration: none;
+	width: 220px;
+	height: 30px;
+	line-height: 30px;
+	target: "_blank";
 }
 </style>
-
+<base target="_blank" />
 </head>
-<body style="background-color: #E3E3E3;">
+<body>
 	<script type="text/javascript" src="js/canvas.js"></script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<div id="top" align="center">
+		<a href="http://www.lsdhss.com/">猎手导航搜索</a>
+	</div>
+	<div id="left">
+		<h4>SSR</h4>
+		<ol>
+			<li><a href="https://free-ssr.xyz">免费SSR/V2ray节点</a>
+			<li><a href="https://freefq.com/free-ssr/" οnclick="return false">免费翻墙网SSR</a>
+			<li><a href="https://fanqiangdang.com/forum-2-1.html">翻墙论坛|翻墙公益党SSR</a>
+			<li><a href="https://fanqiang.network/shadowsocks-servers">翻墙网络SSR/V2ray</a>
+			<li><a href="https://t.me/s/SSRlist?before=11041">SSR节点免费发放-Telegram</a>
+		</ol>
+		<h4>V2ray</h4>
+		<ol>
+			<li><a href="https://free-ssr.xyz/">免费SSR/V2ray节点</a>
+			<li><a href="https://freefq.com/v2ray/">免费翻墙网V2ray</a>
+			<li><a href="https://fanqiang.network/shadowsocks-servers">翻墙网络SSR/V2ray</a>
+			<li><a href="https://fanqiangdang.com/forum-36-1.html">翻墙论坛|翻墙公益党V2ray</a>
+		</ol>
+		<h4>订阅地址</h4>
+		<ol>
+			<li><a href="https://github.com/ssrsub/ssr/tree/master">@SSRSUB发布SSR/V2ray</a>
+		</ol>
 
-	<h4>SSR</h4>
-	<ol>
-		<li><a href="https://free-ssr.xyz/">免费SSR节点 - https://free-ssr.xyz</a>
-		<li><a href="https://freefq.com/free-ssr/">免费SSR节点 -https://freefq.com</a>
-		<li><a href="https://fanqiangdang.com/forum-2-1.html">免费SSR节点 - https://fanqiangdang.com</a>
-		<li><a href="https://t.me/s/SSRlist?before=11041">SSR节点免费发放-Telegram</a>
-	</ol>
-	<h4>V2ray</h4>
-	<ol>
-		<li><a href="https://free-ssr.xyz/">免费V2ray节点 - https://free-ssr.xyz</a>
-		<li><a href="https://fanqiangdang.com/forum-36-1.html">免费V2ray节点 - https://fanqiangdang.com</a>
-		<li><a href="https://freefq.com/v2ray/">免费V2ray节点 - https://freefq.com/v2ray</a>
-	</ol>
+	</div>
+	<div id="right"></div>
+
 	<script type="text/javascript">
-		var aList = document.getElementsByTagName("a");
-		for (var i = 0; i < aList.length; i++) {
-			aList[i].target = "_blank";
-		}
+		var temp = "https://free-ssr.xyz";
+		document.getElementById("right").innerHTML = '<object type="text/html" data="' + temp + '" width="100%" height="600px"></object>';
+		$(document).ready(function() {
+			$("a").hover(function() {
+				var url = $(this).attr("href");
+
+				$(this)[0].style.fontWeight = "bolder";
+				$(this)[0].style.background = "#CEC9C9";
+				console.log(document.getElementById("right"));
+				document.getElementById("right").innerHTML = '<object type="text/html" data="' + url + '" width="100%" height="600px"></object>';
+			});
+			$("a").mouseleave(function() {
+
+				$(this)[0].style.fontWeight = ""
+				$(this)[0].style.background = "";
+			});
+		});
 	</script>
+
+</body>
 </html>

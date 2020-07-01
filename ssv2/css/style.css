@@ -1,3 +1,22 @@
-<head>
-<link rel="shortcut icon" href="https://george0728.github.io/img/favicon.ico" type="image/x-icon" />
-</head>
+#top {
+	width: 100%;
+	height: 30px;
+	background-color: #CEC9C9;
+}
+
+#left {
+	float: left;
+	width: 260px;
+	height: 600px;
+	background-color: #E3E3E3;
+}
+
+#right {
+	background-color: #E3E3E3;
+	margin-left: 270px;
+	height: 600px;
+}
+
+body{
+	border-left-width: 0px;border-right-width: 0px;
+}
