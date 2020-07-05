@@ -2,73 +2,89 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-<meta charset="UTF-8">
-<title>网址导航</title>
-<link rel="stylesheet" href="css/style.css" type="text/css" />
-<link rel="shortcut icon" href="img/favicon21.png" type="image/x-icon" />
-<style type="text/css">
-a {
-	display: inline-block;
-	text-decoration: none;
-	width: 220px;
-	height: 30px;
-	line-height: 30px;
-	target: "_blank";
-}
-</style>
-<base target="_blank" />
+    <meta charset="UTF-8">
+    <title>网址导航</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <link rel="shortcut icon" href="img/favicon21.png" type="image/x-icon"/>
+    <style type="text/css">
+
+    </style>
+    <base target="_blank"/>
+
 </head>
-<body>
-	<script type="text/javascript" src="js/canvas.js"></script>
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<div id="top" align="center">
-		<a href="http://www.lsdhss.com/">猎手导航搜索</a>
-		<a href="https://www.dalipan.com/">网盘搜索</a>
-		<a href="port.html">常用代理</a>
-	</div>
-	<div id="left">
-		<h4>SSR</h4>
-		<ol>
-			<li><a href="https://free-ssr.xyz">免费SSR/V2ray节点</a>
-			<li><a href="https://freefq.com/free-ssr/" οnclick="return false">免费翻墙网SSR</a>
-			<li><a href="https://fanqiangdang.com/forum-2-1.html">翻墙论坛|翻墙公益党SSR</a>
-			<li><a href="https://fanqiang.network/shadowsocks-servers">翻墙网络SSR/V2ray</a>
-			<li><a href="https://t.me/s/SSRlist?before=11041">SSR节点免费发放-Telegram</a>
-		</ol>
-		<h4>V2ray</h4>
-		<ol>
-			<li><a href="https://free-ssr.xyz/">免费SSR/V2ray节点</a>
-			<li><a href="https://freefq.com/v2ray/">免费翻墙网V2ray</a>
-			<li><a href="https://fanqiang.network/shadowsocks-servers">翻墙网络SSR/V2ray</a>
-			<li><a href="https://fanqiangdang.com/forum-36-1.html">翻墙论坛|翻墙公益党V2ray</a>
-		</ol>
-		<h4>订阅地址</h4>
-		<ol>
-			<li><a href="https://github.com/ssrsub/ssr/tree/master">@SSRSUB发布SSR/V2ray</a>
-		</ol>
+<body style="margin: 0px">
+<!--	<script type="text/javascript" src="js/canvas.js"></script>-->
+<script type="text/javascript" src="js/jquery.min.js"></script>
 
-	</div>
-	<div id="right"></div>
+<!--	//顶部-->
+<div id="top" align="center">
+    <a href="http://www.lsdhss.com/">猎手导航搜索</a>
+    <a href="https://www.dalipan.com/">网盘搜索</a>
 
-	<script type="text/javascript">
-		var temp = "https://www.dalipan.com/";
-		document.getElementById("right").innerHTML = '<object type="text/html" data="' + temp + '" width="100%" height="540px"></object>';
-		$(document).ready(function() {
-			$("a").hover(function() {
-				var url = $(this).attr("href");
+</div>
 
-				$(this)[0].style.fontWeight = "bolder";
-				$(this)[0].style.background = "#CEC9C9";
-				console.log(document.getElementById("right"));
-				document.getElementById("right").innerHTML = '<object type="text/html" data="' + url + '" width="100%" height="540px"></object>';
-			});
-			$("a").mouseleave(function() {
+<!--	//左侧-->
+<div id="left">
+    <h4>SSR</h4>
+    <ol>
+        <li><a href="https://free-ssr.xyz" title="免费SSR/V2ray节点:每日更新">免费SSR/V2ray节点</a>
+        <li><a href="https://freefq.com/free-ssr/" οnclick="return false">免费翻墙网SSR</a>
+        <li><a href="https://fanqiangdang.com/forum-2-1.html">论坛|翻墙公益党SSR</a>
+        <li><a href="https://fanqiang.network/shadowsocks-servers">翻墙网络SSR/V2ray</a>
+            <!--			<li><a href="https://t.me/s/SSRlist">SSR节点免费发放-Telegram</a>-->
+    </ol>
+    <h4>V2ray</h4>
+    <ol>
+        <li><a href="https://free-ssr.xyz/">免费SSR/V2ray节点</a>
+        <li><a href="https://freefq.com/v2ray/">免费翻墙网V2ray</a>
+        <li><a href="https://fanqiang.network/shadowsocks-servers">翻墙网络SSR/V2ray</a>
+        <li><a href="https://fanqiangdang.com/forum-36-1.html">论坛|翻墙公益党V2ray</a>
+    </ol>
+    <h4>订阅地址</h4>
+    <ol>
+        <li><a href="port.html">常用代理</a></li>
+        <li><a href="https://github.com/ssrsub/ssr/tree/master">SSRSUB发布SSR/V2ray</a>
+    </ol>
+</div>
 
-				$(this)[0].style.fontWeight = ""
-				$(this)[0].style.background = "";
-			});
-		});
-	</script>
+<!--	//右侧-->
+<div id="right">
+    <iframe style="border-left:3px dashed #CEC9C9;border-bottom: 0px dashed #CEC9C9;" src="" id="content_iframe_id" name="content_iframe_name"></iframe>
+</div>
+<script type="text/javascript">
+    //右侧iframe网页初始加载ss
+    // var temp = "https://www.dalipan.com/";
+    // document.getElementById("right").innerHTML = '<object type="text/html" data="' + temp + '" width="100%" height="540px"></object>';
+    $(document).ready(function () {
+        $("a").click(function () {
+            var url = $(this).attr("href");
+            for (var i = 0; i < $("a").length; i++) {
+                $("a")[i].style.fontWeight = ""
+                $("a")[i].style.background = "";
+            }
+            $(this)[0].style.fontWeight = "bolder";
+            $(this)[0].style.background = "#B0B0B0";
+            $(this)[0].target = "content_iframe_name"//设置点击链接时，窗口打开位置
+            $("content_iframe_id").setAttribute("src", url); //将鼠标点击的链接url传到iframe中
+            // $(this)[0].style.pointerEvents = "none";
+            // console.log(document.getElementById("right"));
+            // document.getElementById("right").innerHTML = '<object type="text/html" data="' + url + '" width="100%" height="540px"></object>';
+        });
+        $("a").hover(function () {
+            // for (var i=0;i<$("a").length;i++){
+            // 	$("a")[i].style.fontWeight = ""
+            // 	$("a")[i].style.background = "";
+            // }
+            // $(this)[0].style.fontWeight = "bolder";
+            // $(this)[0].style.background = "#CEC9C9";
+        });
+
+        // $("a").mouseleave(function() {
+        // 	$(this)[0].style.fontWeight = ""
+        // 	$(this)[0].style.background = "";
+        // });
+    });
+</script>
 
 </body>
 </html>
