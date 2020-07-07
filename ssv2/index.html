@@ -8,16 +8,83 @@
     <link rel="shortcut icon" href="img/favicon21.png" type="image/x-icon"/>
     <style type="text/css">
 
+        .topform{
+            display: inline-block ;
+            width: 170px;
+        }
+        .keywords_input{
+            font-size: 18px;
+            width: 160px; height: 30px; outline: none ;background: #EFEFEF ;border-radius: 15px;text-align: center
+        }
+        .submit{
+            height: 30px;border-radius: 8px;
+            width: 46px;
+            height: 35px;
+            font-size: 18px;
+            font-weight: bold;
+            outline: #CEC9C9;
+        }
+        input::-webkit-input-placeholder {
+            color: #dbd3d3;//候选字颜色自定义
+        }
     </style>
     <base target="_blank"/>
 
 </head>
 <body style="margin: 0">
-<!--	<script type="text/javascript" src="js/canvas.js"></script>-->
+	<script type="text/javascript" src="js/canvas.js"></script>
 <script type="text/javascript" src="js/jquery.min.js"></script>
 
+
 <!--	//顶部-->
-<div id="top" align="center">
+<div id="top">
+
+    <form class="topform" action="https://www.dalipan.com/search" method="get" target="_blank">
+        <input class="keywords_input" placeholder="欢迎使用大力盘搜索"  name="keyword" size="20" type="text" />
+<!--        <input class="submit" type="submit" value="网盘搜索">-->
+    </form>
+
+    <form calss="topform"  action="http://www.google.com/search" method="get" target="_blank">
+<!--        <input name="ie" value="UTF-8" type="hidden" />-->
+        <!--    <input name="sitesearch" value="www.qq.com" type="hidden" />&lt;!&ndash;如果要限制访问的域名，比如只让Google搜索自己网站上的信息&ndash;&gt;-->
+        <input class="keywords_input" placeholder="欢迎使用谷歌搜索" autocomplete="off" size="20" name="q"  type="text"/>
+        <!--                    <input class="submit" type="submit"value="搜索"  />-->
+    </form>
+
+    <form class="topform" action="http://www.google.com/search" method="get" target="_blank">
+        <input class="keywords_input" placeholder="欢迎使用谷歌搜索"  name="q" size="20" type="text" />
+        <!--        <input class="submit" type="submit" value="网盘搜索">-->
+    </form>
+
+    <form class="topform" action="http://www.google.com/search" method="get" target="_blank">
+        <input class="keywords_input" placeholder="欢迎使用谷歌搜索"  name="q" size="20" type="text" />
+        <!--        <input class="submit" type="submit" value="网盘搜索">-->
+    </form>
+
+    <form class="topform" action="https://www.dalipan.com/search" method="get" target="_blank">
+        <input class="keywords_input" placeholder="欢迎使用大力盘搜索"  name="keyword" size="20" type="text" />
+        <!--        <input class="submit" type="submit" value="网盘搜索">-->
+    </form>
+
+<!--    <form class="topform" action="https://www.dalipan.com/search" method="get" target="_blank">-->
+<!--        <input class="keywords_input" placeholder="欢迎使用大力盘搜索"  name="keyword" size="20" type="text" />-->
+<!--        &lt;!&ndash;        <input class="submit" type="submit" value="网盘搜索">&ndash;&gt;-->
+<!--    </form>-->
+
+<!--    <form class="topform" action="https://www.dalipan.com/search" method="get" target="_blank">-->
+<!--        <input class="keywords_input" placeholder="欢迎使用大力盘搜索"  name="keyword" size="20" type="text" />-->
+<!--        &lt;!&ndash;        <input class="submit" type="submit" value="网盘搜索">&ndash;&gt;-->
+<!--    </form>-->
+
+<!--    <form class="topform" action="https://www.dalipan.com/search" method="get" target="_blank">-->
+<!--        <input class="keywords_input" placeholder="欢迎使用大力盘搜索"  name="keyword" size="20" type="text" />-->
+<!--        &lt;!&ndash;        <input class="submit" type="submit" value="网盘搜索">&ndash;&gt;-->
+<!--    </form>-->
+
+
+
+
+    <a href="depend/depend-sousuo.html" style="display: none">谷歌搜索</a>
     <a href="http://www.lsdhss.com/">猎手导航搜索</a>
     <a href="https://www.dalipan.com/">网盘搜索</a>
 
@@ -25,6 +92,7 @@
 
 <!--	//左侧-->
 <div id="left">
+
     <h4>SSR</h4>
     <ol>
         <li><a href="https://free-ssr.xyz" title="免费SSR/V2ray节点:每日更新">免费SSR/V2ray节点</a>
@@ -41,17 +109,18 @@
         <li><a href="https://fanqiang.network/shadowsocks-servers">翻墙网络SSR/V2ray</a>
         <li><a href="https://fanqiangdang.com/forum-36-1.html">论坛|翻墙公益党V2ray</a>
     </ol>
-    <h4>订阅地址</h4>
+    <h4>常用地址</h4>
     <ol>
-        <li><a href="iframe.html">常用代理</a></li>
-<!--        <li><a href="https://github.com/ssrsub/ssr/tree/master">SSRSUB发布SSR/V2ray</a>-->
+        <li><a href="depend/depend-iframe-airport.html">常用代理</a></li>
+        <li><a href="https://www.runoob.com/">RUNOOB.COM</a></li>
     </ol>
 </div>
 
 <!--	//右侧-->
 <div id="right">
-    <iframe src="iframe.html" id="content_iframe_id" name="content_iframe_name" style="border-left:3px dashed #CEC9C9;border-bottom: 0px dashed #CEC9C9;"></iframe>
+    <iframe src="depend/depend-sousuo.html" id="content_iframe_id" name="content_iframe_name" style="border-left:3px dashed #CEC9C9;border-bottom: 0px dashed #CEC9C9;"></iframe>
 </div>
+
 <script type="text/javascript">
     //右侧iframe网页初始加载ss
     // var temp = "https://www.dalipan.com/";
