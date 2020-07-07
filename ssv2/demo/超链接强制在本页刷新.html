@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<!--    <base target="_top">-->
+</head>
+<body>
+<a  href="https://www.google.com.hk/" >点击此超链接，测试是否在本页加载</a>
+<br/>
+<a  href="https://www.google.com.hk/" target="iframe_name">点击此超链接，测试是否在框架中加载</a>
+<br/>
+<div id="new" style="background: grey">
+
+</div>
+<!--<iframe name="iframe_name" height="500px" width="1200px"></iframe>-->
+<script>
+    var sc = document.createElement("script");
+    sc.src ="https://www.baidu.com/";
+    sc.src ="https://www.google.com.hk/"; //谷歌的X-Frame-Options 设置不允许自己的页面被嵌套
+    document.getElementById("new").innerHTML = '<object type="text/html" data="'+sc.src+'" height="50px" width="120px"></object>'
+
+</script>
+
+<pre style="z-index: 999">
+    在html中，用iframe标签在网页中嵌入百度成功，嵌入google却失败了，呈现出空白，后搜索得知原因是google使用 X-Frame-Options中的SAMEORIGIN选项。详细如下：
+
+X-Frame-Options HTTP 响应头是用来给浏览器指示允许一个页面可否在 ,或者 中展现的标记。网站可以使用此功能，来确保自己网站的内容没有被嵌到别人的网站中去，也从而避免了点击劫持 (clickjacking) 的攻击。
+
+使用 X-Frame-Options
+X-Frame-Options 有三个值:
+
+DENY
+
+表示该页面不允许在 frame 中展示，即便是在相同域名的页面中嵌套也不允许。
+
+SAMEORIGIN
+
+表示该页面可以在相同域名页面的 frame 中展示。
+
+ALLOW-FROMuri
+
+表示该页面可以在指定来源的 frame 中展示。
+
+换一句话说，如果设置为DENY，不光在别人的网站 frame 嵌入时会无法加载，在同域名页面中同样会无法加载。另一方面，如果设置为SAMEORIGIN，那么页面就可以在同域名页面的 frame 中嵌套。
+
+
+
+作者：土司0
+链接：https://www.jianshu.com/p/db5c2caba1af
+来源：简书
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
+</pre>
+
+
+
+
+
+</body>
+</html>
