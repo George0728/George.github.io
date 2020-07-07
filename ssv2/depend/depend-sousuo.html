@@ -4,45 +4,47 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        input{
-            border: 1px solid #dfe1e5;
+        .keywords_input {
+            border: 1px solid rgba(223, 225, 229, 0.5);
             box-shadow: none;
-            border-radius: 24px;
+            border-radius: 15px;
             z-index: 3;
-            height: 44px;
+            width: 50vw;
             margin: 0;
-
-            left: 20px;
             text-align: center;
             outline: none;
-            font-size: 24px;
-            color:#5d6494;
+            font-size: 28px;
+            outline: none;
         }
+
+
         input::-webkit-input-placeholder {
-            color: #DBD3D3; //placeholder 字体颜色自定义
+            color: #DBD3D3;  /* placeholder 字体颜色自定义*/
         }
-        #keywords_input{
-            background: #fff;
-            /*display: flex;*/
-            border: 1px solid #dfe1e5;
-            box-shadow: none;
-            border-radius: 24px;
-            z-index: 3;
-            height: 44px;
-            margin: 0;
-            width: 482px;
+        form{
+
+            margin-top: 5px;
+
         }
+
+
+
     </style>
 
 </head>
-<body >
+<body>
 <div class="searchgoogle">
 
     <form action="http://www.google.com/search" method="get" target="_blank">
-        <input name="ie" value="UTF-8" type="hidden" />
+        <input name="ie" value="UTF-8" type="hidden"/>
         <!--    <input name="sitesearch" value="www.qq.com" type="hidden" />&lt;!&ndash;如果要限制访问的域名，比如只让Google搜索自己网站上的信息&ndash;&gt;-->
-        <input id="keywords_input" placeholder="欢迎使用谷歌搜索" autocomplete="off" size="20" name="q"  type="text"/>
-        <input type="submit"value="Google Search"  />
+        <input class="keywords_input" placeholder="谷歌搜索" autocomplete="off" size="30" name="q" type="text"/>
+<!--        <input class="submit_btn" type="submit" value="Google Search"/>-->
+    </form>
+    <form action="https://www.dalipan.com/search" method="get" target="_blank">
+        <input name="ie" value="UTF-8" type="hidden"/>
+        <input class="keywords_input" placeholder="云盘搜索" autocomplete="off" size="30" name="keyword" type="text"/>
+<!--        <input class="submit_btn" type="submit" value="云盘搜索"/>-->
     </form>
 
 </div>
