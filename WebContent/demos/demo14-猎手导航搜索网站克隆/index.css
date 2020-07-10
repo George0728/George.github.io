@@ -1,0 +1,383 @@
+@charset"UTF-8";
+body, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, html, img, legend, li, ol, p, ul {
+    margin:0;
+    padding:0
+}
+button, fieldset, img, input {
+    border:0;
+    padding:0;
+    margin:0;
+    outline-style:none
+}
+ol, ul {
+    list-style:none
+}
+input {
+    padding-top:0;
+    padding-bottom:0;
+    font-family:SimSun, "宋体"
+}
+input, select {
+    vertical-align:middle
+}
+input, select, textarea {
+    font-size:12px;
+    margin:0
+}
+textarea {
+    resize:none
+}
+img {
+    border:0;
+    vertical-align:middle
+}
+table {
+    border-collapse:collapse
+}
+body {
+    font:16px/150%"微软雅黑", Arial, Verdana, "\5b8b\4f53";
+    position:relative
+}
+.clearfix:after, .clearfix:before {
+    content:"";
+    display:table
+}
+.clearfix:after {
+    clear:both
+}
+a {
+    color:#666;
+    text-decoration:none
+}
+a:hover {
+    color:#c81623
+}
+h1, h2, h3, h4, h5, h6 {
+    text-decoration:none;
+    font-weight:400;
+    font-size:100%
+}
+em, i, s {
+    font-style:normal;
+    text-decoration:none
+}
+.col-red {
+    color:#c81623!important
+}
+.w {
+    width:980px;
+    margin:0 auto
+}
+@media(max-width:768px) {
+    .w {
+        width:100%
+    }
+}
+.fl {
+    float:left
+}
+.fr {
+    float:right
+}
+.al {
+    text-align:left
+}
+.ac {
+    text-align:center
+}
+.ar {
+    text-align:right
+}
+.hide {
+    display:none
+}
+.topbanner {
+    margin-bottom:8px;
+    height:180px;
+    width:100%;
+    background-color:#34495E
+}
+.w .top {
+    padding-top:20px
+}
+.w .bottom, .w .top {
+    margin:0 auto;
+    text-align:center
+}
+.w .top .active {
+    background-color:#b9282f
+}
+.w .top span {
+    width:70px;
+    height:30px;
+    margin-left:15px;
+    line-height:30px;
+    display:inline-block;
+    color:#00ff00;
+    font-size:16px;
+    cursor:pointer
+}
+.topbanner .middle {
+    margin-top:15px;
+    margin-left:0
+}
+.middle .web-image {
+    float:left;
+    cursor:pointer
+}
+.topbanner .middle i {
+    float:left;
+    line-height:38px;
+    margin:0 10px 0 -10px;
+    color:#b9282f;
+    cursor:pointer
+}
+.middle div {
+    position:relative
+}
+.middle .web-ico {
+    width:120px;
+    border:1px solid #d2d2d2;
+    border-bottom:0;
+    position:absolute;
+    top:40px;
+    left:-2px;
+    display:none;
+    z-index:1000
+}
+.middle .web-ico img {
+    border-bottom:1px solid #d2d2d2;
+    background-color:#fafafa
+}
+.topbanner .middle input {
+    width:665px;
+    height:38px;
+    float:left;
+    padding-left:10px;
+    font-size:18px
+}
+#search a {
+    width:80px;
+    height:38px;
+    float:left;
+    background-color:#b9282f;
+    color:#fff;
+    font-family:"微软雅黑";
+    line-height:38px;
+    text-align:center;
+    cursor:pointer
+}
+.guestbook a, .middle .guestbook {
+    line-height:38px;
+    margin-left:20px;
+    color:#b9282f
+}
+.w .bottom {
+    padding-top:20px
+}
+.w .bottom div {
+    display:none
+}
+.w .bottom .show {
+    display:block
+}
+.bottom .current a::before {
+    content:"▶";
+    padding-right:5px
+}
+.bottom a {
+    display:inline-block;
+    height:30px;
+    margin-left:10px;
+    line-height:30px;
+    font-size:16px;
+    cursor:pointer;
+    color:#808080;
+    padding:0 10px 0 10px;
+    background-color:#c0c0c0
+}
+.slider {
+    position:relative;
+    height:400px;
+    margin-bottom:10px
+}
+#box {
+    width:980px;
+    height:400px;
+    position:absolute;
+    left:0;
+    top:0
+}
+.w .title {
+    width:150px;
+    float:left
+}
+.w .title h3 {
+    color:#fff
+}
+.title {
+    position:absolute;
+    left:0;
+    top:0;
+    border-top:1px solid #d2d2d2;
+    z-index:999;
+    background-color:#fff
+}
+.foo {
+    position:relative;
+    margin-bottom:15px;
+    height:245px;
+    box-shadow:3px 2px 8px rgba(0, 0, 0, .07)
+}
+.title h3, .title span {
+    float:left;
+    width:150px;
+    height:40px;
+    border:1px solid #d2d2d2;
+    border-top:0;
+    line-height:38px;
+    text-align:center
+}
+.title h3 {
+    background-color:#b9282f;
+    font-size:18px;
+    font-weight:600;
+    text-align:center
+}
+.title span {
+    cursor:pointer
+}
+.title .active {
+    color:#b9282f;
+    font-weight:500;
+    border-bottom-color:#b9282f
+}
+.w .web-link {
+    position:absolute;
+    top:0;
+    right:0;
+    width:828px;
+    height:100%;
+    border:1px solid #d2d2d2;
+    border-left:none;
+    overflow:hidden;
+    background-color:#fff;
+    margin-right:-1px
+}
+.web-link ul {
+    float:left
+}
+.web-link .control {
+    width:900px
+}
+.web-link .control li {
+    float:left
+}
+.web-link .control a {
+    width:138px;
+    height:40px;
+    display:block;
+    border-bottom:1px solid #d2d2d2;
+    border-right:1px solid #d2d2d2;
+    text-align:center;
+    line-height:40px
+}
+.web-link .control a:hover {
+    background-color:#fbfbfb;
+    color:#b9282f;
+    text-decoration:underline
+}
+.web-link ul {
+    display:none
+}
+.web-link .current {
+    display:block
+}
+.footer {
+    margin-top:30px;
+    height:210px;
+    width:100%;
+    background-color:#222
+}
+.font-bold {
+    font-size:18px;
+    font-weight:700;
+    line-height:60px;
+    color:#b9282f
+}
+#gotop {
+    width:80px;
+    position:fixed;
+    bottom:90px;
+    cursor:pointer;
+    z-index:99998;
+    right:50%;
+    margin-right:-620px
+}
+#gotop:hover {
+    animation:rubberBand 1s
+}
+@keyframes rubberBand {
+    from {
+        transform:scale3d(1, 1, 1)
+    }
+    30% {
+        transform:scale3d(1.25, .75, 1)
+    }
+    40% {
+        transform:scale3d(.75, 1.25, 1)
+    }
+    50% {
+        transform:scale3d(1.15, .85, 1)
+    }
+    65% {
+        transform:scale3d(.95, 1.05, 1)
+    }
+    75% {
+        transform:scale3d(1.05, .95, 1)
+    }
+    to {
+        transform:scale3d(1, 1, 1)
+    }
+}
+@media(max-width:1000px) {
+    #foonav {
+        display:none
+    }
+}
+#foonav {
+    width:70px;
+    position:fixed;
+    top:6%;
+    right:6%;
+    border:1px solid #d2d2d2
+}
+#foonav ul li {
+    height:16px;
+    border-bottom:1px solid #d2d2d2;
+    list-style:none;
+    font-size:15px;
+    text-align:center;
+    line-height:16px;
+    position:relative;
+    cursor:pointer;
+    padding:10px 0;
+    background:#fff;
+    color:#666
+}
+#foonav ul li span {
+    width:70px;
+    padding:10px 0;
+    position:absolute;
+    top:0;
+    left:0
+}
+#foonav ul li.last {
+    background:#222;
+    color:#fff
+}
+#c ul li.active span {
+    background:#b9282f;
+    color:#fff;
+    display:block
+}

@@ -9,13 +9,14 @@
 <style type="text/css">
 .topform {
 	display: inline-block;
-	width: 170px;
+	width: 130px;
 }
 
 .keywords_input {
 	border: 8px;
 	font-size: 18px;
-	width: 160px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	width: 120px;
 	height: 30px;
 	background-color: red;
 	outline: none;
@@ -25,18 +26,15 @@
 	outline: none;
 }
 
-#left .btn {
-	float: right;
-}
-
 .btn {
+	float: right;	
+	margin-right :10px;
 	height: 30px;
 	margin-top: 5px;
 	border-radius: 8px;
 	width: 100px;
-	height: 35px;
 	font-size: 18px;
-	color: #d2c1c1;
+	color: #aaa;
 	border: none;
 	outline: none;
 }
@@ -65,8 +63,14 @@ input::-webkit-input-placeholder {
 	<script type="text/javascript" src="source/js/jquery.min.js"></script>
 
 	<!--	//顶部-->
-	<div id="top">
+	<div id="top" style="min-width: 400">
 
+		<form class="topform" action="https://www.dalipan.com/search" method="get"
+			target="_blank">
+			<input class="keywords_input" placeholder="网盘搜索" autocomplete="off" name="keyword"
+				size="20" type="text" />
+			<!--        <input class="submit" type="submit" value="网盘搜索">-->
+		</form>
 
 		<form class="topform" action="http://www.google.com/search" method="get" target="_blank">
 			<!--        <input name="ie" value="UTF-8" type="hidden" />-->
@@ -76,73 +80,81 @@ input::-webkit-input-placeholder {
 			<!--                    <input class="submit" type="submit"value="搜索"  />-->
 		</form>
 
-
-
-		<form class="topform" action="https://www.dalipan.com/search" method="get"
+		<form class="topform" action="https://zh.wikipedia.org/wiki/index.php" method="get"
 			target="_blank">
-			<input class="keywords_input" placeholder="大力盘搜索" autocomplete="off" name="keyword"
+			<input class="keywords_input" placeholder="维基搜索" autocomplete="off" name="search"
 				size="20" type="text" />
-			<!--        <input class="submit" type="submit" value="网盘搜索">-->
+		</form>
+		<form class="topform" action="https://zzk.cnblogs.com/s/blogpost" method="get"
+			target="_blank">
+			<input class="keywords_input" placeholder="博客园搜索" autocomplete="off" name="keywords"
+				size="20" type="text" />
+		</form>
+		<form class="topform" action="https://so.csdn.net/so/search/s.do?" method="get"
+			target="_blank">
+			<input class="keywords_input" placeholder="CSDN搜索" autocomplete="off" name="q"
+				size="20" type="text" />
+		</form>
+		<form class="topform" action="https://www.zhihu.com/search?type=content" method="get"
+			target="_blank">
+			<input class="keywords_input" placeholder="知乎搜索" autocomplete="off" name="q"
+				size="20" type="text" />
+		</form>
+		<form class="topform" action="https://github.com/search" method="get"
+			target="_blank">
+			<input class="keywords_input" placeholder="GitHub搜索" autocomplete="off" name="q"
+				size="20" type="text" />
+		</form>
+		<form class="topform" action="https://www.jianshu.com/search" method="get"
+			target="_blank">
+			<input class="keywords_input" placeholder="简书搜索" autocomplete="off" name="q"
+				size="20" type="text" />
+		</form>
+		<form class="topform" action="https://www.runoob.com" method="get"
+			target="_blank">
+			<input class="keywords_input" placeholder="菜鸟搜索" autocomplete="off" name="s"
+				size="20" type="text" />
 		</form>
 
-		<!--    <form class="topform" action="https://www.dalipan.com/search" method="get" target="_blank">-->
-		<!--        <input class="keywords_input" placeholder="大力盘搜索" autocomplete="off" name="keyword" size="20" type="text" />-->
-		<!--        &lt;!&ndash;        <input class="submit" type="submit" value="网盘搜索">&ndash;&gt;-->
-		<!--    </form>-->
-
-		<!--    <form class="topform" action="https://www.dalipan.com/search" method="get" target="_blank">-->
-		<!--        <input class="keywords_input" placeholder="大力盘搜索" autocomplete="off" name="keyword" size="20" type="text" />-->
-		<!--        &lt;!&ndash;        <input class="submit" type="submit" value="网盘搜索">&ndash;&gt;-->
-		<!--    </form>-->
-
-		<!--    <form class="topform" action="https://www.dalipan.com/search" method="get" target="_blank">-->
-		<!--        <input class="keywords_input" placeholder="大力盘搜索" autocomplete="off" name="keyword" size="20" type="text" />-->
-		<!--        &lt;!&ndash;        <input class="submit" type="submit" value="网盘搜索">&ndash;&gt;-->
-		<!--    </form>-->
-
-
-
-
 		<a href="source/depend/depend-sousuo.html" style="display: none">谷歌搜索</a> 
-		<a href="http://www.lsdhss.com/">猎手导航搜索</a>
-		<a href="https://able-veld-217908.appspot.com/index.php?">谷歌代理搜索</a> 
-			<a href="https://www.google.com/">谷歌搜索2</a>
-		<!-- https://onedrive.live.com/view.aspx?resid=9B7CE29936A6A261%211162&id=documents&wd=target%28%E8%B0%B7%E6%AD%8C%E6%90%9C%E7%B4%A2.one%7CD66F9B56-455A-4006-9F66-E5B0698EA243%2F%E5%B0%86%E8%B0%B7%E6%AD%8C%E7%BD%91%E7%AB%99iframe%E5%88%B0%E8%87%AA%E5%B7%B1%E7%9A%84%E7%BD%91%E7%AB%99%E4%B8%AD%7C9BDF8D13-FD36-4852-AB8C-E3BEC2CB1A34%2F%29
-onenote:https://d.docs.live.net/9b7ce29936a6a261/文档/HTML/谷歌搜索.one#将谷歌网站iframe到自己的网站中&section-id={D66F9B56-455A-4006-9F66-E5B0698EA243}&page-id={9BDF8D13-FD36-4852-AB8C-E3BEC2CB1A34}&end -->
+<!-- 		<a href="http://www.lsdhss.com/">猎手导航搜索</a> -->
+		<a href="https://able-veld-217908.appspot.com/index.php?" style="display: none">谷歌搜索</a> 
 	</div>
 
 	<!--	//左侧-->
 	<div id="left">
 		<button class="btn" onclick="clear_all()">清除顶部</button>
 		<!--    <input type="button" value="清除全部2" onclick="clear_all()"/>-->
+		<h4>常用地址</h4>
+		<ol>
+			<li><a href="source/depend/depend-iframe-airport.html">常用代理</a></li>
+			<li><a href="https://www.chaonengsou.com">超能搜</a></li>
+			<li><a href="https://www.runoob.com/">菜鸟教程</a></li>
+			<li><a href="https://www.w3schools.com/">W3C教程</a></li>
+			<li><a href="https://george0728.github.io/Web/adguard/en.htm">Adguard教程</a></li>
+<!-- 			<li><a href="https://kb.adguard.com/en/">Adguard网上教程</a></li> -->
+		</ol>
 		<h4>SSR</h4>
 		<ol>
 			<li><a href="https://free-ssr.xyz" title="使用体验4星-免费SSR/V2ray节点:每日更新两种节点各6/7个">免费SSR/V2ray节点</a>
 			<li><a href="https://freefq.com/free-ssr/"
-				title=使用体验5星-freefq.com:几乎每天更新，内容来自SSSUB,cnhumanright99电报群>免费翻墙网SSR</a>
-			<li><a href="https://fanqiangdang.com/forum-2-1.html" title="使用体验3星-机场推广,及推广节点">论坛|翻墙公益党SSR</a>
+				title=使用体验5星-freefq.com:几乎每天更新，内容来自SSRUB,cnhumanright99电报群>免费翻墙网SSR</a>
+			<li><a href="https://fanqiangdang.com/forum-2-1.html" title="使用体验3星-机场推广,及推广节点">论坛|公益党SSR</a>
 				<!--			<li><a href="https://t.me/s/SSRlist">SSR节点免费发放-Telegram</a>-->
 		</ol>
 		<h4>V2ray</h4>
 		<ol>
 			<li><a href="https://free-ssr.xyz/" title="使用体验4星-免费SSR/V2ray节点:每日更新两种节点各6/7个">免费SSR/V2ray节点</a>
 			<li><a href="https://freefq.com/v2ray/"
-				title=使用体验5星-freefq.com:几乎每天更新，内容来自SSSUB,cnhumanright99电报群>免费翻墙网V2ray</a>
-			<li><a href="https://fanqiangdang.com/forum-36-1.html" title="使用体验3星-机场推广,及推广节点">论坛|翻墙公益党V2ray</a>
+				title=使用体验5星-freefq.com:几乎每天更新，内容来自SSRUB,cnhumanright99电报群>免费翻墙网V2ray</a>
+			<li><a href="https://fanqiangdang.com/forum-36-1.html" title="使用体验3星-机场推广,及推广节点">论坛|公益党V2ray</a>
 		</ol>
-		<h4>常用地址</h4>
-		<ol>
-			<li><a href="source/depend/depend-iframe-airport.html">常用代理</a></li>
-			<li><a href="https://www.runoob.com/">菜鸟教程</a></li>
-			<li><a href="https://www.w3schools.com/">W3C教程</a></li>
-			<li><a href="https://george0728.github.io/Web/adguard/en.htm">Adguard教程</a></li>
-<!-- 			<li><a href="https://kb.adguard.com/en/">Adguard网上教程</a></li> -->
-		</ol>
+
 	</div>
 
 	<!--	//右侧-->
 	<div id="right">
-		<iframe src="https://www.google.com/" id="content_iframe_id" name="content_iframe_name"
+		<iframe src="http://www.google.com" id="content_iframe_id" name="content_iframe_name"
 			style="border-left: 3px dashed #CEC9C9; border-bottom: 0px dashed #CEC9C9;"></iframe>
 	</div>
 
@@ -179,7 +191,7 @@ onenote:https://d.docs.live.net/9b7ce29936a6a261/文档/HTML/谷歌搜索.one#�
 				// document.getElementById("right").innerHTML = '<object type="text/html" data="' + url + '" width="100%" height="540px"></object>';
 			});
 			//双击文本框，删除文本
-			$("input").c(function() {
+			$("input").dblclick(function() {
 				$(this)[0].value = "";
 			});
 			//鼠标指向标签事件,鼠标离开标签属性
