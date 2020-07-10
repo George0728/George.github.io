@@ -11,6 +11,7 @@
 <%
 	Person person = new Person();
 	person.print();
+	
 
 %>
 
