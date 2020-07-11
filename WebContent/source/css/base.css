@@ -1,0 +1,47 @@
+/* base.css中定义上，左，右div与iframe等有关的整体布局 */
+
+html, body {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.outer {
+	height: 100%;
+	background: grey
+}
+
+.top {
+	height: 35px;
+	width: 100%;
+	background: #CEC9C9;
+}
+
+.bottom {
+	position: absolute;
+	top: 35px;
+	left: 0px;
+	bottom: 0px; width : 100%;
+	width: 100%;
+	background: #E3E3E3;
+}
+
+#left {
+	float: left;
+	width: 230px;
+	height: 100%;
+}
+
+#right {
+	margin-left: 200px;
+	height: 100%;
+}
+
+#content_iframe_id{
+	border-left: 2px dashed #CEC9C9;
+	position: absolute;
+	top:0px;
+	left:200px;
+	width:84vw; /* 自定义，不友好 */
+	height:548px;/*自定义，不友好 */
+}

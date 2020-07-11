@@ -1,0 +1,50 @@
+/* form.css定义form表单样式 */
+
+@charset "UTF-8";
+.topform {
+	display: inline-block;
+	width: 130px;
+}
+
+.keywords_input {
+	border: 8px;
+	font-size: 18px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	width: 120px;
+	height: 30px;
+	background-color: red;
+	outline: none;
+	background: #EFEFEF;
+	border-radius: 5px;
+	text-align: center;
+	outline: none;
+}
+
+.btn {
+	float: right;
+	margin-right: 40px;
+	height: 30px;
+	margin-top: 5px;
+	border-radius: 8px;
+	width: 100px;
+	font-size: 18px;
+	color: #aaa;
+	border: none;
+	outline: none;
+}
+
+.submit {
+	height: 30px;
+	border-radius: 8px;
+	width: 46px;
+	height: 35px;
+	font-size: 18px;
+	font-weight: bold;
+	outline: #CEC9C9;
+}
+
+input::-webkit-input-placeholder {
+	color: #dbd3d3;
+
+	/* 候选字颜色自定义 */
+}
