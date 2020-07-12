@@ -22,7 +22,7 @@ html, body {
 	left: 0px;
 	bottom: 0px; width : 100%;
 	width: 100%;
-	background: #E3E3E3;
+	background: #EFEFEF;
 }
 
 #left {
@@ -31,10 +31,11 @@ html, body {
 	height: 100%;
 	overflow-x: hidden;
 	overflow-y: scroll;
+	background: white;
 }
 
 #right {	
-	margin-left: 200px;
+	margin-left: 160px;
 	height: 100%;
 }
 
@@ -42,8 +43,8 @@ html, body {
 	border-left: 2px dashed #CEC9C9;
 	border-top: 2px dashed #CEC9C9;
 	position: absolute;
-	top:0px;
-	left:140px;  /* 此数据修改时，宽度也应进行相应修改 */
-	width:88.7vw;  /*自定义，不友好 */
-	height:560px;/*自定义，不友好 */
+	top:20px;
+	left:143px;  /* 此数据修改时，宽度也应进行相应修改 */
+	width:88.5vw;  /*自定义，不友好 */
+	height:540px;/*自定义，不友好 */
 }

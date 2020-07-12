@@ -1,6 +1,13 @@
 /* meta.css定义div中的元素：a h1~6 ol  li 等 */
 
-a {
+
+a:hover{
+/* 	color: orange; */
+	background:#BFBFBF;
+	font-weight: bold;
+}
+
+#left a {
 	padding-left: 5px;
 	border: 1px solid lightgray;
 	border-radius: 5px;
@@ -9,6 +16,7 @@ a {
 	text-decoration: none;
 	width: 120px;
 	height: 20px;
+	color:#400040;
 	line-height: 20px;
 }
 #top a {
@@ -29,6 +37,7 @@ h5 {
 
 #left ul {
 	list-style: none;
+
 	font-family:Microsoft YaHei;
 	font-size: 13px;
 	padding-left: 0px;
