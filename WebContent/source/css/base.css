@@ -43,8 +43,8 @@ html, body {
 	border-top: 2px dashed #CEC9C9;
 	position: absolute;
 	top:0px;
-	left:160px;  /* 此数据修改时，宽度也应进行相应修改 */
-/* 	z-index:99; */
-	width:87vw;  /*自定义，不友好 */
-	height:548px;/*自定义，不友好 */
+	left:140px;  /* 此数据修改时，宽度也应进行相应修改 */
+/* 	z-index:99;s
+	width:88.7vw;  /*自定义，不友好 */
+	height:560px;/*自定义，不友好 */
 }
