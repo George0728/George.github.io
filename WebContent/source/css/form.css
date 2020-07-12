@@ -3,15 +3,15 @@
 @charset "UTF-8";
 .topform {
 	display: inline-block;
-	width: 130px;
+	width: 123px;
 }
 
 .keywords_input {
 	border: 8px;
-	font-size: 18px;
+	font-size: 16px;
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	width: 120px;
-	height: 30px;
+	height: 20px;
 	background-color: red;
 	outline: none;
 	background: #EFEFEF;
@@ -21,16 +21,19 @@
 }
 
 .btn {
-	float: right;
-	margin-right: 40px;
-	height: 30px;
-	margin-top: 5px;
-	border-radius: 8px;
-	width: 100px;
+	position:absolute;
+	float :left;
+	top:3px;
+	left:75px;
+/* 	height: 30px; */
+	border-radius: 5px;
+	width: 60px;
 	font-size: 18px;
 	color: #aaa;
 	border: none;
 	outline: none;
+	z-index: 99;
+	opacity: 0.6;
 }
 
 .submit {

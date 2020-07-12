@@ -8,7 +8,6 @@ html, body {
 
 .outer {
 	height: 100%;
-	background: grey
 }
 
 .top {
@@ -19,7 +18,7 @@ html, body {
 
 .bottom {
 	position: absolute;
-	top: 35px;
+	top: 22px;
 	left: 0px;
 	bottom: 0px; width : 100%;
 	width: 100%;
@@ -28,20 +27,24 @@ html, body {
 
 #left {
 	float: left;
-	width: 230px;
+	width: 160px;
 	height: 100%;
+	overflow-x: hidden;
+	overflow-y: scroll;
 }
 
-#right {
+#right {	
 	margin-left: 200px;
 	height: 100%;
 }
 
 #content_iframe_id{
 	border-left: 2px dashed #CEC9C9;
+	border-top: 2px dashed #CEC9C9;
 	position: absolute;
 	top:0px;
-	left:200px;
-	width:84vw; /* 自定义，不友好 */
+	left:160px;  /* 此数据修改时，宽度也应进行相应修改 */
+/* 	z-index:99; */
+	width:87vw;  /*自定义，不友好 */
 	height:548px;/*自定义，不友好 */
 }

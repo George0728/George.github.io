@@ -7,9 +7,9 @@ a {
 	/*background: antiquewhite;*/
 	display: inline-block;
 	text-decoration: none;
-	width: 155px;
-	height: 30px;
-	line-height: 30px;
+	width: 120px;
+	height: 20px;
+	line-height: 20px;
 }
 #top a {
 	/*align : center;*/
@@ -19,15 +19,18 @@ a {
 }
 
 
-h4 {
+h5 {
 	margin: 10px;
 	color : #ff8000;
+    margin-top: 0px;
+    margin-bottom: 0px;
+	
 }
 
-#left ol {
-	padding-left: 20px;
+#left ul {
+	list-style: none;
+	font-family:Microsoft YaHei;
+	font-size: 13px;
+	padding-left: 0px;
 	margin: 10px;
 }
-
-
-
