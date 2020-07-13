@@ -45,6 +45,6 @@ html, body {
 	position: absolute;
 	top:20px;
 	left:143px;  /* 此数据修改时，宽度也应进行相应修改 */
-	width:88.5vw;  /*自定义，不友好 */
-	height:540px;/*自定义，不友好 */
+	width:89vw;  /*自定义，不友好 */
+	height:95%;/*自定义，不友好 */
 }
