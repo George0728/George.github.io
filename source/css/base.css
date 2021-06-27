@@ -1,0 +1,49 @@
+
+html, body {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.outer {
+	height: 100%;
+}
+
+.top {
+	height: 35px;
+	width: 100%;
+	background: #CEC9C9;
+}
+
+.bottom {
+	position: absolute;
+	top: 22px;
+	left: 0px;
+	bottom: 0px; width : 100%;
+	width: 100%;
+	background: #EFEFEF;
+}
+
+#left {
+	float: left;
+	width: 160px;
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	background: white;
+}
+
+#right {	
+	margin-left: 160px;
+	height: 100%;
+}
+
+#content_iframe_id{
+	border-left: 2px dashed #CEC9C9;
+	border-top: 2px dashed #CEC9C9;
+	position: absolute;
+	top:20px;
+	left:143px;  /* �������޸�ʱ�����ҲӦ������Ӧ�޸� */
+	width:88.5vw;  /*�Զ��壬���Ѻ� */
+	height:95%;/*�Զ��壬���Ѻ� */
+}
