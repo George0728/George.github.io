@@ -4,12 +4,6 @@
             margin: 0px;
         }
 
-
-/*         .ul2 a:hover {
-        
-            background-color: #BFBFBF;
-        } */
-
         ul {
             list-style: none;
         }
@@ -59,6 +53,6 @@
         }
         
         .tabs{
-        	opacity: 0.5;
+        	opacity: 0.8;
         }
         
