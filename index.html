@@ -1,191 +1,212 @@
 <!DOCTYPE html>
-<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>网址导航</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSite Navigation</title>
+    <!-- 引入CDN -->
+    <script src="source/js/vue.js"></script>
+    <!-- 引入Element UI样式 -->
+    <link rel="stylesheet" href="source/css/elementui.css">
+    <!-- 引入Element UI组件库 -->
+    <script src="source/js/elementui.js"></script>
+    <script src="source/js/jquery.js" type="text/javascript"></script>
+    <base target="_blank">
+    <style>
+        .top{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .topform{
+            width: 200px;
+            margin: 0 10px 10px 0;
+        }
+        .content{
+            display: flex;
+            min-height: 800px;
+        }
+        .content .left{
+            width: 200px !important;
+            margin-right: 10px;
+        }
+        .content .right{
+            flex-direction: column;
+            flex-grow: 1;
+            /*background-color: #4d4d4d;*/
+        }
+        /*分割线*/
+        .el-divider--horizontal{
+            margin: 0 0 10px 0;
+        }
+        .menu1{
+            border: 1px #ee0000 !important;
+        }
+        .el-tree {
+            user-select: none;
+        }
+        iframe{
+            border: 2px dashed #CEC9C9;
+            /*position: relative;*/
+            width:100% !important;  /**/
+            height: 47vw !important;
+        }
 
-    <!-- 测试过程中在href路径***.css后加  ?param=Math.random()   这样css修改后无需手动清理缓存保证修改生效，测试完成后去掉，使用缓存加快网页加载速度 -->
-    <link rel="stylesheet" href="source/css/index.css" type="text/css"/>
-    <link rel="stylesheet" href="source/css/form.css" type="text/css"/>
-    <link rel="stylesheet" href="source/css/meta.css" type="text/css"/>
-    <link rel="stylesheet" href="source/css/list.css" type="text/css"/>
-    <link rel="shortcut icon" href="source/img/favicon21.png" type="image/x-icon"/>
-    <script src="source/js/vue.global.js" type="text/javascript"></script>
-    <base target="_blank"/>
+
+    </style>
+
 </head>
 <body>
-<script type="text/javascript" src="source/js/canvas.js"></script>
-<script type="text/javascript" src="source/js/jquery.min.js"></script>
-<div class="outer">
-    <!--	顶部-->
+
+<div id="app">
+
     <div class="top">
-
-        <form class="topform" action="https://www.dalipan.com/search" method="get">
-            <input class="keywords_input" placeholder="网盘搜索" autocomplete="off" name="keyword" size="20" type="text"/>
-            <!--        <input class="submit" type="submit" value="网盘搜索">-->
+        <form  v-for="(item,index) in searchEngineList"  :action="item.action" method="get" class="topform">
+            <el-input size="mini" class="keywords_input" v-model='searchText' :placeholder="item.placeholderText"  :name="item.searchKey" size="20" clearable autocomplete="on">
+                <i slot="prefix"><img :src="item.icon" width="16px" style="position: relative;top: 7px"/></i>
+                <i slot="suffix" class="el-input__icon el-icon-search"></i>
+            </el-input>
         </form>
-
-        <form class="topform" action="https://www.google.com/search" method="get">
-            <!--        <input name="ie" value="UTF-8" type="hidden" />-->
-            <!--    <input name="sitesearch" value="www.qq.com" type="hidden" />&lt;!&ndash;如果要限制访问的域名，比如只让Google搜索自己网站上的信息&ndash;&gt;-->
-            <input class="keywords_input" placeholder="谷歌搜索" autocomplete="off" size="20" name="q" type="text"/>
-            <!--                    <input class="submit" type="submit"value="搜索"  />-->
-        </form>
-
-        <form class="topform" action="https://www.baidu.com/s" method="get">
-            <!-- 			<input name="ie" value="utf-8" type="hidden"> -->
-            <input class="keywords_input" placeholder="百度搜索" autocomplete="off" name="wd" size="20" type="text"/>
-        </form>
-        <form class="topform" action="https://zh.wikipedia.org/wiki/index.php" method="get">
-            <input class="keywords_input" placeholder="维基搜索" autocomplete="off" name="search" size="20" type="text"/>
-        </form>
-        <form class="topform" action="https://stackoverflow.com/search" method="get">
-            <input class="keywords_input" placeholder="stackoverflow" autocomplete="off" name="q" size="20"
-                   type="text"/>
-        </form>
-        <form class="topform" action="https://zzk.cnblogs.com/s/blogpost" method="get">
-            <input class="keywords_input" placeholder="博客园搜索" autocomplete="off" name="keywords" size="20" type="text"/>
-        </form>
-        <form class="topform" action="https://so.csdn.net/so/search/s.do?" method="get">
-            <input class="keywords_input" placeholder="CSDN搜索" autocomplete="off" name="q" size="20" type="text"/>
-        </form>
-        <form class="topform" action="https://www.zhihu.com/search?type=content" method="get">
-            <input class="keywords_input" placeholder="知乎搜索" autocomplete="off" name="q" size="20" type="text"/>
-        </form>
-        <form class="topform" action="https://github.com/search" method="get">
-            <input class="keywords_input" placeholder="GitHub搜索" autocomplete="off" name="q" size="20" type="text"/>
-        </form>
-        <form class="topform" action="https://www.jianshu.com/search" method="get">
-            <input class="keywords_input" placeholder="简书搜索" autocomplete="off" name="q" size="20" type="text"/>
-        </form>
-        <form class="topform" action="https://www.runoob.com" method="get">
-            <input class="keywords_input" placeholder="菜鸟搜索" autocomplete="off" name="s" size="20" type="text"/>
-        </form>
-
-        <a href="source/depend/depend-sousuo.html" style="display: none">谷歌搜索</a>
-        <!-- 		<a href="http://www.lsdhss.com/">猎手导航搜索</a> -->
-        <a href="https://able-veld-217908.appspot.com/index.php?" style="display: none">谷歌搜索</a>
     </div>
-    <!-- 底部 -->
-    <div class="bottom">
-        <!--	左下侧-->
-        <div id="left">
-            <button class="btn" onclick="clear_all()">clear</button>
-            <h5>科学上网</h5>
-            <ul>
-                <li><a href="https://fanqiangdang.com/forum-36-1.html" title="使用体验3星-机场推广,及推广节点">论坛|公益党V2ray</a>
-                <li><a href="https://freefq.com/free-ssr/" title=使用体验5星-freefq.com:几乎每天更新，内容来自SSRUB,cnhumanright99电报群>免费翻墙网SSR</a>
-                <li><a href="https://fanqiangdang.com/forum-2-1.html" title="使用体验3星-机场推广,及推广节点">论坛|公益党SSR</a>
-                <li><a href="https://paoluz.cloud/">跑路云</a></li>
-            </ul>
-            <h5>常用地址</h5>
-            <ul>
-                <li><a href="http://www.lsdhss.com/">猎手导航</a></li>
-                <li><a href="https://www.chaonengsou.com">超能搜</a></li>
-                <li><a href="https://pan.baidu.com/">百度网盘登录</a></li>
-                <li><a href="https://tool.oschina.net/apidocs">API Docs</a></li>
-                <li><a href="https://www.apiref.com/">API ref</a></li>
-                <li><a href="https://www.runoob.com/">菜鸟教程</a></li>
-                <li><a href="https://www.w3schools.com/">W3C教程</a></li>
-                <li><a href="https://www.w3school.com.cn/">W3中文教程</a></li>
-                <li><a href="https://george0728.github.io/Web/adguard/en.htm">Adguard文档</a></li>
-                <li><a href="http://www.aseoe.com/manual/">爱思资源网</a></li>
-                <li><a href="https://www.qiuziyuan.net/">资源分享</a></li>
-            </ul>
-
-        </div>
-
-        <!--	右下侧-->
-        <div id="right">
-            <div class="content">
-
-                <ul class="ul1">
-                    <li class="ul1_li1"><a class="tabs" href="http://www.aseoe.com/manual">常用API</a>
-                        <ul class="ul2">
-                            <li><a href="https://www.apiref.com/java11-zh">Java SE 11</a></li>
-                            <li><a href="https://tool.oschina.net/apidocs/apidoc?api=jdk-zh">JDK中文手册</a></li>
-                            <li><a href="http://www.aseoe.com/manual/html5/">HTML5-API</a></li>
-                            <li><a href="http://www.aseoe.com/manual/js/index.html">JavaScript-API</a></li>
-                            <li><a href="http://www.aseoe.com/manual/jq/">JQuery—API</a></li>
-                            <li><a href="http://www.aseoe.com/manual/css3/">CSS3—API</a></li>
-                            <li><a href="source\api\jquery-api-1.9\index.htm">JQuery1.9—API</a></li>
-                            <li><a href="https://www.runoob.com/cssref/css-reference.html">菜鸟教程CSS</a></li>
-                            <li><a href="https://www.runoob.com/tags/html-reference.html">菜鸟教程HTML</a></li>
-                            <li><a href="https://www.runoob.com/jsref/jsref-tutorial.html">菜鸟教程JavaScript</a></li>
-                            <li><a href="https://www.runoob.com/manual/jquery/">菜鸟教程JQuery</a></li>
-                        </ul>
-                    </li>
-                </ul>
-
-                <ul class="ul1">
-                    <li class="ul1_li1"><a class="tabs" href="https://www.runoob.com">网上教程</a>
-                        <ul class="ul2">
-
-                            <li><a href="https://www.runoob.com/ajax">Ajax</a></li>
-                            <li><a href="https://www.runoob.com/json">JSON</a></li>
-                            <li><a href="https://www.runoob.com/xml">XML</a></li>
-                            <li><a href="https://www.runoob.com/regexp">Regexp</a></li>
-                            <li><a href="https://www.runoob.com/java">Java</a></li>
-                            <li><a href="https://www.runoob.com/maven">Maven</a></li>
-                            <li><a href="https://www.runoob.com/sql">SQL</a></li>
-                            <li><a href="https://www.runoob.com/js">JavaScript</a></li>
-                            <li><a href="https://www.runoob.com/htmldom">HTMLDOM</a></li>
-                            <li><a href="https://www.runoob.com/jquery">JQuery</a></li>
-
-                        </ul>
-                    </li>
-                </ul>
+    <el-divider></el-divider>
+    <div class="content">
+        <div class="left">
+            <div class="menu1">
+                <el-input placeholder="输入关键字进行过滤" size="mini" v-model="filterText" clearable>
+                    <i slot="suffix" class="el-input__icon el-icon-search"></i>
+                </el-input>
+                <el-tree class="filter-tree" :data="menuTreeList" :props="defaultProps" :filter-node-method="filterNode" ref="tree" accordion @node-click="handleRedirectUrl">
+                    <span slot-scope="{ node, data}" class="custom-tree-node">
+                        <!-- 不同节点类型展示logo不同-->
+                        <span v-if="node.level == 1" class="el-icon-folder-opened"><el-link :src="node.url">{{ node.label }}</el-link></span>
+                        <span v-else class="el-icon-view"><el-link :href="node.url">{{ node.label }}</el-link></span>
+                    </span>
+                </el-tree>
             </div>
-        <!--   首页显示-->
+        </div>
+        <div class="right">
+            <!--   首页显示-->
             <div >
-                <iframe src="http://www.lsdhss.com" id="content_iframe_id" name="content_iframe_name"></iframe>
+                <iframe src="https://geeknet.top/" ref="iframe" name="content_iframe_name"></iframe>
             </div>
         </div>
     </div>
+
 </div>
-<script type="text/javascript">
-    //清除input内容
-    function clear_all() {
-        if ($("input").length != 0) {
-            for (let i = 0; i < $("input").length; i++) {
-                $("input")[i].value = "";
 
+
+<script>
+    new Vue({
+        el: '#app',
+        data: function() {
+            return {
+                //顶部搜索框绑定值
+                searchText:null,
+                //顶部搜索引擎api列表
+                searchEngineList:[
+                    {action:'https://www.dalipan.com/search',searchKey:'keyword',placeholderText:'网盘搜索',icon:'source/img/website/netdisk.png',remark:''},
+                    {action:'https://www.google.com/search',searchKey:'q',placeholderText:'谷歌搜索',icon:'source/img/website/google.png',remark:''},
+                    {action:'https://www.baidu.com/s',searchKey:'wd',placeholderText:'百度搜索',icon:'source/img/website/baidu.png',remark:''},
+                    {action:'https://zh.wikipedia.org/wiki/',searchKey:'search',placeholderText:'维基搜索',icon:'source/img/website/wiki.png',remark:''},
+                    {action:'https://stackoverflow.com/search',searchKey:'q',placeholderText:'stackoverflow',icon:'source/img/website/stackoverflow.png',remark:''},
+                    {action:'https://zzk.cnblogs.com/s/blogpost',searchKey:'keywords',placeholderText:'博客园搜索',icon:'source/img/website/cnblogs.png',remark:''},
+                    {action:'https://so.csdn.net/so/search/s.do',searchKey:'q',placeholderText:'CSDN搜索',icon:'source/img/website/csdn.png',remark:''},
+                    {action:'https://www.zhihu.com/search?type=content',searchKey:'q',placeholderText:'知乎搜索',icon:'source/img/website/zhihu.png',remark:''},
+                    {action:'https://github.com/search',searchKey:'q',placeholderText:'GitHub搜索',icon:'source/img/website/github.png',remark:''},
+                    {action:'https://www.jianshu.com/search',searchKey:'q',placeholderText:'简书搜索',icon:'source/img/website/jianshu.png',remark:''},
+                    {action:'https://www.runoob.com',searchKey:'q',placeholderText:'菜鸟搜索',icon:'source/img/website/cainiao.png',remark:''},
+                ],
+                activeName: '1',
+                filterText: '',
+
+                menuTreeList: [{
+                    level:1,
+                    label: '高频访问',
+                    children: [
+                       {level:2, label: '猎手导航',url:'http://www.lsdhss.com/',remark:''},
+                       {level:2, label: 'KuLi云导航',url:'https://www.ooolooo.vip/',remark:''},
+                       {level:2, label: '超能搜',url:'https://www.chaonengsou.com/',remark:''},
+                       {level:2, label: '百度网盘登录',url:'https://pan.baidu.com/',remark:''},
+                       {level:2, label: 'API Docs',url:'https://tool.oschina.net/apidocs/',remark:''},
+                       {level:2, label: 'API ref',url:'https://www.apiref.com/',remark:''},
+                       {level:2, label: '菜鸟教程',url:'https://www.runoob.com/',remark:''},
+                       // {level:2, label: 'W3C教程',url:'https://www.w3schools.com/',remark:''},
+                       {level:2, label: 'W3中文教程',url:'https://www.w3school.com.cn/',remark:''},
+                       {level:2, label: 'Adguard文档',url:'https://george0728.github.io/Web/adguard/en.htm',remark:''},
+                       {level:2, label: '爱思资源网',url:'http://www.aseoe.com/manual/',remark:''},
+                       {level:2, label: '资源分享',url:'https://www.qiuziyuan.net/',remark:''},
+                        ]
+                }, {
+                    level:1,
+                    label: '科学上网',
+                    children: [
+                        {level:2, label: '论坛|公益党V2ray',url:'https://freefq.com/free-ssr/',remark:''},
+                        {level:2, label: '免费翻墙网SSR',url:'https://fanqiangdang.com/forum-2-1.html',remark:''},
+                        {level:2, label: '论坛|公益党SSR',url:'https://fanqiangdang.com/forum-2-1.html',remark:''},
+                        {level:2, label: 'KuLi云',url:'https://oooiooo.me/user',remark:''},
+                    ]
+                }, {
+                    level:1,
+                    label: '编程API',
+                    children: [
+                        {level:2, label:'AJAX',url:'https://www.runoob.com/ajax/',remark:''},
+                        {level:2, label:'BootStrap4',url:'https://code.z01.com/v4/docs/',remark:''},
+                        {level:2, label:'CSS3—API',url:'http://www.aseoe.com/manual/css3/',remark:''},
+                        {level:2, label:'CSS-菜鸟',url:'https://www.runoob.com/cssref/css-reference.html',remark:''},
+                        {level:2, label:'REGEXP',url:'https://www.runoob.com/regexp/',remark:''},
+                        {level:2, label:'MAVEN',url:'https://www.runoob.com/maven/',remark:''},
+                        {level:2, label:'SQL',url:'https://www.runoob.com/sql/',remark:''},
+                        {level:2, label:'HTML5-API',url:'http://www.aseoe.com/manual/html5/',remark:''},
+                        {level:2, label:'HTMLDOM',url:'https://www.runoob.com/htmldom',remark:''},
+                        {level:2, label:'HTML-菜鸟',url:'https://www.runoob.com/tags/html-reference.html',remark:''},
+                        {level:2, label:'Vue2',url:'https://cn.vuejs.org/v2/guide/',remark:''},
+                        {level:2, label:'JAVA',url:'https://www.runoob.com/java/',remark:''},
+                        {level:2, label:'Java SE 11',url:'https://www.apiref.com/java11-zh',remark:''},
+                        {level:2, label:'JavaScript',url:'https://www.runoob.com/js',remark:''},
+                        {level:2, label:'JavaScript-API',url:'http://www.aseoe.com/manual/js/index.html',remark:''},
+                        {level:2, label:'JDK中文手册',url:'https://tool.oschina.net/apidocs/apidoc?api=jdk-zh',remark:''},
+                        {level:2, label:'JQuery',url:'https://www.runoob.com/jquery',remark:''},
+                        {level:2, label:'JQuery—API',url:'http://www.aseoe.com/manual/jq/',remark:''},
+                        {level:2, label:'JQuery1.9—API',url:'source/api/jquery-api-1.9/index.htm',remark:''},
+                        {level:2, label:'JQuery-菜鸟',url:'https://www.runoob.com/manual/jquery/',remark:''},
+                        {level:2, label:'JSON',url:'https://www.runoob.com/json/',remark:''},
+                        {level:2, label:'XML',url:'https://www.runoob.com/xml/',remark:''},
+                    ]
+                }],
+                defaultProps: {
+                    children: 'children',
+                    label: 'label'
+                },
             }
+        },
+        watch: {
+            filterText(val) {
+                let res = val==null?'':val
+                this.$refs.tree.filter(val);
+            }
+        },
+        methods:{
+            //filter-node-method属性：	对树节点进行筛选时执行的方法，返回 true 表示这个节点可以显示，返回 false 则表示这个节点会被隐藏   Function(value, data, node)
+            filterNode(value, data) {
+                if (!value) return true;
+                return data.label.toLowerCase().indexOf(value.toLowerCase()) !== -1;
+            },
+
+            //node-click事件： 共三个参数，依次为：传递给 data 属性的数组中该节点所对应的对象、节点对应的 Node、节点组件本身。  https://element.eleme.cn/#/zh-CN/component/tree#events
+            handleRedirectUrl(data,node,value){
+                console.log("data:",data);
+                console.log("node:",node);
+                console.log("value:",value);
+                if(data.level == 2){
+                    this.$refs.iframe.src = data.url;
+                    // window.location.href = data.url;
+                }
+
+            },
+
+
         }
-    };
-    //使用div布局时，右侧网页初始加载
-    // var temp = "https://www.dalipan.com/";
-    // document.getElementById("right").innerHTML = '<object type="text/html" data="' + temp + '" width="100%" height="540px"></object>';
-    $(document).ready(function () {
-
-        //双击文本框，删除文本
-        $("input").dblclick(function () {
-            $(this)[0].value = "";
-        });
-
-        //也可使用css实现
-        //鼠标点击事件
-        $("a").click(function () {
-            var url = $(this).attr("href");
-            //js实现radio单选设置样式
-            for (let i = 0; i < $("a").length; i++) {
-                $("a")[i].style.fontWeight = ""
-                $("a")[i].style.background = "";
-            }
-
-            $(this)[0].style.background = "#B0B0B0"; //设置所点击链接的背景色
-            $(this)[0].style.fontWeight = "bold";
-            $(this)[0].target = "content_iframe_name"//设置点击链接时，窗口打开目标
-            $("#content_iframe_id").attr("src", url) //将鼠标点击的链接url传到iframe中
-
-            //布局全部使用div时（不适用iframe），使用以下代码，动态创建html页面到指定div中
-            // console.log(document.getElementById("right"));
-            // document.getElementById("right").innerHTML = '<object type="text/html" data="' + url + '" width="100%" height="540px"></object>';
-        });
-
-    });
+    })
 </script>
-
 </body>
 </html>
