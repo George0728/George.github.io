@@ -1,17 +1,21 @@
 @charset "UTF-8";
         * {
-            padding: 0px;
-            margin: 0px;
+            padding: 0;
+            margin: 0;
         }
 
         ul {
             list-style: none;
         }
 
+        .ul2 a {
+            margin: 0 !important;
+        }
+
         .ul2 li {
-        background:#FFFFFF;
+            background: #117bdb;
             clear: both;
-            margin: 0px;
+            margin: 0 !important;
         }
 
         .ul2 {
@@ -25,7 +29,7 @@
 
        .ul1 a {
             padding-left: 5px;
-            border: 1px solid lightgray;
+            /*border: 1px solid lightgray;*/
             display: inline-block;
             text-decoration: none;
             font-size: 14px;
@@ -38,7 +42,7 @@
         .ul1  li {
         width:145px;
             float: left;
-            margin-left: 0px;
+            margin-left: 0;
         }
         
         .content ul{
@@ -47,7 +51,7 @@
         }
         
         li span{
-        	font-size: 14px;
+        	/*font-size: 14px;*/
         	width:100px;
         	text-align: center;
         }
