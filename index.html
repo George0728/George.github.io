@@ -11,7 +11,10 @@
     <link rel="stylesheet" href="source/css/elementui.css">
     <!-- 引入Element UI组件库 -->
     <script src="source/js/elementui.js"></script>
+    <!-- 引入JQuery组件库 -->
     <script src="source/js/jquery.js" type="text/javascript"></script>
+    <!-- 引入cnchar 汉字解析基础库 -->
+    <script src="source/js/cnchar.min.js" type="text/javascript"></script>
     <base target="_blank">
     <style>
         .top{
@@ -151,6 +154,7 @@
                     children: [
                         {level:2, label:'AJAX',url:'https://www.runoob.com/ajax/',remark:''},
                         {level:2, label:'BootStrap4',url:'https://code.z01.com/v4/docs/',remark:''},
+                        {level:2, label:'cnchar (v3.0.5)',url:'https://www.theajack.com/cnchar/guide/',remark:''},
                         {level:2, label:'CSS3—API',url:'http://www.aseoe.com/manual/css3/',remark:''},
                         {level:2, label:'CSS-菜鸟',url:'https://www.runoob.com/cssref/css-reference.html',remark:''},
                         {level:2, label:'REGEXP',url:'https://www.runoob.com/regexp/',remark:''},
@@ -189,7 +193,30 @@
             //filter-node-method属性：	对树节点进行筛选时执行的方法，返回 true 表示这个节点可以显示，返回 false 则表示这个节点会被隐藏   Function(value, data, node)
             filterNode(value, data) {
                 if (!value) return true;
+
+                //支持中文拼音搜索(全部拼音时才会处理)
+                if(cnchar.isCnChar(data.label.toLowerCase())){
+                        //将label拆散成小写拼音数组
+                        let arr = data.label.spell('low', 'array'); //arg1:大小写 low up ；arg2:转换类型array,String
+                        //拼接成完整label的拼音
+                        let spell = arr.join(',');
+                        for (var i = 0; i < arr.length - 1; i++) {
+                            return value.toLowerCase().indexOf(arr[i].toLowerCase()) !== -1;
+                        };
+                    console.log(data.label+"是否为汉字：",cnchar.isCnChar(data.label));
+                    console.log("拆分后的拼音字符串",spell);
+                    //lengths 是label完整拼音 中每个汉字第一个拼音字母的index值的数组
+                    let lengths = [0];
+                    for (var i = 0; i < arr.length - 1; i++) {
+                        lengths.push(lengths[i] + arr[i].length);
+                    };
+                    //判断label完整拼音 中 输入值的 index 是不是等于某个汉字第一个拼音字母的index值
+                    return lengths.indexOf(spell.indexOf(value.toLowerCase())) !== -1
+                }
+
+                //忽略大小写
                 return data.label.toLowerCase().indexOf(value.toLowerCase()) !== -1;
+
             },
 
             //node-click事件： 共三个参数，依次为：传递给 data 属性的数组中该节点所对应的对象、节点对应的 Node、节点组件本身。  https://element.eleme.cn/#/zh-CN/component/tree#events
