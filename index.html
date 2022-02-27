@@ -176,6 +176,15 @@
                         {level:2, label:'JSON',url:'https://www.runoob.com/json/',remark:''},
                         {level:2, label:'XML',url:'https://www.runoob.com/xml/',remark:''},
                     ]
+                }, {
+                    level:1,
+                    label: '在线工具',
+                    children: [
+                        {level:2, label:'在线工具聚合',url:'https://tool.lu/',remark:''},
+                        // {level:2, label:'打字-打飞机',url:'https://theajack.gitee.io/type/',remark:''},
+                        // {level:2, label:'打字-弹钢琴',url:'https://theajack.gitee.io/piano/',remark:''},
+                        // {level:2, label:'JS在线运行环境',url:'https://theajack.gitee.io/jsbox/',remark:''},
+                    ]
                 }],
                 defaultProps: {
                     children: 'children',
@@ -195,7 +204,7 @@
                 if (!value) return true;
 
                 //支持中文拼音搜索(全部拼音时才会处理)
-                if(cnchar.isCnChar(data.label.toLowerCase())){
+                if(cnchar.isCnChar(data.label.toLowerCase()) && !cnchar.isCnChar(value)){
                         //将label拆散成小写拼音数组
                         let arr = data.label.spell('low', 'array'); //arg1:大小写 low up ；arg2:转换类型array,String
                         //拼接成完整label的拼音
