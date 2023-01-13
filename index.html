@@ -83,7 +83,7 @@
                     <span slot-scope="{ node, data}" class="custom-tree-node">
                         <!-- 不同节点类型展示logo不同-->
                         <span v-if="node.level == 1" class="el-icon-folder-opened"><el-link :src="node.url">{{ node.label }}</el-link></span>
-                        <span v-else class="el-icon-view"><el-link :href="node.url">{{ node.label }}</el-link></span>
+                        <span v-else class="#"><el-link :href="node.url">{{ node.label }}</el-link></span>
                     </span>
                 </el-tree>
             </div>
@@ -91,7 +91,9 @@
         <div class="right">
             <!--   首页显示-->
             <div >
-                <iframe src="https://geeknet.top/" ref="iframe" name="content_iframe_name"></iframe>
+                <iframe src="https://www.runoob.com" ref="iframe" name="content_iframe_name"></iframe>
+<!--                <iframe src="https://geeknet.top/" ref="iframe" name="content_iframe_name"></iframe>-->
+
             </div>
         </div>
     </div>
@@ -138,7 +140,9 @@
                        {level:2, label: 'W3中文教程',url:'https://www.w3school.com.cn/',remark:''},
                        {level:2, label: 'Adguard文档',url:'https://george0728.github.io/Web/adguard/en.htm',remark:''},
                        {level:2, label: '爱思资源网',url:'http://www.aseoe.com/manual/',remark:''},
-                       {level:2, label: '资源分享',url:'https://www.qiuziyuan.net/',remark:''},
+                       {level:2, label: '软件下载:资源分享',url:'https://www.qiuziyuan.net/',remark:''},
+                       {level:2, label: '软件下载:423down',url:'https://www.423down.com/',remark:''},
+                       {level:2, label: '软件下载:whg6',url:'https://www.whg6.com/',remark:''},
                         ]
                 }, {
                     level:1,
