@@ -163,11 +163,16 @@
     </el-tooltip>
     <el-tooltip placement="top" effect="light">
         <div slot="content">
-            {{this.menuTreeList}}
+            {{JSON.stringify(this.menuTreeList)}}
         </div>
         <el-button size="mini" >复制节点</el-button>
     </el-tooltip>
-
+    <el-tooltip placement="top" effect="light">
+        <div slot="content">
+            {{this.getCookie("menuTreeList")}}
+        </div>
+        <el-button size="mini" >显示Cookie</el-button>
+    </el-tooltip>
 
 </div>
 
@@ -279,10 +284,14 @@
         },
         created(){
             // window.localStorage.setItem("menuTreeList",JSON.stringify(this.menuTreeList));
-            var storeList = window.localStorage.getItem("menuTreeList");
+            const localStorageValue = window.localStorage.getItem("menuTreeList");
+            const cookieValue = this.getCookie("menuTreeList");
+            if(cookieValue != ""){
+                this.menuTreeList = JSON.parse(cookieValue);
+            }
             // console.log("storeList:::",storeList);
-            if(storeList != null){
-                this.menuTreeList = JSON.parse(storeList);
+            if(localStorageValue != null){
+                this.menuTreeList = JSON.parse(localStorageValue);
             }
         },
         watch: {
@@ -360,6 +369,7 @@
 
             },
             append(data) {
+                console.log("showcookies:",this.getCookie("menuTreeList"));
                 const newChild = { id: this.id++, level:2,label: '子节点', children: [] };
                 if (!data.children) {
                     this.$set(data.parent, 'children', []);
@@ -411,13 +421,25 @@
                 // console.log("this.form:::",this.form);
                 // console.log("编辑保存时menuTreeList:::",this.menuTreeList);
                 // console.log("编辑保存时menuTreeList.json:::",JSON.stringify(this.menuTreeList));
-                window.localStorage.setItem("menuTreeList",JSON.stringify(this.menuTreeList));
+                // window.localStorage.setItem("menuTreeList",JSON.stringify(this.menuTreeList));
+                this.syncMenuTreeList2LocalStorage();
                 // console.log("localStorage:::",window.localStorage.getItem("menuTreeList"));
                 this.dialogFormVisible = false;
             },
             //拖动节点时，更新localStorage
             syncMenuTreeList2LocalStorage(){
                 window.localStorage.setItem("menuTreeList",JSON.stringify(this.menuTreeList));
+                document.cookie = "menuTreeList="+JSON.stringify(this.menuTreeList);
+            },
+
+            getCookie(cname) {
+                var name = cname + "=";
+                var ca = document.cookie.split(';');
+                for (var i = 0; i < ca.length; i++) {
+                    var c = ca[i].trim();
+                    if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
+                }
+                return "";
             }
 
         }
