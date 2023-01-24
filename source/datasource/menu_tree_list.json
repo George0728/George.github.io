@@ -1,0 +1,480 @@
+[
+  {
+    "level": 1,
+    "label": "科学上网",
+    "children": [
+      {
+        "level": 2,
+        "label": "免费翻墙网SSR",
+        "url": "https://freefq.com/free-ssr",
+        "remark": "",
+        "id": 1674563882022,
+        "show": false,
+        "order": 0,
+        "children": []
+      },
+      {
+        "level": 2,
+        "label": "论坛|公益党SSR",
+        "url": "https://fanqiangdang.com/forum-2-1.html",
+        "remark": "",
+        "id": 1674563882023,
+        "show": false,
+        "order": 1,
+        "children": []
+      },
+      {
+        "level": 2,
+        "label": "KuLi云",
+        "url": "http://ooloo.info",
+        "remark": "",
+        "id": 1674563882024,
+        "show": false,
+        "order": 2,
+        "children": []
+      },
+      {
+        "id": 1674563882025,
+        "level": 2,
+        "label": "子节点",
+        "children": [],
+        "show": false,
+        "order": 3,
+        "remark": ""
+      }
+    ],
+    "id": 1674563882021,
+    "show": false,
+    "order": 0,
+    "remark": ""
+  },
+  {
+    "level": 1,
+    "label": "聚合API",
+    "children": [
+      {
+        "level": 2,
+        "label": "API Docs",
+        "url": "https://tool.oschina.net/apidocs/",
+        "remark": "",
+        "id": 1674563882027,
+        "show": false,
+        "order": 0,
+        "children": []
+      },
+      {
+        "level": 2,
+        "label": "API ref",
+        "url": "https://www.apiref.com/",
+        "remark": "",
+        "id": 1674563882028,
+        "show": false,
+        "order": 1,
+        "children": []
+      },
+      {
+        "level": 2,
+        "label": "菜鸟教程",
+        "url": "https://www.runoob.com/",
+        "remark": "",
+        "id": 1674563882029,
+        "show": false,
+        "order": 2,
+        "children": []
+      },
+      {
+        "level": 2,
+        "label": "W3中文教程",
+        "url": "https://www.w3school.com.cn/",
+        "remark": "",
+        "id": 1674563882030,
+        "show": false,
+        "order": 3,
+        "children": []
+      },
+      {
+        "level": 2,
+        "label": "Adguard文档",
+        "url": "https://george0728.github.io/Web/adguard/en.htm",
+        "remark": "",
+        "id": 1674563882031,
+        "show": false,
+        "order": 4,
+        "children": []
+      }
+    ],
+    "id": 1674563882026,
+    "show": false,
+    "order": 1,
+    "remark": ""
+  },
+  {
+    "level": 1,
+    "label": "编程API",
+    "children": [
+      {
+        "level": 2,
+        "label": "AJAX",
+        "url": "https://www.runoob.com/ajax/",
+        "remark": "",
+        "id": 1674563882033,
+        "show": false,
+        "order": 0,
+        "children": []
+      },
+      {
+        "level": 2,
+        "label": "BootStrap4",
+        "url": "https://code.z01.com/v4/docs/",
+        "remark": "",
+        "id": 1674563882034,
+        "show": false,
+        "order": 1,
+        "children": []
+      },
+      {
+        "level": 2,
+        "label": "cnchar (v3.0.5)",
+        "url": "https://www.theajack.com/cnchar/guide/",
+        "remark": "",
+        "id": 1674563882035,
+        "show": false,
+        "order": 2,
+        "children": []
+      },
+      {
+        "level": 2,
+        "label": "CSS3—API",
+        "url": "http://www.aseoe.com/manual/css3/",
+        "remark": "",
+        "id": 1674563882036,
+        "show": false,
+        "order": 3,
+        "children": []
+      },
+      {
+        "level": 2,
+        "label": "CSS-菜鸟",
+        "url": "https://www.runoob.com/cssref/css-reference.html",
+        "remark": "",
+        "id": 1674563882037,
+        "show": false,
+        "order": 4,
+        "children": []
+      },
+      {
+        "id": 1674563882038,
+        "level": 2,
+        "label": "Element",
+        "children": [],
+        "url": "https://element.eleme.cn/#/zh-CN/component/layout",
+        "show": false,
+        "order": 5,
+        "remark": ""
+      },
+      {
+        "level": 2,
+        "label": "REGEXP",
+        "url": "https://www.runoob.com/regexp/",
+        "remark": "",
+        "id": 1674563882039,
+        "show": false,
+        "order": 6,
+        "children": []
+      },
+      {
+        "level": 2,
+        "label": "MAVEN",
+        "url": "https://www.runoob.com/maven/",
+        "remark": "",
+        "id": 1674563882040,
+        "show": false,
+        "order": 7,
+        "children": []
+      },
+      {
+        "level": 2,
+        "label": "SQL",
+        "url": "https://www.runoob.com/sql/",
+        "remark": "",
+        "id": 1674563882041,
+        "show": false,
+        "order": 8,
+        "children": []
+      },
+      {
+        "level": 2,
+        "label": "HTML5-API",
+        "url": "http://www.aseoe.com/manual/html5/",
+        "remark": "",
+        "id": 1674563882042,
+        "show": false,
+        "order": 9,
+        "children": []
+      },
+      {
+        "level": 2,
+        "label": "HTMLDOM",
+        "url": "https://www.runoob.com/htmldom",
+        "remark": "",
+        "id": 1674563882043,
+        "show": false,
+        "order": 10,
+        "children": []
+      },
+      {
+        "level": 2,
+        "label": "HTML-菜鸟",
+        "url": "https://www.runoob.com/tags/html-reference.html",
+        "remark": "",
+        "id": 1674563882044,
+        "show": false,
+        "order": 11,
+        "children": []
+      },
+      {
+        "level": 2,
+        "label": "Vue2",
+        "url": "https://cn.vuejs.org/v2/guide/",
+        "remark": "",
+        "id": 1674563882045,
+        "show": false,
+        "order": 12,
+        "children": []
+      },
+      {
+        "level": 2,
+        "label": "JAVA",
+        "url": "https://www.runoob.com/java/",
+        "remark": "",
+        "id": 1674563882046,
+        "show": false,
+        "order": 13,
+        "children": []
+      },
+      {
+        "level": 2,
+        "label": "Java SE 11",
+        "url": "https://www.apiref.com/java11-zh",
+        "remark": "",
+        "id": 1674563882047,
+        "show": false,
+        "order": 14,
+        "children": []
+      },
+      {
+        "level": 2,
+        "label": "JavaScript",
+        "url": "https://www.runoob.com/js",
+        "remark": "",
+        "id": 1674563882048,
+        "show": false,
+        "order": 15,
+        "children": []
+      },
+      {
+        "level": 2,
+        "label": "JavaScript-API",
+        "url": "http://www.aseoe.com/manual/js/index.html",
+        "remark": "",
+        "id": 1674563882049,
+        "show": false,
+        "order": 16,
+        "children": []
+      },
+      {
+        "level": 2,
+        "label": "JDK中文手册",
+        "url": "https://tool.oschina.net/apidocs/apidoc?api=jdk-zh",
+        "remark": "",
+        "id": 1674563882050,
+        "show": false,
+        "order": 17,
+        "children": []
+      },
+      {
+        "level": 2,
+        "label": "JQuery",
+        "url": "https://www.runoob.com/jquery",
+        "remark": "",
+        "id": 1674563882051,
+        "show": false,
+        "order": 18,
+        "children": []
+      },
+      {
+        "level": 2,
+        "label": "JQuery—API",
+        "url": "http://www.aseoe.com/manual/jq/",
+        "remark": "",
+        "id": 1674563882052,
+        "show": false,
+        "order": 19,
+        "children": []
+      },
+      {
+        "level": 2,
+        "label": "JQuery1.9—API",
+        "url": "source/api/jquery-api-1.9/index.htm",
+        "remark": "",
+        "id": 1674563882053,
+        "show": false,
+        "order": 20,
+        "children": []
+      },
+      {
+        "level": 2,
+        "label": "JQuery-菜鸟",
+        "url": "https://www.runoob.com/manual/jquery/",
+        "remark": "",
+        "id": 1674563882054,
+        "show": false,
+        "order": 21,
+        "children": []
+      },
+      {
+        "level": 2,
+        "label": "JSON",
+        "url": "https://www.runoob.com/json/",
+        "remark": "",
+        "id": 1674563882055,
+        "show": false,
+        "order": 22,
+        "children": []
+      },
+      {
+        "level": 2,
+        "label": "XML",
+        "url": "https://www.runoob.com/xml/",
+        "remark": "",
+        "id": 1674563882056,
+        "show": false,
+        "order": 23,
+        "children": []
+      }
+    ],
+    "id": 1674563882032,
+    "show": false,
+    "order": 2,
+    "remark": ""
+  },
+  {
+    "level": 1,
+    "label": "在线工具",
+    "children": [
+      {
+        "level": 2,
+        "label": "在线工具聚合",
+        "url": "https://tool.lu/",
+        "remark": "",
+        "id": 1674563882058,
+        "show": false,
+        "order": 0,
+        "children": []
+      },
+      {
+        "id": 1674563882059,
+        "level": 2,
+        "label": "子节点",
+        "children": [],
+        "show": false,
+        "order": 1,
+        "remark": ""
+      }
+    ],
+    "id": 1674563882057,
+    "show": false,
+    "order": 3,
+    "remark": ""
+  },
+  {
+    "id": 1674563882060,
+    "level": 2,
+    "label": "菜鸟教程",
+    "children": [
+      {
+        "id": 1674563882061,
+        "level": 2,
+        "label": "测试",
+        "children": [
+          {
+            "id": 1674563882062,
+            "level": 2,
+            "label": "子节点",
+            "children": [],
+            "show": false,
+            "order": 0,
+            "remark": ""
+          }
+        ],
+        "url": "https://www.runoob.com/linux/linux-tutorial.html",
+        "show": false,
+        "order": 0,
+        "remark": ""
+      }
+    ],
+    "url": "",
+    "show": false,
+    "order": 4,
+    "remark": ""
+  },
+  {
+    "id": 1674563882062,
+    "level": 2,
+    "label": "不可用iframe1",
+    "children": [
+      {
+        "level": 2,
+        "label": "猎手导航33333",
+        "url": "http://www.lsdhss.com/",
+        "remark": "",
+        "id": 1674563882063,
+        "show": false,
+        "order": 0,
+        "children": []
+      },
+      {
+        "level": 2,
+        "label": "资源分享4444444",
+        "url": "https://www.qiuziyuan.net/",
+        "remark": "",
+        "id": 1674563882064,
+        "show": false,
+        "order": 1,
+        "children": []
+      },
+      {
+        "level": 2,
+        "label": "爱思资源网5555555",
+        "url": "http://www.aseoe.com/manual/",
+        "remark": "",
+        "id": 1674563882065,
+        "show": false,
+        "order": 2,
+        "children": []
+      }
+    ],
+    "show": false,
+    "order": 5,
+    "remark": ""
+  },
+  {
+    "id": 1674563882066,
+    "level": 2,
+    "label": "沙箱环境",
+    "children": [
+      {
+        "id": 1674563882067,
+        "level": 2,
+        "label": "子节点",
+        "children": [],
+        "show": false,
+        "order": 0,
+        "remark": ""
+      }
+    ],
+    "remark": "",
+    "show": false,
+    "order": 6
+  }
+]

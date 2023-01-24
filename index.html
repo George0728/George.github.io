@@ -78,6 +78,14 @@
         <div class="left">
             <div class="menu1">
 <!--                <el-button size="mini" @click="()=>{this.showEditableButton =!this.showEditableButton}" style="width: 100%;margin-bottom: 10px">编辑目录</el-button>-->
+                <el-link href="https://time.is/Beijing" id="time_is_link" rel="nofollow" style="font-size:14px;margin:0 0 5px 10px;font-weight: bolder" target="_blank">
+                    <span id="Beijing_z43d" style="font-size:14px"></span>
+                </el-link>
+                <script src="//widget.time.is/zh.js"></script>
+                <script>
+                    time_is_widget.init({Beijing_z43d:{template:"DATE TIME", date_format:"year年monthnum月daynum日"}});
+                </script>
+
                 <el-input placeholder="输入关键字进行过滤" size="mini" v-model="filterText" clearable>
                     <i slot="suffix" class="el-input__icon el-icon-search"></i>
                 </el-input>
@@ -95,13 +103,16 @@
                          highlight-current
                          :draggable="true"
                          @node-drop="syncMenuTreeList2LocalStorage">
-                    <span slot-scope="{ node, data}" class="custom-tree-node">
+                    <span slot-scope="{ node, data}" class="custom-tree-node" @mouseenter="mouseenter(data)" @mouseleave="mouseleave(data)" style="width: 100%">
                         <!-- 不同节点类型展示logo不同-->
-                        <span v-if="node.level == 1" class="el-icon-folder-opened" ><el-link :src="node.url" style="margin-left: 3px">{{ node.label }}</el-link></span>
+                        <span v-if="node.level == 1" class="el-icon-folder-opened" >
+                            <el-link :src="node.url" style="margin-left: 3px">{{ node.label }}</el-link>
+                        </span>
                         <span v-else class="el-icon-document" >
                             <el-link :href="node.url" style="margin-left: 3px">{{ node.label }}</el-link>
                         </span>
-                        <div v-if="showEditableButton" style="display: inline-block;position: absolute;right: -80px;background: #F0F7FF;padding-right: 5px;border-radius: 3px;border-color: #1CB1DA">
+
+                        <div v-show="data.show" style="display: inline-block;position:absolute;right: -70px; background: #F0F7FF;margin-top:-4px;padding-right: 5px;border-radius: 3px;border-color: #1CB1DA;">
                             <!--  为 Tree 的一个节点的后面增加一个节点             -->
                             <el-button  v-if="false" type="text" size="mini" @click="() => insertAfter(data, node)" v-if="node.level >= 1">
                                 <i class = "el-icon-plus"></i>
@@ -136,7 +147,7 @@
         <el-dialog title="编辑节点" :visible.sync="dialogFormVisible">
             <el-form :model="form">
                 <el-form-item label="节点id" :label-width="formLabelWidth">
-                    <el-input v-model="form.id" autocomplete="off"  @keyup.enter.native="saveNode"></el-input>
+                    <el-input v-model="form.id" autocomplete="off"  @keyup.enter.native="saveNode" readonly></el-input>
                 </el-form-item>
                 <el-form-item label="节点名称" :label-width="formLabelWidth">
                     <el-input v-model="form.label" autocomplete="off"  @keyup.enter.native="saveNode"></el-input>
@@ -148,9 +159,9 @@
                     <el-input v-model="form.remark" autocomplete="off" @keyup.enter.native="saveNode"></el-input>
                 </el-form-item>
             </el-form>
-            <div slot="footer" class="dialog-footer">
-                <el-button @click="dialogFormVisible = false">取 消</el-button>
+            <div slot="footer" class="dialog-footer" align="left">
                 <el-button type="primary" @click="saveNode">确 定</el-button>
+                <el-button @click="dialogFormVisible = false">取 消</el-button>
             </div>
         </el-dialog>
     </template>
@@ -168,10 +179,16 @@
         <el-button size="mini" >复制节点</el-button>
     </el-tooltip>
     <el-tooltip placement="top" effect="light">
-        <div slot="content">
-            {{this.getCookie("menuTreeList")}}
+        <div slot="content" style="width: 400px;height: 200px">
+            <el-input
+                    type="textarea"
+                    :rows="7"
+                    placeholder="请输入JSON格式数据"
+                    v-model="cookieValue">
+            </el-input>
+            <el-button size="mini" type="primary" @click="uploadData" style="margin-top: 10px;alignment: right" align="right">保存</el-button>
         </div>
-        <el-button size="mini" >显示Cookie</el-button>
+        <el-button size="mini" >上传数据</el-button>
     </el-tooltip>
 
 </div>
@@ -182,6 +199,7 @@
         el: '#app',
         data: function() {
             return {
+                cookieValue:"",
                 formLabelWidth:600,
                 form:{},
                 dialogFormVisible:false,
@@ -275,7 +293,6 @@
                         // {level:2, label:'JS在线运行环境',url:'https://theajack.gitee.io/jsbox/',remark:''},
                     ]
                 }],
-                menuTreeList1: [],
                 defaultProps: {
                     children: 'children',
                     label: 'label'
@@ -285,10 +302,11 @@
         created(){
             // window.localStorage.setItem("menuTreeList",JSON.stringify(this.menuTreeList));
             const localStorageValue = window.localStorage.getItem("menuTreeList");
-            const cookieValue = this.getCookie("menuTreeList");
-            if(cookieValue != ""){
-                this.menuTreeList = JSON.parse(cookieValue);
-            }
+            // const cookieValue = this.getCookie("menuTreeList");
+            // alert(cookieValue);
+            // if(cookieValue != ""){
+            //     this.menuTreeList = JSON.parse(cookieValue);
+            // }
             // console.log("storeList:::",storeList);
             if(localStorageValue != null){
                 this.menuTreeList = JSON.parse(localStorageValue);
@@ -345,6 +363,7 @@
             rightClick (MouseEvent, object, Node, element) { // 鼠标右击触发事件
 
                 this.showEditableButton =!this.showEditableButton
+                this.$message.success("鼠标右击展开节点:"+ (this.showEditableButton ? "否" : "是" ));
                 // console.log('右键被点击的event:', MouseEvent)
                 // console.log('右键被点击的object:', object)
                 // console.log('右键被点击的value:', Node)
@@ -370,12 +389,14 @@
             },
             append(data) {
                 console.log("showcookies:",this.getCookie("menuTreeList"));
-                const newChild = { id: this.id++, level:2,label: '子节点', children: [] };
+                const newChild = { id: new Date().getTime(), level:2,label: '子节点', children: [] };
                 if (!data.children) {
                     this.$set(data.parent, 'children', []);
                 }
                 console.log("拓展前data.children:::",data.children);
                 data.children.push(newChild);
+                this.$refs.tree.store.nodesMap[data.id].expanded = true;
+                data.unfold = true;
                 this.syncMenuTreeList2LocalStorage();
                 // console.log("拓展时data:::",data);
                 // console.log("拓展后data.children:::",data.children);
@@ -429,10 +450,11 @@
             //拖动节点时，更新localStorage
             syncMenuTreeList2LocalStorage(){
                 window.localStorage.setItem("menuTreeList",JSON.stringify(this.menuTreeList));
-                document.cookie = "menuTreeList="+JSON.stringify(this.menuTreeList);
+                // document.cookie = "menuTreeList="+JSON.stringify(this.menuTreeList);
             },
 
             getCookie(cname) {
+                console.log("document.cookie:::",document.cookie);
                 var name = cname + "=";
                 var ca = document.cookie.split(';');
                 for (var i = 0; i < ca.length; i++) {
@@ -440,7 +462,53 @@
                     if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
                 }
                 return "";
+            },
+
+            uploadData(){
+                this.$confirm('此操作将覆盖已有列表数据, 是否继续?', '提示', {
+                    confirmButtonText: '确定',
+                    cancelButtonText: '取消',
+                    type: 'warning'
+                }).then(() => {
+                    const jsonStr = this.cookieValue;
+                    try {
+                        window.localStorage.setItem("menuTreeList4Recovery",JSON.stringify(this.menuTreeList));
+                        const list = JSON.parse(jsonStr);
+                        this.menuTreeList = list;
+                        this.syncMenuTreeList2LocalStorage();
+                        this.$message.success("上传成功");
+                    }catch (e) {
+                        this.$message.error("上传失败");
+                    }
+                    this.syncMenuTreeList2LocalStorage();
+                    this.$message({
+                        type: 'success',
+                        message: '上传成功!'
+                    });
+                }).catch(() => {
+                    this.$message({
+                        type: 'info',
+                        message: '已取消上传'
+                    });
+                });
+            },
+
+
+            mouseenter(data){
+                this.$nextTick(()=>{
+                    this.$set(data, 'show', this.showEditableButton && true)
+                })
+                console.log("鼠标移入data:::",data);
+                console.log("鼠标移入data.show:::",data.show);
+            },
+            mouseleave(data){
+                this.$nextTick(()=>{
+                    this.$set(data, 'show', this.showEditableButton && false )
+                });
+                console.log("鼠标移出data:::",data);
+                console.log("鼠标移出data.show:::",data.show);
             }
+
 
         }
     })

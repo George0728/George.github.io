@@ -6,11 +6,104 @@
 </head>
 <body>
 <script>
-    var arr = new Array();
-    var ab = 157;
-    arr.push("155");
-    arr.push("157");
-    alert(arr.indexOf(ab.toString()) > -1);
+    /**
+     * 测试数组中元素的存在性
+     */
+    // var arr = new Array();
+    // var ab = 157;
+    // arr.push("155");
+    // arr.push("157");
+    // alert(arr.indexOf(ab.toString()) > -1);
+
+
+    /**
+     * 为数组添加id属性，show属性
+     */
+    let str = "[{\"level\":1,\"label\":\"科学上网\",\"children\":[{\"level\":2,\"label\":\"免费翻墙网SSR\",\"url\":\"https://freefq.com/free-ssr\",\"remark\":\"每天自动更新免费节点\"},{\"level\":2,\"label\":\"论坛|公益党SSR\",\"url\":\"https://fanqiangdang.com/forum-2-1.html\",\"remark\":\"\"},{\"level\":2,\"label\":\"KuLi云\",\"url\":\"http://ooloo.info\",\"remark\":\"\"},{\"id\":1674559466893,\"level\":2,\"label\":\"子节点\",\"children\":[]}],\"id\":\"1\"},{\"level\":1,\"label\":\"聚合API\",\"children\":[{\"level\":2,\"label\":\"API Docs\",\"url\":\"https://tool.oschina.net/apidocs/\",\"remark\":\"\"},{\"level\":2,\"label\":\"API ref\",\"url\":\"https://www.apiref.com/\",\"remark\":\"\"},{\"level\":2,\"label\":\"菜鸟教程\",\"url\":\"https://www.runoob.com/\",\"remark\":\"\"},{\"level\":2,\"label\":\"W3中文教程\",\"url\":\"https://www.w3school.com.cn/\",\"remark\":\"\"},{\"level\":2,\"label\":\"Adguard文档\",\"url\":\"https://george0728.github.io/Web/adguard/en.htm\",\"remark\":\"\"}],\"id\":\"0\"},{\"level\":1,\"label\":\"编程API\",\"children\":[{\"level\":2,\"label\":\"AJAX\",\"url\":\"https://www.runoob.com/ajax/\",\"remark\":\"\"},{\"level\":2,\"label\":\"BootStrap4\",\"url\":\"https://code.z01.com/v4/docs/\",\"remark\":\"\"},{\"level\":2,\"label\":\"cnchar (v3.0.5)\",\"url\":\"https://www.theajack.com/cnchar/guide/\",\"remark\":\"\"},{\"level\":2,\"label\":\"CSS3—API\",\"url\":\"http://www.aseoe.com/manual/css3/\",\"remark\":\"\"},{\"level\":2,\"label\":\"CSS-菜鸟\",\"url\":\"https://www.runoob.com/cssref/css-reference.html\",\"remark\":\"\"},{\"id\":0,\"level\":2,\"label\":\"Element\",\"children\":[],\"url\":\"https://element.eleme.cn/#/zh-CN/component/layout\"},{\"level\":2,\"label\":\"REGEXP\",\"url\":\"https://www.runoob.com/regexp/\",\"remark\":\"\"},{\"level\":2,\"label\":\"MAVEN\",\"url\":\"https://www.runoob.com/maven/\",\"remark\":\"\"},{\"level\":2,\"label\":\"SQL\",\"url\":\"https://www.runoob.com/sql/\",\"remark\":\"\"},{\"level\":2,\"label\":\"HTML5-API\",\"url\":\"http://www.aseoe.com/manual/html5/\",\"remark\":\"\"},{\"level\":2,\"label\":\"HTMLDOM\",\"url\":\"https://www.runoob.com/htmldom\",\"remark\":\"\"},{\"level\":2,\"label\":\"HTML-菜鸟\",\"url\":\"https://www.runoob.com/tags/html-reference.html\",\"remark\":\"\"},{\"level\":2,\"label\":\"Vue2\",\"url\":\"https://cn.vuejs.org/v2/guide/\",\"remark\":\"\"},{\"level\":2,\"label\":\"JAVA\",\"url\":\"https://www.runoob.com/java/\",\"remark\":\"\"},{\"level\":2,\"label\":\"Java SE 11\",\"url\":\"https://www.apiref.com/java11-zh\",\"remark\":\"\"},{\"level\":2,\"label\":\"JavaScript\",\"url\":\"https://www.runoob.com/js\",\"remark\":\"\"},{\"level\":2,\"label\":\"JavaScript-API\",\"url\":\"http://www.aseoe.com/manual/js/index.html\",\"remark\":\"\"},{\"level\":2,\"label\":\"JDK中文手册\",\"url\":\"https://tool.oschina.net/apidocs/apidoc?api=jdk-zh\",\"remark\":\"\"},{\"level\":2,\"label\":\"JQuery\",\"url\":\"https://www.runoob.com/jquery\",\"remark\":\"\"},{\"level\":2,\"label\":\"JQuery—API\",\"url\":\"http://www.aseoe.com/manual/jq/\",\"remark\":\"\"},{\"level\":2,\"label\":\"JQuery1.9—API\",\"url\":\"source/api/jquery-api-1.9/index.htm\",\"remark\":\"\"},{\"level\":2,\"label\":\"JQuery-菜鸟\",\"url\":\"https://www.runoob.com/manual/jquery/\",\"remark\":\"\"},{\"level\":2,\"label\":\"JSON\",\"url\":\"https://www.runoob.com/json/\",\"remark\":\"\"},{\"level\":2,\"label\":\"XML\",\"url\":\"https://www.runoob.com/xml/\",\"remark\":\"\"}],\"id\":\"2\"},{\"level\":1,\"label\":\"在线工具\",\"children\":[{\"level\":2,\"label\":\"在线工具聚合\",\"url\":\"https://tool.lu/\",\"remark\":\"\"},{\"id\":0,\"level\":2,\"label\":\"子节点\",\"children\":[]}],\"id\":\"3\"},{\"id\":\"4\",\"level\":2,\"label\":\"菜鸟教程\",\"children\":[{\"id\":0,\"level\":2,\"label\":\"测试\",\"children\":[{\"id\":1,\"level\":2,\"label\":\"子节点\",\"children\":[]}],\"url\":\"https://www.runoob.com/linux/linux-tutorial.html\"}],\"url\":\"\"},{\"id\":1000,\"level\":2,\"label\":\"不可用iframe1\",\"children\":[{\"level\":2,\"label\":\"猎手导航33333\",\"url\":\"http://www.lsdhss.com/\",\"remark\":\"\"},{\"level\":2,\"label\":\"资源分享4444444\",\"url\":\"https://www.qiuziyuan.net/\",\"remark\":\"\"},{\"level\":2,\"label\":\"爱思资源网5555555\",\"url\":\"http://www.aseoe.com/manual/\",\"remark\":\"123123123123123\"}]},{\"id\":1,\"level\":2,\"label\":\"沙箱环境\",\"children\":[{\"id\":2,\"level\":2,\"label\":\"子节点\",\"children\":[]}],\"remark\":\"线上模拟运行代码\"}]\n";
+    let str2 = "[{\n" +
+        "    \"id\": 1,\n" +
+        "    \"level\": 2,\n" +
+        "    \"label\": \"沙箱环境\",\n" +
+        "    \"children\": [\n" +
+        "        {\n" +
+        "            \"id\": 2,\n" +
+        "            \"level\": 2,\n" +
+        "            \"label\": \"子节点1\",\n" +
+        "            \"children\": [\n" +
+        "                {\n" +
+        "                    \"id\": 1674561089911,\n" +
+        "                    \"level\": 2,\n" +
+        "                    \"label\": \"子节点2\",\n" +
+        "                    \"children\": [\n" +
+        "                        {\n" +
+        "                            \"id\": 1674561095271,\n" +
+        "                            \"level\": 2,\n" +
+        "                            \"label\": \"子节点3\",\n" +
+        "                            \"children\": [\n" +
+        "                                {\n" +
+        "                                    \"id\": 1674561110863,\n" +
+        "                                    \"level\": 2,\n" +
+        "                                    \"label\": \"子节点4\",\n" +
+        "                                    \"children\": []\n" +
+        "                                }\n" +
+        "                            ]\n" +
+        "                        }\n" +
+        "                    ]\n" +
+        "                }\n" +
+        "            ]\n" +
+        "        }\n" +
+        "    ],\n" +
+        "    \"remark\": \"线上模拟运行代码\"\n" +
+        "}\n" +
+        "]";
+    const li = JSON.parse(str);
+    let numId = new Date().getTime();
+
+
+    checkNodes(li,numId);
+
+
+    /**
+     * 递归检查数据规范性。
+     * @param li
+     * @param numId
+     */
+    function checkNodes(li,numId) {
+        let k = 0;
+        for (let i = 0; i < li.length; i++) {
+            k++;
+            let parentNode = li[i];
+            parentNode["id"] = numId + k;
+            parentNode["show"] = false;
+            parentNode["order"] = i;
+            parentNode["remark"] = "";
+            console.log("parentNode:::", parentNode);
+            console.log("parentNode.children:::",parentNode.children);
+            if (parentNode.children && parentNode.children.length > 0) {
+                for (let j=0; j< parentNode.children.length; j++) {
+                    k++;
+                    let c_num =  numId + k;
+                    let childNode = parentNode.children[j];
+                    childNode["id"] = c_num;
+                    childNode["show"] = false;
+                    childNode["order"] = j;
+                    childNode["remark"] = "";
+                    console.log("childNode:::", childNode);
+                    console.log("childNode.children:::", childNode.children);
+                    if(childNode.children && childNode.children.length > 0){
+                        checkNodes(childNode.children,c_num);
+                    }else{
+                        childNode["children"] = [];
+                    }
+                }
+            }
+        }
+        console.log("li:::",JSON.stringify(li));
+        // console.log("new Date().getTime():::",new Date().getTime());
+    }
+
+
+
 </script>
 
 </body>
