@@ -57,6 +57,21 @@
             height: 47vw !important;
         }
 
+        /*目录树编辑按钮样式*/
+        .tree_edit {
+            display: inline-block;
+            height: 26px;
+            position: absolute;
+            right: -83px;
+            background: #F0F7FF;
+            margin-top: -5px;
+            padding-left: 5px;
+            padding-right: 5px;
+            border-radius: 3px;
+            border-style: ridge;
+            border-color: rgba(193, 193, 196, 0.96);
+        }
+
 
     </style>
 
@@ -112,7 +127,7 @@
                             <el-link :href="node.url" style="margin-left: 3px">{{ node.label }}</el-link>
                         </span>
 
-                        <div v-show="data.show" style="display: inline-block;position:absolute;right: -70px; background: #F0F7FF;margin-top:-4px;padding-right: 5px;border-radius: 3px;border-color: #1CB1DA;">
+                        <div v-show="data.show"  class="tree_edit">
                             <!--  为 Tree 的一个节点的后面增加一个节点             -->
                             <el-button  v-if="false" type="text" size="mini" @click="() => insertAfter(data, node)" v-if="node.level >= 1">
                                 <i class = "el-icon-plus"></i>
@@ -167,17 +182,19 @@
     </template>
     <el-tooltip placement="top" effect="light">
         <div slot="content">
-1. 鼠标右击编辑目录树，再次右击隐藏编辑按钮。<br/>
-2. 更新的目录树数据使用localStorage存储，清除浏览器本地数据后，不可恢复。
+            1. 鼠标右击编辑目录树，再次右击隐藏编辑按钮。<br/>
+            2. 更新的目录树数据使用localStorage存储，清除浏览器本地数据后，不可恢复。
         </div>
-        <el-button size="mini" >使用帮助</el-button>
+        <el-button size="mini" class="el-icon-info">&nbsp;使用帮助</el-button>
     </el-tooltip>
+
     <el-tooltip placement="top" effect="light">
         <div slot="content">
             {{JSON.stringify(this.menuTreeList)}}
         </div>
-        <el-button size="mini" >复制节点</el-button>
+        <el-button size="mini" @click="sequenceDownload" class="el-icon-download">&nbsp;复制节点/下载</el-button>
     </el-tooltip>
+
     <el-tooltip placement="top" effect="light">
         <div slot="content" style="width: 400px;height: 200px">
             <el-input
@@ -186,9 +203,11 @@
                     placeholder="请输入JSON格式数据"
                     v-model="cookieValue">
             </el-input>
-            <el-button size="mini" type="primary" @click="uploadData" style="margin-top: 10px;alignment: right" align="right">保存</el-button>
+            <el-button size="mini" type="primary" @click="uploadData" style="margin-top: 10px;alignment: right"
+                       align="right">保存
+            </el-button>
         </div>
-        <el-button size="mini" >上传数据</el-button>
+        <el-button size="mini" class="el-icon-upload2">&nbsp;上传数据</el-button>
     </el-tooltip>
 
 </div>
@@ -507,6 +526,14 @@
                 });
                 console.log("鼠标移出data:::",data);
                 console.log("鼠标移出data.show:::",data.show);
+            },
+
+            sequenceDownload() {
+                const element = document.createElement('a')
+                element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(JSON.stringify(this.menuTreeList)))
+                element.setAttribute('download',"menuTreeList.json")
+                element.style.display = 'none'
+                element.click()
             }
 
 
