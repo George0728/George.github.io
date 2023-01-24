@@ -76,14 +76,49 @@
     <div class="content">
         <div class="left">
             <div class="menu1">
+<!--                <el-button size="mini" @click="()=>{this.showEditableButton =!this.showEditableButton}" style="width: 100%;margin-bottom: 10px">编辑目录</el-button>-->
                 <el-input placeholder="输入关键字进行过滤" size="mini" v-model="filterText" clearable>
                     <i slot="suffix" class="el-input__icon el-icon-search"></i>
                 </el-input>
-                <el-tree class="filter-tree" :data="menuTreeList" :props="defaultProps" :filter-node-method="filterNode" ref="tree" accordion @node-click="handleRedirectUrl">
+
+                <el-tree class="filter-tree"
+                         :data="menuTreeList"
+                         :props="defaultProps"
+                         :filter-node-method="filterNode"
+                         :expand-on-click-node="!this.showEditableButton"
+                         node-key="id"
+                         ref="tree"
+                         accordion
+                         @node-click="handleRedirectUrl"
+                         @node-contextmenu="rightClick"
+                         highlight-current
+                         :draggable="true"
+                         @node-drop="syncMenuTreeList2LocalStorage">
                     <span slot-scope="{ node, data}" class="custom-tree-node">
                         <!-- 不同节点类型展示logo不同-->
-                        <span v-if="node.level == 1" class="el-icon-folder-opened"><el-link :src="node.url">{{ node.label }}</el-link></span>
-                        <span v-else class="el-icon-view"><el-link :href="node.url">{{ node.label }}</el-link></span>
+                        <span v-if="node.level == 1" class="el-icon-folder-opened" ><el-link :src="node.url" style="margin-left: 3px">{{ node.label }}</el-link></span>
+                        <span v-else class="el-icon-document" >
+                            <el-link :href="node.url" style="margin-left: 3px">{{ node.label }}</el-link>
+                        </span>
+                        <div v-if="showEditableButton" style="display: inline-block;position: absolute;right: -80px;background: #F0F7FF;padding-right: 5px;border-radius: 3px;border-color: #1CB1DA">
+                            <!--  为 Tree 的一个节点的后面增加一个节点             -->
+                            <el-button  v-if="false" type="text" size="mini" @click="() => insertAfter(data, node)" v-if="node.level >= 1">
+                                <i class = "el-icon-plus"></i>
+                            </el-button>
+                            <!--  为 Tree 中的一个节点追加一个子节点             -->
+                            <el-button type="text" size="mini" @click="() => append(data, node)">
+                                <i class = "el-icon-plus"></i>
+                            </el-button>
+                            <!--		// 编辑按钮-->
+                            <el-button type="text" size="mini" @click = "() => edit(node, data)">
+                                <i class="el-icon-edit"></i>
+                            </el-button>
+                            <!--            // 删除按钮-->
+                            <el-button type="text" size="mini" @click = "() => remove(node, data)">
+                                <i class = "el-icon-delete"></i>
+                            </el-button>
+                        </div>
+
                     </span>
                 </el-tree>
             </div>
@@ -91,10 +126,47 @@
         <div class="right">
             <!--   首页显示-->
             <div >
-                <iframe src="https://geeknet.top/" ref="iframe" name="content_iframe_name"></iframe>
+                <iframe src="https://www.runoob.com/" ref="iframe" name="content_iframe_name"></iframe>
             </div>
         </div>
     </div>
+
+    <template>
+        <el-dialog title="编辑节点" :visible.sync="dialogFormVisible">
+            <el-form :model="form">
+                <el-form-item label="节点id" :label-width="formLabelWidth">
+                    <el-input v-model="form.id" autocomplete="off"  @keyup.enter.native="saveNode"></el-input>
+                </el-form-item>
+                <el-form-item label="节点名称" :label-width="formLabelWidth">
+                    <el-input v-model="form.label" autocomplete="off"  @keyup.enter.native="saveNode"></el-input>
+                </el-form-item>
+                <el-form-item label="节点url" :label-width="formLabelWidth">
+                    <el-input v-model="form.url" autocomplete="off" @keyup.enter.native="saveNode"></el-input>
+                </el-form-item>
+                <el-form-item label="备注" :label-width="formLabelWidth">
+                    <el-input v-model="form.remark" autocomplete="off" @keyup.enter.native="saveNode"></el-input>
+                </el-form-item>
+            </el-form>
+            <div slot="footer" class="dialog-footer">
+                <el-button @click="dialogFormVisible = false">取 消</el-button>
+                <el-button type="primary" @click="saveNode">确 定</el-button>
+            </div>
+        </el-dialog>
+    </template>
+    <el-tooltip placement="top" effect="light">
+        <div slot="content">
+1. 鼠标右击编辑目录树，再次右击隐藏编辑按钮。<br/>
+2. 更新的目录树数据使用localStorage存储，清除浏览器本地数据后，不可恢复。
+        </div>
+        <el-button size="mini" >使用帮助</el-button>
+    </el-tooltip>
+    <el-tooltip placement="top" effect="light">
+        <div slot="content">
+            {{this.menuTreeList}}
+        </div>
+        <el-button size="mini" >复制节点</el-button>
+    </el-tooltip>
+
 
 </div>
 
@@ -104,6 +176,11 @@
         el: '#app',
         data: function() {
             return {
+                formLabelWidth:600,
+                form:{},
+                dialogFormVisible:false,
+                showEditableButton:false,
+                id: 0,
                 //顶部搜索框绑定值
                 searchText:null,
                 //顶部搜索引擎api列表
@@ -124,6 +201,7 @@
                 filterText: '',
 
                 menuTreeList: [{
+                    id:1,
                     level:1,
                     label: '高频访问',
                     children: [
@@ -134,13 +212,13 @@
                        {level:2, label: 'API Docs',url:'https://tool.oschina.net/apidocs/',remark:''},
                        {level:2, label: 'API ref',url:'https://www.apiref.com/',remark:''},
                        {level:2, label: '菜鸟教程',url:'https://www.runoob.com/',remark:''},
-                       // {level:2, label: 'W3C教程',url:'https://www.w3schools.com/',remark:''},
                        {level:2, label: 'W3中文教程',url:'https://www.w3school.com.cn/',remark:''},
                        {level:2, label: 'Adguard文档',url:'https://george0728.github.io/Web/adguard/en.htm',remark:''},
                        {level:2, label: '爱思资源网',url:'http://www.aseoe.com/manual/',remark:''},
                        {level:2, label: '资源分享',url:'https://www.qiuziyuan.net/',remark:''},
                         ]
                 }, {
+                    id:2,
                     level:1,
                     label: '科学上网',
                     children: [
@@ -150,6 +228,7 @@
                         {level:2, label: 'KuLi云',url:'https://oooiooo.me/user',remark:''},
                     ]
                 }, {
+                    id:3,
                     level:1,
                     label: '编程API',
                     children: [
@@ -178,6 +257,7 @@
                         {level:2, label:'XML',url:'https://www.runoob.com/xml/',remark:''},
                     ]
                 }, {
+                    id:4,
                     level:1,
                     label: '在线工具',
                     children: [
@@ -187,10 +267,19 @@
                         // {level:2, label:'JS在线运行环境',url:'https://theajack.gitee.io/jsbox/',remark:''},
                     ]
                 }],
+                menuTreeList1: [],
                 defaultProps: {
                     children: 'children',
                     label: 'label'
                 },
+            }
+        },
+        created(){
+            // window.localStorage.setItem("menuTreeList",JSON.stringify(this.menuTreeList));
+            var storeList = window.localStorage.getItem("menuTreeList");
+            // console.log("storeList:::",storeList);
+            if(storeList != null){
+                this.menuTreeList = JSON.parse(storeList);
             }
         },
         watch: {
@@ -231,16 +320,102 @@
 
             //node-click事件： 共三个参数，依次为：传递给 data 属性的数组中该节点所对应的对象、节点对应的 Node、节点组件本身。  https://element.eleme.cn/#/zh-CN/component/tree#events
             handleRedirectUrl(data,node,value){
-                console.log("data:",data);
-                console.log("node:",node);
-                console.log("value:",value);
+                // console.log("data:",data);
+                // console.log("node:",node);
+                // console.log("value:",value);
                 if(data.level == 2){
+                    console.log("data.url:::",data.url);
                     this.$refs.iframe.src = data.url;
                     // window.location.href = data.url;
                 }
 
             },
+            rightClick (MouseEvent, object, Node, element) { // 鼠标右击触发事件
 
+                this.showEditableButton =!this.showEditableButton
+                // console.log('右键被点击的event:', MouseEvent)
+                // console.log('右键被点击的object:', object)
+                // console.log('右键被点击的value:', Node)
+                // console.log('右键被点击的element:', element)
+                // console.log('鼠标点击了树形结构图')
+                this.clickNode = Node  //存储待操作的节点或删除、或在该层或子层添加节点
+                // alert(Node.level +":"+Node.label)
+            },
+
+            /**
+             * (data, refNode) 接收两个参数
+             * @param data 1. 要增加的节点的 data
+             * @param refNode 2. 要增加的节点的前一个节点的 data、key 或者 node
+             */
+            insertAfter(data, refNode){
+                // console.log("插入兄弟节点data:::",data);
+                // console.log("插入兄弟节点refNode:::",refNode);
+                // console.log("插入兄弟节点refNode.parent:::",refNode.parent);
+                // console.log("插入兄弟节点refNode.parent:::",refNode.parent);
+                const brotherNode = [{ level:1,label: '根节点', children: [{ id: this.id++, level:2,label: '子节点', children: [] }] }];
+                refNode.parent.data.push(brotherNode);
+
+            },
+            append(data) {
+                const newChild = { id: this.id++, level:2,label: '子节点', children: [] };
+                if (!data.children) {
+                    this.$set(data.parent, 'children', []);
+                }
+                console.log("拓展前data.children:::",data.children);
+                data.children.push(newChild);
+                this.syncMenuTreeList2LocalStorage();
+                // console.log("拓展时data:::",data);
+                // console.log("拓展后data.children:::",data.children);
+                // console.log("拓展时data.json:::",JSON.stringify(data));
+                // console.log("拓展时menuTreeList:::",this.menuTreeList);
+                // console.log("拓展时menuTreeList.json:::",JSON.stringify(this.menuTreeList));
+            },
+
+            remove(node, data) {
+                this.$confirm('此操作将永久删除该数据, 是否继续?', '提示', {
+                    confirmButtonText: '确定',
+                    cancelButtonText: '取消',
+                    type: 'warning'
+                }).then(() => {
+                    const parent = node.parent;
+                    const children = parent.data.children || parent.data;
+                    const index = children.findIndex(d => d.id === data.id);
+                    children.splice(index, 1);
+                    this.syncMenuTreeList2LocalStorage();
+                    this.$message({
+                        type: 'success',
+                        message: '删除成功!'
+                    });
+                }).catch(() => {
+                    this.$message({
+                        type: 'info',
+                        message: '已取消删除'
+                    });
+                });
+
+            },
+            edit(node, data) {
+                console.log("node:::",node);
+                console.log("data:::",data);
+                this.form = data;
+                // console.log("编辑开始时data:::",data);
+                // console.log("编辑开始时data.json:::",JSON.stringify(data));
+                // console.log("编辑开始时menuTreeList:::",this.menuTreeList);
+                // console.log("编辑开始时menuTreeList.json:::",JSON.stringify(this.menuTreeList));
+                this.dialogFormVisible = true;
+            },
+            saveNode(){
+                // console.log("this.form:::",this.form);
+                // console.log("编辑保存时menuTreeList:::",this.menuTreeList);
+                // console.log("编辑保存时menuTreeList.json:::",JSON.stringify(this.menuTreeList));
+                window.localStorage.setItem("menuTreeList",JSON.stringify(this.menuTreeList));
+                // console.log("localStorage:::",window.localStorage.getItem("menuTreeList"));
+                this.dialogFormVisible = false;
+            },
+            //拖动节点时，更新localStorage
+            syncMenuTreeList2LocalStorage(){
+                window.localStorage.setItem("menuTreeList",JSON.stringify(this.menuTreeList));
+            }
 
         }
     })
