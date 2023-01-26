@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+<!--    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />-->
     <title>WebSite Navigation</title>
     <link rel="icon" href="source/img/favicon12.png">
     <!-- 引入CDN -->
     <script src="source/js/vue.js"></script>
     <!-- 引入Element UI样式 -->
     <link rel="stylesheet" href="source/css/elementui.css">
+
+<!--    css图标样式库 对el-link有影响-->
+<!--    <link rel="stylesheet" href="source/css/easy-icon/easy-icon-all.css">-->
+
     <!-- 引入Element UI组件库 -->
     <script src="source/js/elementui.js"></script>
     <!-- 引入JQuery组件库 -->
@@ -24,15 +28,18 @@
             flex-wrap: wrap;
         }
         .topform{
-            width: 200px;
+            width: 260px;
             margin: 0 10px 10px 0;
         }
+        /*.topform .keywords_input{*/
+        /*    width: 225px;*/
+        /*}*/
         .content{
             display: flex;
             min-height: 800px;
         }
         .content .left{
-            width: 200px !important;
+            width: 260px !important;
             margin-right: 10px;
         }
         .content .right{
@@ -72,6 +79,22 @@
             border-color: rgba(193, 193, 196, 0.96);
         }
 
+        /*.el-input-group__append{*/
+        /*    width: 40px;*/
+        /*    padding: 5px 0px 5px 3px;*/
+        /*}*/
+        /*.el-input-group__append button{*/
+        /*    padding-right: 5px;*/
+        /*}*/
+
+        .el-input__inner{
+            /*display: flex;*/
+            /*text-align:center;*/
+        }
+        .el-input-group__append{
+            padding-left: 5px !important;
+            padding-right: 5px !important;
+        }
 
     </style>
 
@@ -82,10 +105,14 @@
 
     <div class="top">
         <form  v-for="(item,index) in searchEngineList"  :action="item.action" method="get" class="topform">
-            <el-input size="mini" class="keywords_input" v-model='searchText' :placeholder="item.placeholderText"  :name="item.searchKey" size="20" clearable autocomplete="on">
-                <i slot="prefix"><img :src="item.icon" width="16px" style="position: relative;top: 7px"/></i>
-                <i slot="suffix" class="el-input__icon el-icon-search"></i>
+
+
+            <el-input size="medium" class="keywords_input" v-model='searchText' :placeholder="item.placeholderText" :name="item.searchKey" size="20" clearable autocomplete="off">
+                <i slot="prefix"><img :src="item.icon" width="18px" style="position: relative;top: 8px"/></i>
+<!--                <i slot="suffix" class="el-input__icon el-icon-search"></i>-->
+                <input class="on_submit" slot="append" type="image" src="source/img/search_icon2.png" style="width: 18px;position: relative;z-index: 999"></input>
             </el-input>
+
         </form>
     </div>
     <el-divider></el-divider>
@@ -101,7 +128,7 @@
                     time_is_widget.init({Beijing_z43d:{template:"DATE TIME", date_format:"year年monthnum月daynum日"}});
                 </script>
 
-                <el-input placeholder="输入关键字进行过滤" size="mini" v-model="filterText" clearable>
+                <el-input placeholder="输入关键字进行过滤" size="medium" v-model="filterText" clearable>
                     <i slot="suffix" class="el-input__icon el-icon-search"></i>
                 </el-input>
 
@@ -153,7 +180,8 @@
         <div class="right">
             <!--   首页显示-->
             <div >
-                <iframe src="https://www.runoob.com/" ref="iframe" name="content_iframe_name"></iframe>
+<!--                <iframe src="source/html/lsdh_website.html" ref="iframe" name="content_iframe_name"></iframe>-->
+                <iframe src="http://www.lsdhss.com/" ref="iframe" name="content_iframe_name"></iframe>
             </div>
         </div>
     </div>
@@ -169,6 +197,9 @@
                 </el-form-item>
                 <el-form-item label="节点url" :label-width="formLabelWidth">
                     <el-input v-model="form.url" autocomplete="off" @keyup.enter.native="saveNode"></el-input>
+                </el-form-item>
+                <el-form-item label="level" :label-width="formLabelWidth">
+                    <el-input v-model="form.level" autocomplete="off" @keyup.enter.native="saveNode"></el-input>
                 </el-form-item>
                 <el-form-item label="备注" :label-width="formLabelWidth">
                     <el-input v-model="form.remark" autocomplete="off" @keyup.enter.native="saveNode"></el-input>
@@ -375,6 +406,7 @@
                 if(data.level == 2){
                     console.log("data.url:::",data.url);
                     this.$refs.iframe.src = data.url;
+                    // window.top.location.href = data.url;
                     // window.location.href = data.url;
                 }
 
@@ -517,15 +549,15 @@
                 this.$nextTick(()=>{
                     this.$set(data, 'show', this.showEditableButton && true)
                 })
-                console.log("鼠标移入data:::",data);
-                console.log("鼠标移入data.show:::",data.show);
+                // console.log("鼠标移入data:::",data);
+                // console.log("鼠标移入data.show:::",data.show);
             },
             mouseleave(data){
                 this.$nextTick(()=>{
                     this.$set(data, 'show', this.showEditableButton && false )
                 });
-                console.log("鼠标移出data:::",data);
-                console.log("鼠标移出data.show:::",data.show);
+                // console.log("鼠标移出data:::",data);
+                // console.log("鼠标移出data.show:::",data.show);
             },
 
             sequenceDownload() {
