@@ -157,8 +157,8 @@
 
                         <div v-show="data.show"  class="tree_edit">
                             <!--  为 Tree 的一个节点的后面增加一个节点             -->
-                            <el-button  v-if="false" type="text" size="mini" @click="() => insertAfter(data, node)" v-if="node.level >= 1">
-                                <i class = "el-icon-plus"></i>
+                            <el-button   type="text" size="mini" @click="targetNewBlank(data)">
+                                <i class = "el-icon-top-right"></i>
                             </el-button>
                             <!--  为 Tree 中的一个节点追加一个子节点             -->
                             <el-button type="text" size="mini" @click="() => append(data, node)">
@@ -188,22 +188,22 @@
     </div>
 
     <template>
-        <el-dialog title="编辑节点" :visible.sync="dialogFormVisible">
-            <el-form :model="form">
+        <el-dialog title="编辑节点" :visible.sync="dialogFormVisible" width="500px" >
+            <el-form :model="form" label-width="120px">
                 <el-form-item label="节点id" :label-width="formLabelWidth">
                     <el-input v-model="form.id" autocomplete="off"  @keyup.enter.native="saveNode" readonly></el-input>
                 </el-form-item>
                 <el-form-item label="节点名称" :label-width="formLabelWidth">
-                    <el-input v-model="form.label" autocomplete="off"  @keyup.enter.native="saveNode"></el-input>
+                    <el-input v-model="form.label" autocomplete="off"  @keyup.enter.native="saveNode" clearable></el-input>
                 </el-form-item>
                 <el-form-item label="节点url" :label-width="formLabelWidth">
-                    <el-input v-model="form.url" autocomplete="off" @keyup.enter.native="saveNode"></el-input>
+                    <el-input v-model="form.url" autocomplete="off" @keyup.enter.native="saveNode" clearable></el-input>
                 </el-form-item>
                 <el-form-item label="level" :label-width="formLabelWidth">
-                    <el-input v-model="form.level" autocomplete="off" @keyup.enter.native="saveNode"></el-input>
+                    <el-input v-model="form.level" autocomplete="off" @keyup.enter.native="saveNode" clearable></el-input>
                 </el-form-item>
                 <el-form-item label="备注" :label-width="formLabelWidth">
-                    <el-input v-model="form.remark" autocomplete="off" @keyup.enter.native="saveNode"></el-input>
+                    <el-input v-model="form.remark" autocomplete="off" @keyup.enter.native="saveNode" clearable></el-input>
                 </el-form-item>
             </el-form>
             <div slot="footer" class="dialog-footer" align="left">
@@ -251,7 +251,7 @@
         data: function() {
             return {
                 cookieValue:"",
-                formLabelWidth:600,
+                formLabelWidth:100,
                 form:{},
                 dialogFormVisible:false,
                 showEditableButton:false,
@@ -350,6 +350,14 @@
                     // window.top.location.href = data.url;
                     // window.location.href = data.url;
                 }
+            },
+            targetNewBlank(data){
+                // window.top.location.href = data.url;
+                // window.location.href = data.url;
+                window.open(data.url,"_blank");
+                // window.open(data.url, "_blank", "location=no,screenX=300px,titlebar=no,screenY=1800px,scrollbars=yes,resizable=1,modal=true,alwaysRaised=yes");
+                // window.open(data.url, "_blank",  'height=1400, width=2800, top=200,left=300, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no');
+
 
             },
             rightClick (MouseEvent, object, Node, element) { // 鼠标右击触发事件
@@ -365,20 +373,6 @@
                 // alert(Node.level +":"+Node.label)
             },
 
-            /**
-             * (data, refNode) 接收两个参数
-             * @param data 1. 要增加的节点的 data
-             * @param refNode 2. 要增加的节点的前一个节点的 data、key 或者 node
-             */
-            insertAfter(data, refNode){
-                // console.log("插入兄弟节点data:::",data);
-                // console.log("插入兄弟节点refNode:::",refNode);
-                // console.log("插入兄弟节点refNode.parent:::",refNode.parent);
-                // console.log("插入兄弟节点refNode.parent:::",refNode.parent);
-                const brotherNode = [{ level:1,label: '根节点', children: [{ id: this.id++, level:2,label: '子节点', children: [] }] }];
-                refNode.parent.data.push(brotherNode);
-
-            },
             append(data) {
                 console.log("showcookies:",this.getCookie("menuTreeList"));
                 const newChild = { id: new Date().getTime(), level:2,label: '子节点', children: [] };
@@ -488,14 +482,17 @@
 
             mouseenter(data){
                 this.$nextTick(()=>{
-                    this.$set(data, 'show', this.showEditableButton && true)
+                    this.$set(data, 'show', this.showEditableButton && true);
+                    // this.$refs.tree.store.nodesMap[data.id].expanded = true;
                 })
-                // console.log("鼠标移入data:::",data);
+                console.log("鼠标移入data:::",data);
                 // console.log("鼠标移入data.show:::",data.show);
             },
             mouseleave(data){
                 this.$nextTick(()=>{
-                    this.$set(data, 'show', this.showEditableButton && false )
+                    this.$set(data, 'show', this.showEditableButton && false );
+                    // this.$refs.tree.store.nodesMap[data.id].expanded = false;
+
                 });
                 // console.log("鼠标移出data:::",data);
                 // console.log("鼠标移出data.show:::",data.show);
