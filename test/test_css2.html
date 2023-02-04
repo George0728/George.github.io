@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- 引入JQuery组件库 -->
+    <script src="../source/js/jquery.js" type="text/javascript"></script>
+    <style>
+        .card-filp {
+            height: 200px;
+            width: 200px;
+            /*position: relative;*/
+            transform-style: preserve-3d;
+            transition: 2s;
+        }
+
+        .front{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            /*backface-visibility:hidden*/
+        }
+        .front {
+            background: green;
+        }
+
+    </style>
+</head>
+<body ontouchstart>
+<div class="card-filp">
+<!--    <div class="back"></div>-->
+    <div class="front"></div>
+</div>
+<button onclick="trunoverX()">翻转X</button>
+<button onclick="trunoverY()">翻转Y</button>
+<button onclick="trunoverZ()">翻转Z</button>
+<script type="text/javascript">
+    var  rotateTimes = 5;
+    function  trunoverX(){
+        console.log($('.card-filp').css('transform'));  // string 'none','matrix(1, 0, 0, 1, 0, 0)'
+        if($('.card-filp').css('transform') == 'none'){
+            $('.card-filp').css('transform','rotateX(360deg)');
+        }else {
+            $('.card-filp').css('transform','none');
+            console.log('再次翻转：'+ $('.card-filp').css('transform'));
+        }
+    }
+    function  trunoverY(){
+        console.log($('.card-filp').css('transform'));  // string 'none','matrix(1, 0, 0, 1, 0, 0)'
+        if($('.card-filp').css('transform') == 'none'){
+            $('.card-filp').css('transform','rotateY(360deg)');
+        }else {
+            $('.card-filp').css('transform','none');
+            console.log('再次翻转：'+ $('.card-filp').css('transform'));
+        }
+    }
+    function  trunoverZ(){
+        console.log($('.card-filp').css('transform'));  // string 'none','matrix(1, 0, 0, 1, 0, 0)'
+        $('.card-filp').css('transform','rotateZ('+360*rotateTimes+'deg)');
+        rotateTimes++;
+    }
+</script>
+</body>
+
+</html>
