@@ -7,19 +7,31 @@
     <!--    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />-->
     <title>WebSite Navigation</title>
     <link rel="icon" href="source/img/favicon12.png">
-    <!-- 引入CDN -->
-    <script src="source/js/vue.js"></script>
-    <!-- 引入Element UI样式 -->
-    <link rel="stylesheet" href="source/css/elementui.css">
+
     <link rel="stylesheet" href="source/css/transition.css">
 
     <!--    css图标样式库 对el-link有影响-->
     <!--    <link rel="stylesheet" href="source/css/easy-icon/easy-icon-all.css">-->
 
+
+    <!-- 引入CDN -->
+    <script src="source/js/vue.js"></script>
+    <!-- 引入Element UI样式 -->
+    <link rel="stylesheet" href="source/css/elementui.css">
     <!-- 引入Element UI组件库 -->
     <script src="source/js/elementui.js"></script>
     <!-- 引入JQuery组件库 -->
     <script src="source/js/jquery.js" type="text/javascript"></script>
+    <script src="//widget.time.is/zh.js"></script>
+    <script>
+        time_is_widget.init({
+            Beijing_z43d: {
+                template: "DATE TIME",
+                date_format: "dayname year年monthnum月daynum日"
+            }
+        });
+    </script>
+
     <!-- 引入cnchar 汉字解析基础库 -->
     <script src="source/js/cnchar.min.js" type="text/javascript"></script>
     <base target="_blank">
@@ -85,11 +97,13 @@
         /*目录树编辑按钮样式*/
         .tree_edit {
             display: inline-block;
-            height: 26px;
-            position: absolute;
-            right: -83px;
+            height: 15px;
+            /*position: absolute;*/
+            /*right: -83px;*/
             background: #F0F7FF;
-            margin-top: -5px;
+            /*margin-top: -5px;*/
+            padding-top: 2px;
+            padding-bottom: 10px;
             padding-left: 5px;
             padding-right: 5px;
             border-radius: 3px;
@@ -123,57 +137,45 @@
 <div id="app">
 
     <div class="top">
-        <form v-for="(item,index) in this.searchEngineList" :action="item.action" method="get" class="topform"
-              @submit="saveQueryStr2SearchHistory(item)">
-
-
-            <el-input size="medium" class="keywords_input" v-model='searchText' :placeholder="item.placeholderText"
+        <form v-for="(item,index) in this.searchEngineList" :action="item.searchUrl" method="get" class="topform"
+              @submit="saveSearchText2SearchHistory(item)">
+            <el-input size="medium" class="keywords_input" v-model='searchText' :placeholder="item.placeholder"
                       :name="item.searchKey" size="20" clearable autocomplete="off">
-                <i slot="prefix"><img :src="item.icon" width="18px" style="position: relative;top: 8px"/></i>
-                <!--                <i slot="suffix" class="el-input__icon el-icon-search"></i>-->
+                <i slot="prefix"><img :src="item.iconUrl" width="18px" style="position: relative;top: 8px"/></i>
                 <input class="on_submit" slot="append" type="image" src="source/img/search_icon2.png"
                        style="width: 18px;position: relative;z-index: 999"></input>
             </el-input>
-            <!--            <el-button @click="getSuggestionResults"></el-button>-->
-
         </form>
     </div>
     <el-divider></el-divider>
-    <div class="content">
-        <div class="left">
-            <div class="menu1">
-                <!--                <el-button size="mini" @click="()=>{this.showEditableButton =!this.showEditableButton}" style="width: 100%;margin-bottom: 10px">编辑目录</el-button>-->
-                <el-link href="https://time.is/Beijing" id="time_is_link" rel="nofollow"
-                         style="font-size:14px;margin:0 0 5px 10px;font-weight: bolder" target="_blank">
-                    <span id="Beijing_z43d" style="font-size:14px"></span>
-                </el-link>
-                <script src="//widget.time.is/zh.js"></script>
-                <script>
-                    time_is_widget.init({
-                        Beijing_z43d: {
-                            template: "DATE TIME",
-                            date_format: "dayname year年monthnum月daynum日"
-                        }
-                    });
-                </script>
 
-                <el-input placeholder="输入关键字进行过滤" size="medium" v-model="filterText" clearable>
-                    <i slot="suffix" class="el-input__icon el-icon-search"></i>
-                </el-input>
+    <template>
+        <div class="content">
+            <div class="left">
+                <div class="menu1">
+                    <!--                <el-button size="mini" @click="()=>{this.showEditableButton =!this.showEditableButton}" style="width: 100%;margin-bottom: 10px">编辑目录</el-button>-->
+                    <el-link href="https://time.is/Beijing" id="time_is_link" rel="nofollow"
+                             style="font-size:14px;margin:0 0 5px 10px;font-weight: bolder" target="_blank">
+                        <span id="Beijing_z43d" style="font-size:14px"></span>
+                    </el-link>
 
-                <el-tree class="filter-tree"
-                         :data="menuTreeList"
-                         :props="defaultProps"
-                         :filter-node-method="filterNode"
-                         :expand-on-click-node="!this.showEditableButton"
-                         node-key="id"
-                         ref="tree"
-                         accordion
-                         @node-click="handleRedirectUrl"
-                         @node-contextmenu="rightClick"
-                         highlight-current
-                         :draggable="true"
-                         @node-drop="syncMenuTreeList2LocalStorage">
+                    <el-input placeholder="输入关键字进行过滤" size="medium" v-model="filterText" clearable>
+                        <i slot="suffix" class="el-input__icon el-icon-search"></i>
+                    </el-input>
+
+                    <el-tree class="filter-tree"
+                             :data="menuTreeList"
+                             :props="defaultProps"
+                             :filter-node-method="filterNode"
+                             :expand-on-click-node="!this.showEditableButton"
+                             node-key="id"
+                             ref="tree"
+                             accordion
+                             @node-click="handleRedirectUrl2Iframe"
+                             @node-contextmenu="rightClick"
+                             highlight-current
+                             :draggable="true"
+                             @node-drop="onDropSuccessEvent">
                     <span slot-scope="{ node, data}" class="custom-tree-node" @mouseenter="mouseenter(data)"
                           @mouseleave="mouseleave(data)" style="width: 100%">
                         <!-- 不同节点类型展示logo不同-->
@@ -184,9 +186,9 @@
                             <el-link :href="node.url" style="margin-left: 3px">{{ node.label }}</el-link>
                         </span>
 
-                        <div v-show="data.show" class="tree_edit">
+                        <span v-show="data.show" class="tree_edit-delete20230205">
                             <!--  为 Tree 的一个节点的后面增加一个节点             -->
-                            <el-button type="text" size="mini" @click="targetNewBlank(data)">
+                            <el-button type="text" size="mini" @click="handleRedirectUrl2NewPage(data)">
                                 <i class="el-icon-top-right"></i>
                             </el-button>
                             <!--  为 Tree 中的一个节点追加一个子节点             -->
@@ -201,21 +203,19 @@
                             <el-button type="text" size="mini" @click="() => remove(node, data)">
                                 <i class="el-icon-delete"></i>
                             </el-button>
-                        </div>
+                        </span>
 
                     </span>
-                </el-tree>
+                    </el-tree>
+                </div>
+            </div>
+            <div class="right card-flip">
+                <div class="front">
+                    <iframe :src="this.iframeInitSrc" ref="front_iframe" ></iframe>
+                </div>
             </div>
         </div>
-        <div class="right card-flip">
-            <div class="front">
-                <iframe :src="this.iframeInitSrc" ref="front_iframe" ></iframe>
-            </div>
-<!--            <div class="back">-->
-<!--                <iframe :src="this.iframeInitSrc" ref="back_iframe" ></iframe>-->
-<!--            </div>-->
-        </div>
-    </div>
+    </template>
 
     <div class="footer">
         <el-tooltip placement="top" effect="light">
@@ -226,27 +226,7 @@
             <el-button size="mini" class="el-icon-info">&nbsp;使用帮助</el-button>
         </el-tooltip>
 
-        <el-tooltip placement="top" effect="light">
-            <div slot="content">
-                {{JSON.stringify(this.menuTreeList)}}
-            </div>
-            <el-button size="mini" @click="sequenceDownload" class="el-icon-download">&nbsp;复制节点/下载</el-button>
-        </el-tooltip>
 
-        <el-tooltip placement="top" effect="light">
-            <div slot="content" style="width: 400px;height: 200px">
-                <el-input
-                        type="textarea"
-                        :rows="7"
-                        placeholder="请输入JSON格式数据"
-                        v-model="cookieValue">
-                </el-input>
-                <el-button size="mini" type="primary" @click="uploadData" style="margin-top: 10px;alignment: right"
-                           align="right">保存
-                </el-button>
-            </div>
-            <el-button size="mini" class="el-icon-upload2">&nbsp;上传数据</el-button>
-        </el-tooltip>
     </div>
 
     <template>
@@ -296,509 +276,11 @@
                 searchText: null,
                 searchHistory: [],
                 //顶部搜索引擎api列表
-                searchEngineList: [
-                    {
-                        action: 'https://www.dalipan.com/search',
-                        searchKey: 'keyword',
-                        placeholderText: '网盘搜索',
-                        icon: 'source/img/website/netdisk.png',
-                        remark: ''
-                    },
-                    {
-                        action: 'https://www.google.com/search',
-                        searchKey: 'q',
-                        placeholderText: '谷歌搜索',
-                        icon: 'source/img/website/google.png',
-                        remark: ''
-                    },
-                    {
-                        action: 'https://www.baidu.com/s',
-                        searchKey: 'wd',
-                        placeholderText: '百度搜索',
-                        icon: 'source/img/website/baidu.png',
-                        remark: ''
-                    },
-                    {
-                        action: 'https://searx.tiekoetter.com/search',
-                        searchKey: 'q',
-                        placeholderText: 'SearX搜索',
-                        icon: 'source/img/website/searx.png',
-                        remark: ''
-                    },
-                    {
-                        action: 'https://fsoufsou.com/search',
-                        searchKey: 'q',
-                        placeholderText: 'F搜',
-                        icon: 'source/img/website/fsearch.ico',
-                        remark: ''
-                    },
-                    {
-                        action: 'https://zh.wikipedia.org/wiki/',
-                        searchKey: 'search',
-                        placeholderText: '维基搜索',
-                        icon: 'source/img/website/wiki.png',
-                        remark: ''
-                    },
-                    {
-                        action: 'https://stackoverflow.com/search',
-                        searchKey: 'q',
-                        placeholderText: 'stackoverflow',
-                        icon: 'source/img/website/stackoverflow.png',
-                        remark: ''
-                    },
-                    {
-                        action: 'https://zzk.cnblogs.com/s/blogpost',
-                        searchKey: 'keywords',
-                        placeholderText: '博客园搜索',
-                        icon: 'source/img/website/cnblogs.png',
-                        remark: ''
-                    },
-                    {
-                        action: 'https://so.csdn.net/so/search/s.do',
-                        searchKey: 'q',
-                        placeholderText: 'CSDN搜索',
-                        icon: 'source/img/website/csdn.png',
-                        remark: ''
-                    },
-                    {
-                        action: 'https://www.zhihu.com/search?type=content',
-                        searchKey: 'q',
-                        placeholderText: '知乎搜索',
-                        icon: 'source/img/website/zhihu.png',
-                        remark: ''
-                    },
-                    {
-                        action: 'https://github.com/search',
-                        searchKey: 'q',
-                        placeholderText: 'GitHub搜索',
-                        icon: 'source/img/website/github.png',
-                        remark: ''
-                    },
-                    {
-                        action: 'https://www.jianshu.com/search',
-                        searchKey: 'q',
-                        placeholderText: '简书搜索',
-                        icon: 'source/img/website/jianshu.png',
-                        remark: ''
-                    },
-                    {
-                        action: 'https://www.runoob.com',
-                        searchKey: 's',
-                        placeholderText: '菜鸟搜索',
-                        icon: 'source/img/website/cainiao.png',
-                        remark: ''
-                    },
-
-                ],
+                searchEngineList: [],
                 activeName: '1',
                 filterText: '',
-
                 iframeInitSrc: 'http://www.lsdhss.com/',
-                menuTreeList: [{
-                    "level": 1,
-                    "label": "聚合API",
-                    "children": [{
-                        "level": 2,
-                        "label": "API Docs",
-                        "url": "https://tool.oschina.net/apidocs/",
-                        "remark": "",
-                        "id": 1674563882027,
-                        "show": false,
-                        "order": 0,
-                        "children": []
-                    }, {
-                        "level": 2,
-                        "label": "API ref",
-                        "url": "https://www.apiref.com/",
-                        "remark": "",
-                        "id": 1674563882028,
-                        "show": false,
-                        "order": 1,
-                        "children": []
-                    }, {
-                        "level": 2,
-                        "label": "菜鸟教程",
-                        "url": "https://www.runoob.com/",
-                        "remark": "",
-                        "id": 1674563882029,
-                        "show": false,
-                        "order": 2,
-                        "children": []
-                    }, {
-                        "level": 2,
-                        "label": "W3中文教程",
-                        "url": "https://www.w3school.com.cn/",
-                        "remark": "",
-                        "id": 1674563882030,
-                        "show": false,
-                        "order": 3,
-                        "children": []
-                    }, {
-                        "level": 2,
-                        "label": "Adguard文档",
-                        "url": "https://george0728.github.io/Web/adguard/en.htm",
-                        "remark": "",
-                        "id": 1674563882031,
-                        "show": false,
-                        "order": 4,
-                        "children": []
-                    }],
-                    "id": 1674563882026,
-                    "show": false,
-                    "order": 1,
-                    "remark": ""
-                }, {
-                    "level": 1,
-                    "label": "编程API",
-                    "children": [{
-                        "level": 2,
-                        "label": "Ajax",
-                        "url": "https://www.runoob.com/ajax/",
-                        "remark": "",
-                        "id": 1674563882033,
-                        "show": false,
-                        "order": 0,
-                        "children": []
-                    }, {
-                        "level": 2,
-                        "label": "BootStrap4",
-                        "url": "https://code.z01.com/v4/docs/",
-                        "remark": "",
-                        "id": 1674563882034,
-                        "show": false,
-                        "order": 1,
-                        "children": []
-                    }, {
-                        "level": 2,
-                        "label": "cnchar (v3.0.5)",
-                        "url": "https://www.theajack.com/cnchar/guide/",
-                        "remark": "",
-                        "id": 1674563882035,
-                        "show": false,
-                        "order": 2,
-                        "children": []
-                    }, {
-                        "level": 2,
-                        "label": "CSS3—API",
-                        "url": "http://www.aseoe.com/manual/css3/",
-                        "remark": "",
-                        "id": 1674563882036,
-                        "show": false,
-                        "order": 3,
-                        "children": []
-                    }, {
-                        "level": 2,
-                        "label": "CSS-菜鸟",
-                        "url": "https://www.runoob.com/cssref/css-reference.html",
-                        "remark": "",
-                        "id": 1674563882037,
-                        "show": false,
-                        "order": 4,
-                        "children": []
-                    }, {
-                        "id": 1674563882038,
-                        "level": 2,
-                        "label": "Element",
-                        "children": [],
-                        "url": "https://element.eleme.cn/#/zh-CN/component/layout",
-                        "show": false,
-                        "order": 5,
-                        "remark": ""
-                    }, {
-                        "level": 2,
-                        "label": "MAVEN",
-                        "url": "https://www.runoob.com/maven/",
-                        "remark": "",
-                        "id": 1674563882040,
-                        "show": false,
-                        "order": 7,
-                        "children": []
-                    }, {
-                        "level": 2,
-                        "label": "SQL",
-                        "url": "https://www.runoob.com/sql/",
-                        "remark": "",
-                        "id": 1674563882041,
-                        "show": false,
-                        "order": 8,
-                        "children": []
-                    }, {
-                        "level": 2,
-                        "label": "HTML5-API",
-                        "url": "http://www.aseoe.com/manual/html5/",
-                        "remark": "",
-                        "id": 1674563882042,
-                        "show": false,
-                        "order": 9,
-                        "children": []
-                    }, {
-                        "level": 2,
-                        "label": "HTMLDOM-菜鸟",
-                        "url": "https://www.runoob.com/htmldom",
-                        "remark": "",
-                        "id": 1674563882043,
-                        "show": false,
-                        "order": 10,
-                        "children": []
-                    }, {
-                        "level": 2,
-                        "label": "HTML-菜鸟",
-                        "url": "https://www.runoob.com/tags/html-reference.html",
-                        "remark": "",
-                        "id": 1674563882044,
-                        "show": false,
-                        "order": 11,
-                        "children": []
-                    }, {
-                        "level": 2,
-                        "label": "Vue2",
-                        "url": "https://v2.cn.vuejs.org/v2/guide/",
-                        "remark": "https://v2.cn.vuejs.org/v2/guide/",
-                        "id": 1674563882045,
-                        "show": false,
-                        "order": 12,
-                        "children": []
-                    }, {
-                        "level": 2,
-                        "label": "Java-菜鸟",
-                        "url": "https://www.runoob.com/java/",
-                        "remark": "",
-                        "id": 1674563882046,
-                        "show": false,
-                        "order": 13,
-                        "children": []
-                    }, {
-                        "level": 2,
-                        "label": "Java SE 11",
-                        "url": "https://www.apiref.com/java11-zh",
-                        "remark": "",
-                        "id": 1674563882047,
-                        "show": false,
-                        "order": 14,
-                        "children": []
-                    }, {
-                        "level": 2,
-                        "label": "JavaScript-菜鸟",
-                        "url": "https://www.runoob.com/js",
-                        "remark": "",
-                        "id": 1674563882048,
-                        "show": false,
-                        "order": 15,
-                        "children": []
-                    }, {
-                        "level": 2,
-                        "label": "JavaScript-API",
-                        "url": "http://www.aseoe.com/manual/js/index.html",
-                        "remark": "http://www.aseoe.com/manual/js/index.html",
-                        "id": 1674563882049,
-                        "show": false,
-                        "order": 16,
-                        "children": []
-                    }, {
-                        "level": 2,
-                        "label": "JDK中文手册",
-                        "url": "https://tool.oschina.net/apidocs/apidoc?api=jdk-zh",
-                        "remark": "",
-                        "id": 1674563882050,
-                        "show": false,
-                        "order": 17,
-                        "children": []
-                    }, {
-                        "level": 2,
-                        "label": "JQuery-菜鸟",
-                        "url": "https://www.runoob.com/jquery",
-                        "remark": "",
-                        "id": 1674563882051,
-                        "show": false,
-                        "order": 18,
-                        "children": []
-                    }, {
-                        "level": 2,
-                        "label": "JQuery—API",
-                        "url": "http://www.aseoe.com/manual/jq/",
-                        "remark": "",
-                        "id": 1674563882052,
-                        "show": false,
-                        "order": 19,
-                        "children": []
-                    }, {
-                        "level": 2,
-                        "label": "JQuery1.9 API -离线",
-                        "url": "source/api/jquery-api-1.9/index.htm",
-                        "remark": "",
-                        "id": 1674563882053,
-                        "show": false,
-                        "order": 20,
-                        "children": []
-                    }, {
-                        "level": 2,
-                        "label": "JQuery-菜鸟",
-                        "url": "https://www.runoob.com/manual/jquery/",
-                        "remark": "",
-                        "id": 1674563882054,
-                        "show": false,
-                        "order": 21,
-                        "children": []
-                    }, {
-                        "level": 2,
-                        "label": "JSON-菜鸟",
-                        "url": "https://www.runoob.com/json/",
-                        "remark": "",
-                        "id": 1674563882055,
-                        "show": false,
-                        "order": 22,
-                        "children": []
-                    }, {
-                        "level": 2,
-                        "label": "XML-菜鸟",
-                        "url": "https://www.runoob.com/xml/",
-                        "remark": "",
-                        "id": 1674563882056,
-                        "show": false,
-                        "order": 23,
-                        "children": []
-                    }],
-                    "id": 1674563882032,
-                    "show": false,
-                    "order": 2,
-                    "remark": ""
-                }, {
-                    "level": 1,
-                    "label": "在线工具",
-                    "children": [{
-                        "level": 2,
-                        "label": "在线工具聚合",
-                        "url": "https://tool.lu/",
-                        "remark": "",
-                        "id": 1674563882058,
-                        "show": false,
-                        "order": 0,
-                        "children": []
-                    }, {
-                        "id": 1674563882059,
-                        "level": 2,
-                        "label": "JSON工具",
-                        "children": [{
-                            "id": 1674610905051,
-                            "level": 2,
-                            "label": "JSON生成Java实体",
-                            "children": [],
-                            "show": false,
-                            "url": "http://www.jsons.cn/json2java"
-                        }],
-                        "show": false,
-                        "order": 1,
-                        "remark": "",
-                        "unfold": true
-                    }],
-                    "id": 1674563882057,
-                    "show": false,
-                    "order": 3,
-                    "remark": ""
-                }, {
-                    "id": 1674563882060,
-                    "level": 2,
-                    "label": "菜鸟教程",
-                    "children": [{
-                        "id": 1674563882062,
-                        "level": 2,
-                        "label": "菜鸟-Rust",
-                        "children": [],
-                        "show": false,
-                        "order": 0,
-                        "remark": "",
-                        "url": "https://www.runoob.com/rust/rust-tutorial.html"
-                    }, {
-                        "id": 1674563882061,
-                        "level": 2,
-                        "label": "菜鸟-Linux",
-                        "children": [],
-                        "url": "https://www.runoob.com/linux/linux-tutorial.html",
-                        "show": false,
-                        "order": 0,
-                        "remark": ""
-                    }, {
-                        "level": 2,
-                        "label": "菜鸟-Regexp",
-                        "url": "https://www.runoob.com/regexp/",
-                        "remark": "",
-                        "id": 1674563882039,
-                        "show": false,
-                        "order": 6,
-                        "children": []
-                    }],
-                    "url": "",
-                    "show": false,
-                    "order": 4,
-                    "remark": ""
-                }, {
-                    "id": 1674563882062,
-                    "level": 2,
-                    "label": "不可用iframe1",
-                    "children": [{
-                        "level": 2,
-                        "label": "猎手导航33333",
-                        "url": "http://www.lsdhss.com/",
-                        "remark": "",
-                        "id": 1674563882063,
-                        "show": false,
-                        "order": 0,
-                        "children": [],
-                        "unfold": true
-                    }, {
-                        "level": 2,
-                        "label": "资源分享4444444",
-                        "url": "https://www.qiuziyuan.net/",
-                        "remark": "",
-                        "id": 1674563882064,
-                        "show": false,
-                        "order": 1,
-                        "children": []
-                    }, {
-                        "level": 2,
-                        "label": "爱思资源网5555555",
-                        "url": "http://www.aseoe.com/manual/",
-                        "remark": "",
-                        "id": 1674563882065,
-                        "show": false,
-                        "order": 2,
-                        "children": []
-                    }],
-                    "show": false,
-                    "order": 5,
-                    "remark": "",
-                    "unfold": true
-                }, {
-                    "id": 1674566619881,
-                    "level": 2,
-                    "label": "多媒体",
-                    "children": [{
-                        "id": 1674733125414,
-                        "level": 2,
-                        "label": "腾讯视频",
-                        "children": [],
-                        "show": false,
-                        "url": "https://v.qq.com/"
-                    }],
-                    "show": false,
-                    "url": "https://v.qq.com/",
-                    "unfold": true
-                }, {
-                    "id": 1674566619130,
-                    "level": 2,
-                    "label": "常用",
-                    "children": [{
-                        "id": 1674566840739,
-                        "level": 2,
-                        "label": "百度一下",
-                        "children": [],
-                        "show": false,
-                        "url": "https://www.baidu.com/"
-                    }],
-                    "show": false,
-                    "unfold": true,
-                    "url": "http://192.168.88.8:8181/docs/note"
-                }],
+                menuTreeList:[],
                 defaultProps: {
                     children: 'children',
                     label: 'label'
@@ -826,17 +308,8 @@
                 }
                 return fmt;
             };
-            // window.localStorage.setItem("menuTreeList",JSON.stringify(this.menuTreeList));
-            const localStorageValue = window.localStorage.getItem("menuTreeList");
-            // const cookieValue = this.getCookie("menuTreeList");
-            // alert(cookieValue);
-            // if(cookieValue != ""){
-            //     this.menuTreeList = JSON.parse(cookieValue);
-            // }
-            // console.log("storeList:::",storeList);
-            if (localStorageValue != null) {
-                this.menuTreeList = JSON.parse(localStorageValue);
-            }
+            this.getSearchEngineList();
+            this.getMenuTreeList();
         },
         watch: {
             filterText(val) {
@@ -845,27 +318,156 @@
             }
         },
         methods: {
-            saveQueryStr2SearchHistory(item) {
-                console.log("item:", item);
-                let searchItem = {};
-                searchItem['searchEngine'] = item.placeholderText;
-                searchItem['searchText'] = this.searchText;
-                searchItem['searchTime'] = new Date().format("yyyy-MM-dd hh:mm:ss");
-                let sh = window.localStorage.getItem("searchHistory");
-                try {
-                    if (sh != null && sh != '') {
-                        this.searchHistory = JSON.parse(sh);
+
+            /**
+             * ajax 获取后台节点数列表，并渲染到node
+             */
+            getMenuTreeList(){
+                var that = this;
+                $.ajax({
+                    url: "http://localhost:10086/system/menu-tree/pagelist",
+                    method:'get',
+                    // dataType: "json",
+                    type: "json",
+                    data: {},
+                    success: function (response) {
+                        // console.log("response:::",response);
+                        if(response.code = 200){
+                            that.menuTreeList = that.resolveMenuTreeList2TreeNode(response.data,0);
+                            // console.log("response.data:::",response.data);
+                            // console.log("that.menuTreeList:::",that.menuTreeList);
+                        }
+                    },
+                    error: function () {
+
                     }
-                    this.searchHistory.push(searchItem);
-                    console.log("搜索明细：", JSON.stringify(this.searchHistory));
-                    window.localStorage.setItem("searchHistory", JSON.stringify(this.searchHistory));
-                } catch (e) {
-                    window.localStorage.removeItem("searchHistory");
-                    console.log("解析json异常：", e)
-                }
+                });
             },
 
-            //filter-node-method属性：	对树节点进行筛选时执行的方法，返回 true 表示这个节点可以显示，返回 false 则表示这个节点会被隐藏   Function(value, data, node)
+            /**
+             * 遍历list到node中
+             * @param list
+             * @param parentId
+             * @returns {*[]}
+             */
+            resolveMenuTreeList2TreeNode(list,parentId){
+                const arr = [];
+                list.forEach(item =>{
+                    if(item.parentId === parentId){
+                        arr.push(item);
+                        item.children = this.resolveMenuTreeList2TreeNode(list,item.id);
+                    }
+                });
+                return arr;
+            },
+
+            /**
+             * ajax 获取后台搜索引擎列表
+             */
+            getSearchEngineList(){
+                var that = this;
+                $.ajax({
+                    url: "http://localhost:10086/system/search-engine/pagelist",
+                    method:'get',
+                    type: "json",
+                    data: {},
+                    success: function (response) {
+                        if(response.code = 200){
+                            that.searchEngineList = response.data;
+                        }
+                    },
+                    error: function () {
+
+                    }
+                });
+            },
+
+            /**
+             * ajax 保存搜索历史
+             * @param item
+             */
+            saveSearchText2SearchHistory(item) {
+                var that = this;
+                $.ajax({
+                    url: "http://localhost:10086/system/search-history/addhistory",
+                    method: 'get',
+                    type: "json",
+                    data: {searchText: this.searchText, searchEngine: item.placeholder},
+                    success: function (response) {
+                        if(response.code != 200){
+                            that.$alert(response.msg);
+                        }
+                    },
+                    error: function () {
+
+                    }
+                });
+
+            },
+            /**
+             * ajax 新增或编辑 节点数据
+             * @param item
+             */
+            saveMenuTreeNode2DB(formData) {
+                var that = this;
+                $.ajax({
+                    url: "http://localhost:10086/system/menu-tree/insert-update",
+                    method: 'get',
+                    type: "json",
+                    data: {"menuTreeStr" : JSON.stringify(formData)},
+                    success: function (response) {
+                        console.log("更新节点数据:::",response);
+                        if(response.code === 200){
+                            that.getMenuTreeList();
+                            alert(response.data);
+                            that.$nextTick(()=>{
+                                that.$refs.tree.store.nodesMap[response.data].expanded = true;
+                            })
+
+                            // formData.id = response.data;
+                            // formData.children = []; //新的节点，子节点为空，也要写上便于后续扩展。
+                            // // this.$refs.tree.store.nodesMap[data.id].expanded = true;
+                            // var currentNode = that.$refs.tree.getCurrentNode();
+                            // console.log("保存新增节点后，获取当前要添加子节点的父节点：",currentNode);
+                            // currentNode.children.push(formData);
+                        }else{
+                            that.$alert(response.msg);
+                        }
+                    },
+                    error: function () {
+
+                    }
+                });
+            },
+            /**
+             * ajax 根据节点id 删除后台数据
+             * @param item
+             */
+            deleteMenuTreeNodeById(nodeId) {
+                var that = this;
+                $.ajax({
+                    url: "http://localhost:10086/system/menu-tree/delete",
+                    method: 'get',
+                    type: "json",
+                    data: {"id" : nodeId},
+                    success: function (response) {
+                        console.log("删除节点数据:::",response);
+                        if(response.code != 200){
+                            that.$alert(response.msg);
+                        }
+                    },
+                    error: function () {
+
+                    }
+                });
+            },
+
+            /**
+             * filter-node-method属性：	对树节点进行筛选时执行的方法，返回 true 表示这个节点可以显示，返回 false 则表示这个节点会被隐藏   Function(value, data, node)
+             * @param value
+             * @param data
+             * @returns {boolean}
+             */
             filterNode(value, data) {
                 if (!value) return true;
 
@@ -896,8 +498,14 @@
 
             },
 
-            //node-click事件： 共三个参数，依次为：传递给 data 属性的数组中该节点所对应的对象、节点对应的 Node、节点组件本身。  https://element.eleme.cn/#/zh-CN/component/tree#events
-            handleRedirectUrl(data, node, value) {
+
+            /**
+             * 渲染点击节点url到 iframe中
+             * @param data
+             * @param node
+             * @param value
+             */
+            handleRedirectUrl2Iframe(data, node, value) {
                 // console.log("data:",data);
                 // console.log("node:",node);
                 // console.log("value:",value);
@@ -913,7 +521,11 @@
                 }
             },
 
-            targetNewBlank(data) {
+            /**
+             * 渲染点击节点url到 新的标签页
+             * @param data
+             */
+            handleRedirectUrl2NewPage(data) {
                 // window.top.location.href = data.url;
                 // window.location.href = data.url;
                 window.open(data.url, "_blank");
@@ -937,16 +549,19 @@
             },
 
             append(data) {
-                console.log("showcookies:", this.getCookie("menuTreeList"));
-                const newChild = {id: new Date().getTime(), level: 2, label: '子节点', children: []};
-                if (!data.children) {
-                    this.$set(data.parent, 'children', []);
-                }
-                // console.log("拓展前data.children:::",data.children);
-                data.children.push(newChild);
+                console.log("添加节点:", data);
+                this.form = {};
+                this.form.parentId = data.id;
+                this.dialogFormVisible = true;
+                // const newChild = {id: new Date().getTime(), level: 2, label: '子节点', children: []};
+                // if (!data.children) {
+                //     this.$set(data.parent, 'children', []);
+                // }
+                // // console.log("拓展前data.children:::",data.children);
+                // data.children.push(newChild);
                 this.$refs.tree.store.nodesMap[data.id].expanded = true;
                 data.unfold = true;
-                this.syncMenuTreeList2LocalStorage();
+                // this.syncMenuTreeList2LocalStorage();
                 // console.log("拓展时data:::",data);
                 // console.log("拓展后data.children:::",data.children);
                 // console.log("拓展时data.json:::",JSON.stringify(data));
@@ -960,11 +575,7 @@
                     cancelButtonText: '取消',
                     type: 'warning'
                 }).then(() => {
-                    const parent = node.parent;
-                    const children = parent.data.children || parent.data;
-                    const index = children.findIndex(d => d.id === data.id);
-                    children.splice(index, 1);
-                    this.syncMenuTreeList2LocalStorage();
+                    this.deleteMenuTreeNodeById(node.id);
                     this.$message({
                         type: 'success',
                         message: '删除成功!'
@@ -990,62 +601,23 @@
             },
 
             saveNode() {
-                // console.log("this.form:::",this.form);
-                // console.log("编辑保存时menuTreeList:::",this.menuTreeList);
-                // console.log("编辑保存时menuTreeList.json:::",JSON.stringify(this.menuTreeList));
-                // window.localStorage.setItem("menuTreeList",JSON.stringify(this.menuTreeList));
-                this.syncMenuTreeList2LocalStorage();
-                // console.log("localStorage:::",window.localStorage.getItem("menuTreeList"));
+                console.log("this.form:::",this.form);
+                this.saveMenuTreeNode2DB(this.form);
                 this.dialogFormVisible = false;
             },
-            //拖动节点时，更新localStorage
-            syncMenuTreeList2LocalStorage() {
-                try {
-                    window.localStorage.setItem("menuTreeList", JSON.stringify(this.menuTreeList));
-                } catch (e) {
-                    console.log("localstorage set exception:", e)
-                }
-                // document.cookie = "menuTreeList="+JSON.stringify(this.menuTreeList);
-            },
 
-            getCookie(cname) {
-                console.log("document.cookie:::", document.cookie);
-                var name = cname + "=";
-                var ca = document.cookie.split(';');
-                for (var i = 0; i < ca.length; i++) {
-                    var c = ca[i].trim();
-                    if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
-                }
-                return "";
-            },
 
-            uploadData() {
-                this.$confirm('此操作将覆盖已有列表数据, 是否继续?', '提示', {
-                    confirmButtonText: '确定',
-                    cancelButtonText: '取消',
-                    type: 'warning'
-                }).then(() => {
-                    const jsonStr = this.cookieValue;
-                    try {
-                        window.localStorage.setItem("menuTreeList4Recovery", JSON.stringify(this.menuTreeList));
-                        const list = JSON.parse(jsonStr);
-                        this.menuTreeList = list;
-                        this.syncMenuTreeList2LocalStorage();
-                        this.$message.success("上传成功");
-                    } catch (e) {
-                        this.$message.error("上传失败");
-                    }
-                    this.syncMenuTreeList2LocalStorage();
-                    this.$message({
-                        type: 'success',
-                        message: '上传成功!'
-                    });
-                }).catch(() => {
-                    this.$message({
-                        type: 'info',
-                        message: '已取消上传'
-                    });
-                });
+            /**
+             * 拖拽成功完成时触发的事件,，在这里可以将节点拖拽后的顺序返给后端
+             * @param draggingNode
+             * @param dropNode
+             * @param dropType
+             * @param event
+             */
+            onDropSuccessEvent(draggingNode, dropNode, dropType, event) {
+                console.log("tree drop: ", dropType);
+                console.log("draggingNode: ", draggingNode);
+                console.log("dropNode: ", dropNode);
             },
 
             mouseenter(data) {
@@ -1067,13 +639,6 @@
                 // console.log("鼠标移出data.show:::",data.show);
             },
 
-            sequenceDownload() {
-                const element = document.createElement('a')
-                element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(JSON.stringify(this.menuTreeList)))
-                element.setAttribute('download', "menuTreeList.json")
-                element.style.display = 'none'
-                element.click()
-            },
 
         }
     })
