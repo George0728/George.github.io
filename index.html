@@ -180,9 +180,11 @@
                           @mouseleave="mouseleave(data)" style="width: 100%">
                         <!-- 不同节点类型展示logo不同-->
                         <span v-if="node.level == 1" class="el-icon-folder-opened">
+<!--                            <el-link :src="node.url" style="margin-left: 3px">{{ node.label }} {{node.id}} {{data.id}}</el-link>-->
                             <el-link :src="node.url" style="margin-left: 3px">{{ node.label }}</el-link>
                         </span>
                         <span v-else class="el-icon-document">
+<!--                            <el-link :href="node.url" style="margin-left: 3px">{{ node.label }} {{node.id}} {{data.id}}</el-link>-->
                             <el-link :href="node.url" style="margin-left: 3px">{{ node.label }}</el-link>
                         </span>
 
@@ -230,7 +232,7 @@
     </div>
 
     <template>
-        <el-dialog title="编辑节点" :visible.sync="dialogFormVisible" width="500px">
+        <el-dialog title="编辑节点" :visible.sync="dialogFormVisible" width="500px" :close-on-click-modal="false">
             <el-form :model="form" label-width="120px">
                 <el-form-item label="节点id" :label-width="formLabelWidth">
                     <el-input v-model="form.id" autocomplete="off" @keyup.enter.native="saveNode" readonly></el-input>
@@ -418,11 +420,12 @@
                     success: function (response) {
                         console.log("更新节点数据:::",response);
                         if(response.code === 200){
-                            that.getMenuTreeList();
-                            alert(response.data);
-                            that.$nextTick(()=>{
-                                that.$refs.tree.store.nodesMap[response.data].expanded = true;
-                            })
+                            that.$message.success(response.msg);
+                            // that.getMenuTreeList();
+                            // console.log(response.data);
+                            // that.$nextTick(()=>{
+                            //     that.$refs.tree.store.nodesMap[response.data].expanded = true;
+                            // })
 
                             // formData.id = response.data;
                             // formData.children = []; //新的节点，子节点为空，也要写上便于后续扩展。
@@ -440,20 +443,62 @@
                 });
             },
             /**
-             * ajax 根据节点id 删除后台数据
+             * ajax 拖拽更新 节点数据
              * @param item
              */
-            deleteMenuTreeNodeById(nodeId) {
+            handleDropUpdate(dropType,dragDataId,dropDataId) {
+                var that = this;
+                $.ajax({
+                    url: "http://localhost:10086/system/menu-tree/drag-drop",
+                    method: 'get',
+                    type: "json",
+                    data: {"dropType" : dropType, "dragDataId": dragDataId,"dropDataId" : dropDataId},
+                    success: function (response) {
+                        console.log("拖拽更新节点数据:::",response);
+                        if(response.code === 200){
+                            that.$message.success(response.msg);
+                            // that.getMenuTreeList();
+                            // console.log(response.data);
+                            // that.$nextTick(()=>{
+                            //     that.$refs.tree.store.nodesMap[response.data].expanded = true;
+                            // })
+
+                            // formData.id = response.data;
+                            // formData.children = []; //新的节点，子节点为空，也要写上便于后续扩展。
+                            // // this.$refs.tree.store.nodesMap[data.id].expanded = true;
+                            // var currentNode = that.$refs.tree.getCurrentNode();
+                            // console.log("保存新增节点后，获取当前要添加子节点的父节点：",currentNode);
+                            // currentNode.children.push(formData);
+                        }else{
+                            that.$alert(response.msg);
+                        }
+                    },
+                    error: function () {
+
+                    }
+                });
+            },
+            /**
+             * ajax 根据节点数据id 删除后台数据（注意node.id与data.id可能不相等 ！！！）
+             * @param item
+             */
+            deleteMenuTreeNodeById(dataId,node) {
                 var that = this;
                 $.ajax({
                     url: "http://localhost:10086/system/menu-tree/delete",
                     method: 'get',
                     type: "json",
-                    data: {"id" : nodeId},
+                    data: {"id" : dataId},
                     success: function (response) {
                         console.log("删除节点数据:::",response);
                         if(response.code != 200){
-                            that.$alert(response.msg);
+                            that.$alert("???"+response.msg);
+                        }else{
+                            const parent = node.parent;
+                            const children = parent.data.children || parent.data;
+                            const index = children.findIndex(d => d.id === dataId);
+                            children.splice(index, 1);
+                            that.$message.success(response.msg)
                         }
                     },
                     error: function () {
@@ -506,12 +551,18 @@
              * @param value
              */
             handleRedirectUrl2Iframe(data, node, value) {
-                // console.log("data:",data);
-                // console.log("node:",node);
-                // console.log("value:",value);
+                console.log("点击节点data:",data);
+                console.log("点击节点node:",node);
+                console.log("点击节点value:",value);
 
                 // alert($('.card-flip').css('transform') == 'none');
                 // alert(typeof $('.card-flip').css('transform'));
+
+                //节点处于编辑状态时，不进行页面的跳转
+                if(this.showEditableButton){
+                    return;
+                }
+
                 this.$refs.front_iframe.src = data.url;
 
                 if ($('.card-flip').css('transform') == 'none') {
@@ -575,17 +626,11 @@
                     cancelButtonText: '取消',
                     type: 'warning'
                 }).then(() => {
-                    this.deleteMenuTreeNodeById(node.id);
-                    this.$message({
-                        type: 'success',
-                        message: '删除成功!'
-                    });
-                }).catch(() => {
-                    this.$message({
-                        type: 'info',
-                        message: '已取消删除'
-                    });
-                });
+                    console.log('删除data',data);
+                    console.log('删除node',node);
+                    this.deleteMenuTreeNodeById(data.id,node);
+
+                })
 
             },
 
@@ -617,7 +662,10 @@
             onDropSuccessEvent(draggingNode, dropNode, dropType, event) {
                 console.log("tree drop: ", dropType);
                 console.log("draggingNode: ", draggingNode);
+                console.log("draggingData: ", draggingNode.data);
                 console.log("dropNode: ", dropNode);
+                console.log("dropData: ", dropNode.data);
+                this.handleDropUpdate(dropType,draggingNode.data.id,dropNode.data.id);
             },
 
             mouseenter(data) {
