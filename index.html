@@ -67,6 +67,10 @@
             width: 260px !important;
             margin-right: 10px;
         }
+        .content .left .menu1{
+            overflow-y: auto;
+            height: 83vh;
+        }
 
         .content .right {
             flex-direction: row-reverse;
@@ -129,6 +133,33 @@
             padding-right: 5px !important;
         }
 
+
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+
+        ::-webkit-scrollbar-track {
+            width: 6px;
+            background: #efebeb;
+            -webkit-border-radius: 2em;
+            -moz-border-radius: 2em;
+            border-radius: 2em;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #D3D3D3FF !important;
+            background-clip: padding-box;
+            min-height: 28px;
+            -webkit-border-radius: 2em;
+            -moz-border-radius: 2em;
+            border-radius: 2em;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: #b1a8a8;
+        }
+
     </style>
 
 </head>
@@ -152,16 +183,17 @@
     <template>
         <div class="content">
             <div class="left">
-                <div class="menu1">
-                    <!--                <el-button size="mini" @click="()=>{this.showEditableButton =!this.showEditableButton}" style="width: 100%;margin-bottom: 10px">编辑目录</el-button>-->
-                    <el-link href="https://time.is/Beijing" id="time_is_link" rel="nofollow"
-                             style="font-size:14px;margin:0 0 5px 10px;font-weight: bolder" target="_blank">
-                        <span id="Beijing_z43d" style="font-size:14px"></span>
-                    </el-link>
+                <!--                <el-button size="mini" @click="()=>{this.showEditableButton =!this.showEditableButton}" style="width: 100%;margin-bottom: 10px">编辑目录</el-button>-->
+                <el-link href="https://time.is/Beijing" id="time_is_link" rel="nofollow"
+                         style="font-size:14px;margin:0 0 5px 10px;font-weight: bolder" target="_blank">
+                    <span id="Beijing_z43d" style="font-size:14px"></span>
+                </el-link>
 
-                    <el-input placeholder="输入关键字进行过滤" size="medium" v-model="filterText" clearable>
-                        <i slot="suffix" class="el-input__icon el-icon-search"></i>
-                    </el-input>
+                <el-input placeholder="输入关键字进行过滤" size="medium" v-model="filterText" clearable>
+                    <i slot="suffix" class="el-input__icon el-icon-search"></i>
+                </el-input>
+                <div class="menu1">
+
 
                     <el-tree class="filter-tree"
                              :data="menuTreeList"
@@ -188,11 +220,15 @@
                             <el-link :href="node.url" style="margin-left: 3px">{{ node.label }}</el-link>
                         </span>
 
-                        <span v-show="data.show" class="tree_edit-delete20230205">
+                        <span v-show="data.level == 2">
                             <!--  为 Tree 的一个节点的后面增加一个节点             -->
                             <el-button type="text" size="mini" @click="handleRedirectUrl2NewPage(data)">
                                 <i class="el-icon-top-right"></i>
                             </el-button>
+                        </span>
+
+                        <span v-show="data.show" class="tree_edit-delete20230205">
+
                             <!--  为 Tree 中的一个节点追加一个子节点             -->
                             <el-button type="text" size="mini" @click="() => append(data, node)">
                                 <i class="el-icon-plus"></i>
@@ -427,12 +463,16 @@
                             //     that.$refs.tree.store.nodesMap[response.data].expanded = true;
                             // })
 
-                            // formData.id = response.data;
-                            // formData.children = []; //新的节点，子节点为空，也要写上便于后续扩展。
-                            // // this.$refs.tree.store.nodesMap[data.id].expanded = true;
-                            // var currentNode = that.$refs.tree.getCurrentNode();
-                            // console.log("保存新增节点后，获取当前要添加子节点的父节点：",currentNode);
-                            // currentNode.children.push(formData);
+                            console.log("formData.id:",formData.id);
+                            //id不存在表示为新增的节点
+                            if(!formData.id){
+                                formData.id = response.data;
+                                formData.children = []; //新的节点，子节点为空，也要写上便于后续扩展。
+                                // // this.$refs.tree.store.nodesMap[data.id].expanded = true;
+                                var currentNode = that.$refs.tree.getCurrentNode();
+                                console.log("保存新增节点后，获取当前要添加子节点的父节点：",currentNode);
+                                currentNode.children.push(formData);
+                            }
                         }else{
                             that.$alert(response.msg);
                         }
@@ -470,7 +510,7 @@
                             // console.log("保存新增节点后，获取当前要添加子节点的父节点：",currentNode);
                             // currentNode.children.push(formData);
                         }else{
-                            that.$alert(response.msg);
+                            that.$message.error(response.msg);
                         }
                     },
                     error: function () {
@@ -560,11 +600,9 @@
 
                 //节点处于编辑状态时，不进行页面的跳转
                 if(this.showEditableButton){
-                    return;
+                    return
                 }
-
                 this.$refs.front_iframe.src = data.url;
-
                 if ($('.card-flip').css('transform') == 'none') {
                     $('.card-flip').css('transform', 'rotateX(360deg)');
                 } else {
