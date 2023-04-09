@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />-->
+    <title>Navigation</title>
+    <link rel="icon" href="source/img/favicon12.png"/>
+
+    <!--    css图标样式库 对el-link有影响-->
+    <!--    <link rel="stylesheet" href="source/css/easy-icon/easy-icon-all.css">-->
+
+    <!-- 引入CDN -->
+    <script src="source/js/vue.js"></script>
+    <!-- 引入Element UI样式 -->
+    <link rel="stylesheet" href="source/css/elementui.css">
+    <!-- 引入Element UI组件库 -->
+    <script src="source/js/elementui.js"></script>
+    <!-- 引入JQuery组件库 -->
+    <script src="source/js/jquery.js" type="text/javascript"></script>
+    <script src="//widget.time.is/zh.js"></script>
+    <script>
+        time_is_widget.init({
+            Beijing_z43d: {
+                template: "DATE TIME",
+                date_format: "dayname year年monthnum月daynum日"
+            }
+        });
+    </script>
+
+
+    <base target="_blank">
+    <style>
+        body {
+            background : #aa9c9c;
+            height: 100%;
+        }
+        .top {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 900px;
+        }
+
+        .topform{
+            width: 25%;
+            margin-right: 10px;
+        }
+
+        .el-scrollbar .highlighted{
+            /*background-color:grey !important;*/
+            color: #0003ff !important;
+        }
+        .el-input-group__append{
+
+            padding: 0 10px 0 10px !important;
+        }
+
+    </style>
+
+</head>
+<body>
+<!--    实现背景三角体悬浮且可鼠标指针吸引的效果-->
+<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvas-nest.js/2.0.4/canvas-nest.js"></script>-->
+<!--<script src="source/js/canvas-nest.js"></script>-->
+
+
+<div id="app">
+
+    <div class="top">
+        <form v-for="(item,index) in this.searchEngineList" :action="item.searchUrl" method="get" class="topform">
+            <el-autocomplete class="search-content" id="search-sug" size="large" class="keywords_input" v-model='searchText' :placeholder="item.placeholder" :fetch-suggestions="((queryString,cb)=>{querySearch(queryString,cb,item)})" :trigger-on-focus="false"
+                      :name="item.searchKey"  clearable autocomplete="off" @select="handleSelect" style="width: 100%;">
+                <i slot="prefix"><img :src="item.iconUrl" width="18px" style="position: relative;top: 10px"/></i>
+                <input class="on_submit" slot="append" type="image" src="source/img/search_icon2.png"
+                       style="width: 18px; padding:0px !important;position: relative;z-index: 999"></input>
+            </el-autocomplete>
+        </form>
+    </div>
+
+</div>
+
+<script>
+    new Vue({
+        el: '#app',
+        data: function () {
+            return {
+                //顶部搜索框绑定值
+                searchText: null,
+                searchHistory: [],
+                //顶部搜索引擎api列表
+                searchEngineList:[
+                    {
+                        "id": 2,
+                        "engineName": "google",
+                        "searchUrl": "https://www.google.com/search",
+                        "searchKey": "q",
+                        "placeholder": "Google Search",
+                        "iconUrl": "source/img/website/google.png",
+                        "remark": "",
+                        "status": 1,
+                        "suggestUrl": "http://suggestqueries.google.com/complete/search?client=youtube&q=#content#",
+                        "suggestCallback": "jsonp",
+                        "orderNumber": 0
+                    },
+                    {
+                        "id": 3,
+                        "engineName": "baidu",
+                        "searchUrl": "https://www.baidu.com/s",
+                        "searchKey": "wd",
+                        "placeholder": "Baidu Search",
+                        "iconUrl": "source/img/website/baidu.png",
+                        "remark": "",
+                        "status": 1,
+                        "suggestUrl": "http://suggestion.baidu.com/su?wd=#content#",
+                        "suggestCallback": "cb",
+                        "orderNumber": 0
+                    }]
+            }
+        },
+        created() {
+
+        },
+        watch: {
+            filterText(val) {
+                let res = val == null ? '' : val
+                this.$refs.tree.filter(val);
+            }
+        },
+        methods: {
+            handleSelect(item) {
+                console.log("selected:",item.value);
+            },
+
+            querySearch(queryString,cb,item) {
+                console.log("item:",item);
+                let res = [];
+                let searchKey = $("#search-sug").val();
+                let sugurl = item.suggestUrl;
+                sugurl = sugurl.replace("#content#", searchKey);
+                $.ajax({
+                    type: "GET",
+                    url: sugurl,
+                    dataType: "jsonp",
+                    // async: false,
+                    // timeout: 15000,
+                    jsonp: item.suggestCallback, //定义回调函数,不写则为默认回调函数
+                    // jsonpCallback: 'window.baidusug',
+                    success: function (data) {
+                        // alert("ok");
+                        let arr = [];
+                        if("baidu" == item.engineName){
+                            console.log("res:",data.s);
+                            let result = data.s;
+                            for(let i=0; i<result.length; i++) {
+                                let obj = {};
+                                obj["value"] = result[i];
+                                arr.push(obj);
+                            }
+                        }else if("google" == item.engineName){
+                            console.log("res:",data[1]);
+                            let result = data[1];
+                            for(let i=0; i<result.length; i++) {
+                                let obj = {};
+                                obj["value"] = result[i][0];
+                                arr.push(obj);
+                            }
+                        }
+                        cb(arr);
+                        },
+                    error: function () {
+                        alert("fail");
+                    }
+                });
+
+                return res;
+            },
+
+        },
+
+    })
+</script>
+</body>
+</html>

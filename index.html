@@ -486,16 +486,16 @@
                     success: function (data) {
                         // alert("ok");
                         let arr = [];
-                        if("baidu" == item.engineName){
-                            console.log("res:",data.s);
+                        if("baidu" == item.engineName){  //item.engineName : wangpan,google,baidu,searx,fsou,wiki,stackoverflow,cnblogs,csdn,zhihu,github,jianshu,runoob,doboku,bilibili,qqvideo,youtube
+                            // console.log("res:",data.s);
                             let result = data.s;
                             for(let i=0; i<result.length; i++) {
                                 let obj = {};
                                 obj["value"] = result[i];
                                 arr.push(obj);
                             }
-                        }else if("google" == item.engineName){
-                            console.log("res:",data[1]);
+                        }else {
+                            // console.log("res:",data[1]);
                             let result = data[1];
                             for(let i=0; i<result.length; i++) {
                                 let obj = {};

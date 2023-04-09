@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/javascript">
+    new Vue({
+        el: 'app',
+        data:function (){
+            return{
+                searchEngineList:[
+                    {
+                        "id": 2,
+                        "engineName": "google",
+                        "searchUrl": "https://www.google.com/search",
+                        "searchKey": "q",
+                        "placeholder": "谷歌搜索",
+                        "iconUrl": "source/img/website/google.png",
+                        "remark": "",
+                        "status": 1,
+                        "suggestUrl": "http://suggestqueries.google.com/complete/search?client=youtube&q=#content#",
+                        "suggestCallback": "jsonp",
+                        "orderNumber": 0
+                    },
+                    {
+                        "id": 3,
+                        "engineName": "baidu",
+                        "searchUrl": "https://www.baidu.com/s",
+                        "searchKey": "wd",
+                        "placeholder": "百度搜索",
+                        "iconUrl": "source/img/website/baidu.png",
+                        "remark": "",
+                        "status": 1,
+                        "suggestUrl": "http://suggestion.baidu.com/su?wd=#content#",
+                        "suggestCallback": "cb",
+                        "orderNumber": 0
+                    }]
+            }
+
+        }
+    });
+
+</script>
+</body>
+</html>
