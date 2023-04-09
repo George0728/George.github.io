@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />-->
-    <title>WebSite Navigation</title>
-    <link rel="icon" href="source/img/favicon12.png">
+    <title>Navigation</title>
+    <link rel="icon" href="source/img/favicon12.png"/>
 
-    <link rel="stylesheet" href="source/css/transition.css">
+    <link rel="stylesheet" href="source/css/transition.css"/>
+    <link rel="stylesheet" href="source/css/scrollbar.css"/>
 
     <!--    css图标样式库 对el-link有影响-->
     <!--    <link rel="stylesheet" href="source/css/easy-icon/easy-icon-all.css">-->
-
 
     <!-- 引入CDN -->
     <script src="source/js/vue.js"></script>
@@ -36,6 +36,9 @@
     <script src="source/js/cnchar.min.js" type="text/javascript"></script>
     <base target="_blank">
     <style>
+        body {
+            background : #f3f0f0;
+        }
         #app {
             display: flex;
             flex-direction: column;
@@ -52,9 +55,6 @@
             margin: 0 10px 10px 0;
         }
 
-        /*.topform .keywords_input{*/
-        /*    width: 225px;*/
-        /*}*/
         .content {
             width: 100%;
             display: flex;
@@ -75,7 +75,6 @@
         .content .right {
             flex-direction: row-reverse;
             flex-grow: 1;
-            /*background-color: #4d4d4d;*/
         }
 
         /*分割线*/
@@ -106,7 +105,7 @@
             /*right: -83px;*/
             background: #F0F7FF;
             /*margin-top: -5px;*/
-            padding-top: 2px;
+            padding-top: 0px;
             padding-bottom: 10px;
             padding-left: 5px;
             padding-right: 5px;
@@ -115,67 +114,114 @@
             border-color: rgba(193, 193, 196, 0.96);
         }
 
-        /*.el-input-group__append{*/
-        /*    width: 40px;*/
-        /*    padding: 5px 0px 5px 3px;*/
-        /*}*/
-        /*.el-input-group__append button{*/
-        /*    padding-right: 5px;*/
-        /*}*/
-
-        .el-input__inner {
-            /*display: flex;*/
-            /*text-align:center;*/
-        }
-
         .el-input-group__append {
             padding-left: 5px !important;
             padding-right: 5px !important;
         }
 
-
-        ::-webkit-scrollbar {
-            width: 6px;
-            height: 6px;
+        /*树控件背景色为透明*/
+        .el-tree{
+            background: transparent;
         }
 
-        ::-webkit-scrollbar-track {
-            width: 6px;
-            background: #efebeb;
-            -webkit-border-radius: 2em;
-            -moz-border-radius: 2em;
-            border-radius: 2em;
+        /*节点label默认显示颜色*/
+        .el-link.el-link--default {
+            color: #0043c9;
+
+        }
+        /*节点内容样式*/
+        .el-tree-node__content{
+            height: 25px;
+            color: #0043c9;
+            border-radius:5px !important;
+            padding-bottom: 3px !important;
+            margin-bottom: 3px !important;
+        }
+        span.expanded.el-tree-node__expand-icon.el-icon-caret-right {
+            color: #2fff00 !important;
+        }
+        span.el-tree-node__expand-icon.el-icon-caret-right::before {
+            color: #0043c9;
+        }
+        /*是否有叶子节点,如果没有则改为透明色*/
+        .is-leaf::before {
+        // display: none;
+            opacity: 0;
         }
 
-        ::-webkit-scrollbar-thumb {
-            background-color: #D3D3D3FF !important;
-            background-clip: padding-box;
-            min-height: 28px;
-            -webkit-border-radius: 2em;
-            -moz-border-radius: 2em;
-            border-radius: 2em;
+
+        /*tree组件选中背景色修改 */
+        .el-tree-node.is-current > .el-tree-node__content{
+            background-color: rgba(0,133,254,.5) !important;
         }
 
-        ::-webkit-scrollbar-thumb:hover {
-            background-color: #b1a8a8;
+        /*tree组件鼠标hover悬浮背景色 */
+        .el-tree-node > .el-tree-node__content:hover{
+            background-color: rgba(0,133,254,.5);
         }
+        .menu1 a:hover {
+            color: rgba(104,252,0,1) !important;
+        }
+
+
+
+        .tree_edit-delete20230205{
+            background-color: #ffffff;
+            height: 23px;
+            border: black ridge !important;
+            /*border-style:ridge;*/
+            padding: 0px 10px 3px 10px !important;
+            border-radius: 5px;
+            position:absolute;
+            right: 0px;
+        }
+
+        .text-color-red{
+            color:red !important;
+        }
+
+        .tree-edit-form .el-form-item {
+            display: flex;
+            width: 80%;
+        }
+
+        .el-form-item__label{
+            font-weight: 600;
+            width: 100px !important;
+
+        }
+        .tree-edit-form .el-input--suffix .el-input__inner {
+            width: 320px !important;
+            padding-right: 0px !important;
+        }
+
+
+        .el-scrollbar .highlighted{
+            /*background-color:grey !important;*/
+            color: #0003ff !important;
+        }
+
 
     </style>
 
 </head>
 <body>
+<!--    实现背景三角体悬浮且可鼠标指针吸引的效果-->
+<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvas-nest.js/2.0.4/canvas-nest.js"></script>-->
+<!--<script src="source/js/canvas-nest.js"></script>-->
+
 
 <div id="app">
 
     <div class="top">
         <form v-for="(item,index) in this.searchEngineList" :action="item.searchUrl" method="get" class="topform"
               @submit="saveSearchText2SearchHistory(item)">
-            <el-input size="medium" class="keywords_input" v-model='searchText' :placeholder="item.placeholder"
-                      :name="item.searchKey" size="20" clearable autocomplete="off">
+            <el-autocomplete id="search-sug" size="medium" class="keywords_input" v-model='searchText' :placeholder="item.placeholder" :fetch-suggestions="((queryString,cb)=>{querySearch(queryString,cb,item)})" :trigger-on-focus="false"
+                      :name="item.searchKey" size="20" clearable autocomplete="off" @select="handleSelect">
                 <i slot="prefix"><img :src="item.iconUrl" width="18px" style="position: relative;top: 8px"/></i>
                 <input class="on_submit" slot="append" type="image" src="source/img/search_icon2.png"
                        style="width: 18px;position: relative;z-index: 999"></input>
-            </el-input>
+            </el-autocomplete>
         </form>
     </div>
     <el-divider></el-divider>
@@ -211,21 +257,20 @@
                     <span slot-scope="{ node, data}" class="custom-tree-node" @mouseenter="mouseenter(data)"
                           @mouseleave="mouseleave(data)" style="width: 100%">
                         <!-- 不同节点类型展示logo不同-->
-                        <span v-if="node.level == 1" class="el-icon-folder-opened">
-<!--                            <el-link :src="node.url" style="margin-left: 3px">{{ node.label }} {{node.id}} {{data.id}}</el-link>-->
-                            <el-link :src="node.url" style="margin-left: 3px">{{ node.label }}</el-link>
-                        </span>
-                        <span v-else class="el-icon-document">
-<!--                            <el-link :href="node.url" style="margin-left: 3px">{{ node.label }} {{node.id}} {{data.id}}</el-link>-->
-                            <el-link :href="node.url" style="margin-left: 3px">{{ node.label }}</el-link>
-                        </span>
+                            <el-link :src="node.url" style="margin-left: 3px" :class="{'text-color-red': (data.level == 2) }">{{ node.label }}</el-link>
+<!--                        <span v-if="node.level == 1" class="el-icon-folder-opened">-->
+<!--                            <el-link :src="node.url" style="margin-left: 3px" :class="{'text-color-red': (data.level == 2) }">{{ node.label }}</el-link>-->
+<!--                        </span>-->
+<!--                        <span v-else class="el-icon-document">-->
+<!--                            <el-link :href="node.url" style="margin-left: 3px" :class="{'text-color-red': (data.level == 2) }">{{ node.label }}</el-link>-->
+<!--                        </span>-->
 
-                        <span v-show="data.level == 2">
-                            <!--  为 Tree 的一个节点的后面增加一个节点             -->
-                            <el-button type="text" size="mini" @click="handleRedirectUrl2NewPage(data)">
-                                <i class="el-icon-top-right"></i>
-                            </el-button>
-                        </span>
+<!--                        <span v-show="data.level == 2">-->
+<!--                            &lt;!&ndash;  为 Tree 的一个节点的后面增加一个节点             &ndash;&gt;-->
+<!--                            <el-button type="text" size="mini" @click="handleRedirectUrl2NewPage(data)">-->
+<!--                                <i class="el-icon-top-right"></i>-->
+<!--                            </el-button>-->
+<!--                        </span>-->
 
                         <span v-show="data.show" class="tree_edit-delete20230205">
 
@@ -259,7 +304,7 @@
         <el-tooltip placement="top" effect="light">
             <div slot="content">
                 1. 鼠标右击编辑目录树，再次右击隐藏编辑按钮。<br/>
-                2. 更新的目录树数据使用localStorage存储，清除浏览器本地数据后，不可恢复。
+<!--                2. 更新的目录树数据使用localStorage存储，清除浏览器本地数据后，不可恢复。-->
             </div>
             <el-button size="mini" class="el-icon-info">&nbsp;使用帮助</el-button>
         </el-tooltip>
@@ -268,23 +313,23 @@
     </div>
 
     <template>
-        <el-dialog title="编辑节点" :visible.sync="dialogFormVisible" width="500px" :close-on-click-modal="false">
-            <el-form :model="form" label-width="120px">
-                <el-form-item label="节点id" :label-width="formLabelWidth">
+        <el-dialog title="编辑节点" :visible.sync="this.dialogFormVisible" width="600px" :close-on-click-modal="false">
+            <el-form :model="form" label-width="120px" class="tree-edit-form">
+                <el-form-item label="节点id" :label-width="this.formLabelWidth">
                     <el-input v-model="form.id" autocomplete="off" @keyup.enter.native="saveNode" readonly></el-input>
                 </el-form-item>
-                <el-form-item label="节点名称" :label-width="formLabelWidth">
+                <el-form-item label="节点名称" :label-width="this.formLabelWidth">
                     <el-input v-model="form.label" autocomplete="off" @keyup.enter.native="saveNode"
                               clearable></el-input>
                 </el-form-item>
-                <el-form-item label="节点url" :label-width="formLabelWidth">
+                <el-form-item label="节点url" :label-width="this.formLabelWidth">
                     <el-input v-model="form.url" autocomplete="off" @keyup.enter.native="saveNode" clearable></el-input>
                 </el-form-item>
-                <el-form-item label="level" :label-width="formLabelWidth">
-                    <el-input v-model="form.level" autocomplete="off" @keyup.enter.native="saveNode"
-                              clearable></el-input>
+                <el-form-item label="level" :label-width="this.formLabelWidth">
+                    <el-input-number v-model="form.level" :min="1" :max="2"@keyup.enter.native="saveNode"></el-input-number>
+<!--                    <el-input v-model="form.level" autocomplete="off" @keyup.enter.native="saveNode" clearable></el-input>-->
                 </el-form-item>
-                <el-form-item label="备注" :label-width="formLabelWidth">
+                <el-form-item label="备注" :label-width="this.formLabelWidth">
                     <el-input v-model="form.remark" autocomplete="off" @keyup.enter.native="saveNode"
                               clearable></el-input>
                 </el-form-item>
@@ -317,7 +362,8 @@
                 searchEngineList: [],
                 activeName: '1',
                 filterText: '',
-                iframeInitSrc: 'http://www.lsdhss.com/',
+                // iframeInitSrc: 'http://www.lsdhss.com/',
+                iframeInitSrc: '/source/html/home.html',
                 menuTreeList:[],
                 defaultProps: {
                     children: 'children',
@@ -356,6 +402,116 @@
             }
         },
         methods: {
+            handleSelect(item) {
+                console.log("selected:",item.value);
+            },
+            querySearch1(queryString, cb) {
+                let res = [];
+                let searchKey = $("#search-sug").val();
+                let sugurl = "http://suggestion.baidu.com/su?wd=#content#";
+                sugurl = sugurl.replace("#content#", searchKey);
+                $.ajax({
+                    type: "GET",
+                    url: sugurl,
+                    dataType: "jsonp",
+                    async: false,
+                    // timeout: 15000,
+                    jsonp: "cb", //定义回调函数,不写则为默认回调函数
+                    // jsonpCallback: 'window.baidusug',
+                    success: function (data) {
+                        // alert("ok");
+                        console.log("res:",data.s);
+                        let result = data.s;
+                        let arr = [];
+                        for(let i=0; i<result.length; i++) {
+                            let obj = {};
+                            obj["value"] = result[i];
+                            arr.push(obj);
+                        }
+                        cb(arr);
+                        },
+                    error: function () {
+                        alert("fail");
+                    }
+                });
+                return res;
+            },
+            querySearch2(queryString,cb,item) {
+                console.log("item:",item);
+                let res = [];
+                let searchKey = $("#search-sug").val();
+                let sugurl = "http://suggestqueries.google.com/complete/search?client=youtube&q=#content#";
+                sugurl = sugurl.replace("#content#", searchKey);
+                $.ajax({
+                    type: "GET",
+                    url: sugurl,
+                    dataType: "jsonp",
+                    // async: false,
+                    // timeout: 15000,
+                    jsonp: "jsonp", //定义回调函数,不写则为默认回调函数
+                    // jsonpCallback: 'window.baidusug',
+                    success: function (data) {
+                        // alert("ok");
+                        console.log("res:",data[1]);
+                        let result = data[1];
+                        let arr = [];
+                        for(let i=0; i<result.length; i++) {
+                            let obj = {};
+                            obj["value"] = result[i][0];
+                            arr.push(obj);
+                        }
+                        cb(arr);
+                        },
+                    error: function () {
+                        alert("fail");
+                    }
+                });
+
+                return res;
+            },
+            querySearch(queryString,cb,item) {
+                console.log("item:",item);
+                let res = [];
+                let searchKey = $("#search-sug").val();
+                let sugurl = item.suggestUrl;
+                sugurl = sugurl.replace("#content#", searchKey);
+                $.ajax({
+                    type: "GET",
+                    url: sugurl,
+                    dataType: "jsonp",
+                    // async: false,
+                    // timeout: 15000,
+                    jsonp: item.suggestCallback, //定义回调函数,不写则为默认回调函数
+                    // jsonpCallback: 'window.baidusug',
+                    success: function (data) {
+                        // alert("ok");
+                        let arr = [];
+                        if("baidu" == item.engineName){
+                            console.log("res:",data.s);
+                            let result = data.s;
+                            for(let i=0; i<result.length; i++) {
+                                let obj = {};
+                                obj["value"] = result[i];
+                                arr.push(obj);
+                            }
+                        }else if("google" == item.engineName){
+                            console.log("res:",data[1]);
+                            let result = data[1];
+                            for(let i=0; i<result.length; i++) {
+                                let obj = {};
+                                obj["value"] = result[i][0];
+                                arr.push(obj);
+                            }
+                        }
+                        cb(arr);
+                        },
+                    error: function () {
+                        alert("fail");
+                    }
+                });
+
+                return res;
+            },
 
             /**
              * ajax 获取后台节点数列表，并渲染到node
@@ -595,12 +751,24 @@
                 console.log("点击节点node:",node);
                 console.log("点击节点value:",value);
 
-                // alert($('.card-flip').css('transform') == 'none');
-                // alert(typeof $('.card-flip').css('transform'));
+                let event = window.event || arguments.callee.caller.arguments[0];
+                var ctrlKeyDowned = event.ctrlKey;
+                var shiftKeyDowned = event.shiftKey;
+
+                // alert(ctrlKeyDowned);
+                // alert(shiftKeyDowned);
+
 
                 //节点处于编辑状态时，不进行页面的跳转
                 if(this.showEditableButton){
                     return
+                }
+                if(data.url == null){
+                    data.url = '/source/html/home.html';
+                }
+                if(data.level == 2 || ctrlKeyDowned){
+                    this.handleRedirectUrl2NewPage(data);
+                    return;
                 }
                 this.$refs.front_iframe.src = data.url;
                 if ($('.card-flip').css('transform') == 'none') {
@@ -725,6 +893,9 @@
                 // console.log("鼠标移出data.show:::",data.show);
             },
 
+
+        },
+        mounted(){
 
         }
     })

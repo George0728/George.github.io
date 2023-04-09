@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="../../source/js/jquery.js"></script>
+
+</head>
+<body>
+
+<script type="text/javascript">
+
+    window.onload = function () {
+
+        //组装查询地址
+        var sugurl = "http://suggestion.baidu.com/su?wd=#content#&cb=window.baidu.sug";
+        var content = "关键字";
+        sugurl = sugurl.replace("#content#", content);
+
+        //定义回调函数
+        window.baidu = {
+            sug: function (json) {
+                console.log("查询结果:", json);
+                $("body").html(JSON.stringify(json));
+            }
+        }
+
+        //动态添加JS脚本
+        var script = document.createElement("script");
+        script.src = sugurl;
+        // alert(1);
+        document.getElementsByTagName("head")[0].appendChild(script);
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/scrollbar.css"/>
+    <script src="../js/jquery.min.js"></script>
+
+    <style>
+        body, html{
+            height: calc(100% - 20px);
+        }
+        .container {
+            display: flex;
+            height: 100%;
+            /*min-height: 900px;*/
+            /*justify-content: space-around;*/
+            flex-flow: row wrap;
+            /*align-items: center;*/
+            align-content: stretch;
+
+        }
+        .child{
+            width: calc((100% - 32px * 4) / 4);
+            margin: 10px 10px 10px 10px;
+            padding: 5px;
+            min-width: 300px;
+            border: solid 1px purple;
+            border-radius: 3px;
+            /*flex: 0;*/
+
+
+
+/*            display: inline-block;
+            vertical-align: top;
+            width: 30%;
+            min-width: 300px;
+            margin-right: 3%;*/
+
+
+
+            /*background-color: #74d718 !important;*/
+        }
+
+
+    </style>
+</head>
+<body>
+<input type="text" placeholder="请输入关键词" id="key_word">
+<input type="button" onclick="getSearchData()" value="搜索">
+<script type="text/javascript">
+
+    // window.onload = function () {
+    //
+    //     //组装查询地址
+    //     var sugurl = "http://suggestion.baidu.com/su?wd=#content#&cb=window.baidu.sug";
+    //     var content = "关键字";
+    //     sugurl = sugurl.replace("#content#", content);
+    //
+    //     //定义回调函数
+    //     window.baidu = {
+    //         sug: function (json) {
+    //             console.log("查询结果:",json)
+    //         }
+    //     }
+    //
+    //     //动态添加JS脚本
+    //     var script = document.createElement("script");
+    //     script.src = sugurl;
+    //     // alert(1);
+    //     document.getElementsByClassName("child")[0].appendChild(script);
+    // }
+
+    // window.baidu = {
+    //     sug:function (response) {
+    //         console.log("结果:",response.s);
+    //     }
+    // }
+    var getSearchData = function () {
+        var searchKey = $("#key_word").val();
+        // alert(searchKey);
+        var sugurl = "http://suggestion.baidu.com/su?wd=#content#";
+        sugurl = sugurl.replace("#content#", searchKey);
+        // //定义回调函数
+        // window.baidu = {
+        //     sug: function (json) {
+        //         console.log("查询结果:",json)
+        //         document.getElementsByClassName("child")[0].innerHTML = json.s;
+        //     }
+        // }
+        // var script = document.createElement("script");
+        // script.src = sugurl;
+        // document.getElementsByClassName("child")[0].appendChild(script);
+
+        $.ajax({
+            type: "GET",
+            url: sugurl,
+            dataType: "jsonp",
+            // timeout: 15000,
+            jsonp: "cb",
+            // jsonpCallback: 'window.baidusug',
+            success: function (data) {
+                alert("ok");
+                $("#child").val(data);
+                console.log("res:",data);
+            },
+            error: function () {
+                alert("fail");
+            }
+            });
+    }
+
+
+
+</script>
+<div class="container">
+    <div class="child">1</div>
+    <div class="child">2</div>
+    <div class="child">3</div>
+    <div class="child">4</div>
+    <div class="child">5</div>
+    <div class="child">6</div>
+    <div class="child">7</div>
+    <div class="child">8</div>
+    <div class="child">9</div>
+    <div class="child">10</div>
+    <div class="child">11</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="../../source/js/jquery.min.js"></script>
+</head>
+<body>
+<input type="text" placeholder="请输入关键词" id="key_word">
+<input type="button" onclick="getSearchData()" value="搜索">
+<div>
+    <br/>
+    <textarea  id="content"  style="width: 800px;height: 400px"></textarea>
+</div>
+
+<script type="text/javascript">
+    let getSearchData;
+    $(document).ready(function(){
+        getSearchData = function  () {
+            let searchKey = $("#key_word").val();
+            let sugurl = "http://suggestion.baidu.com/su?wd=#content#";
+            sugurl = sugurl.replace("#content#", searchKey);
+            $.ajax({
+                type: "GET",
+                url: sugurl,
+                dataType: "jsonp",
+                // timeout: 15000,
+                jsonp: "cb", //定义回调函数,不写则默认为 window.baidu.sug
+                // jsonpCallback: 'window.baidusug',
+                success: function (data) {
+                    alert("ok");
+                    $("#child").val(data);
+                    console.log("res:",data);
+                    $("#content").val(data.s);
+                },
+                error: function () {
+                    alert("fail");
+                }
+            });
+        }
+    })
+</script>
+</body>
+</html>
